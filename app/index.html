@@ -107,6 +107,8 @@
 
   [data-en] { display: none; }
   html[lang="en"] [data-en] { display: revert; }
+  .from-to small[data-ja], html[lang="en"] .from-to small[data-en] { display: block; }
+  html[lang="en"] .from-to small[data-ja] { display: none; }
   html[lang="en"] [data-ja] { display: none; }
 
   @media (max-width: 760px) {
@@ -143,7 +145,7 @@
         <div class="row"><span class="kind" style="color:#b8c4c2">普通</span><span class="dest">LINES      594</span></div>
         <div class="row"><span class="kind" style="color:#f15a22">快速</span><span class="dest">STATIONS 10154</span></div>
         <div class="row"><span class="kind" style="color:#e53935">特急</span><span class="dest">TRAINS     255</span></div>
-        <div class="row" style="color:#6d7773;font-size:11px">まもなく&nbsp; NEXT RIDE<span class="cursor"></span></div>
+        <div style="color:#6d7773;font-size:11px;margin-top:8px;white-space:nowrap">まもなく&nbsp; NEXT RIDE<span class="cursor"></span></div>
       </div>
 
       <div class="ticket">
