@@ -1,0 +1,111 @@
+# Network audit against Wikidata
+
+## Shorter than Wikidata (15): possibly missing track
+
+北陸本線 (jr-west.hokuriku): ours 43.9 km, Wikidata 356.5 km (-312.6)
+鹿児島本線 (jr-kyushu.kagoshima): ours 278.9 km, Wikidata 398.5 km (-119.6)
+日高本線 (jr-hokkaido.hidaka): ours 30.6 km, Wikidata 146.5 km (-115.9)
+根室本線 (jr-hokkaido.nemuro): ours 361.6 km, Wikidata 443.8 km (-82.2)
+横須賀線 (jr-east.yokosuka): ours 24.0 km, Wikidata 73.3 km (-49.3)
+武蔵野線 (jr-east.musashino): ours 71.9 km, Wikidata 117.1 km (-45.2)
+留萌本線 (jr-hokkaido.rumoi): ours 14.4 km, Wikidata 50.1 km (-35.7)
+島原鉄道線 (shimabara-tetsudo.shimabara-railway): ours 43.4 km, Wikidata 78.5 km (-35.1)
+山手線 (jr-east.yamanote): ours 20.4 km, Wikidata 34.5 km (-14.1)
+片町線 (jr-west.katamachi): ours 44.9 km, Wikidata 55.4 km (-10.5)
+東京メトロ副都心線 (tokyo-metro.fukutoshin): ours 12.0 km, Wikidata 20.2 km (-8.2)
+福塩線 (jr-west.fukuen): ours 77.8 km, Wikidata 85.1 km (-7.3)
+南武線 (jr-east.nambu): ours 38.5 km, Wikidata 45.0 km (-6.5)
+東急目黒線 (tokyu.meguro): ours 6.5 km, Wikidata 11.9 km (-5.5)
+伊予鉄道連絡線 (iyotetsudo.renraku): ours 0.2 km, Wikidata 3.5 km (-3.3)
+
+## Missing termini (80)
+
+秋田内陸縦貫鉄道秋田内陸線 (akita-nairiku-jukan-tetsudo.akita-nairiku): terminus 鷹ノ巣駅 is not on our line
+阿佐海岸鉄道阿佐東線 (asa-kaigan-tetsudo.asato): terminus 甲浦信号場 is not on our line
+筑豊電気鉄道線 (chikuho-denkitetsudo.chikuho-electric-railroad): terminus 黒崎駅 is not on our line
+函館市電本線 (hakodate-shi.main): terminus ガス会社前停留場 is not on our line
+函館市電本線 (hakodate-shi.main): terminus 五稜郭駅 is not on our line
+阪急京都本線 (hankyudentetsu.hankyu-kyoto): terminus ‎大阪梅田駅 is not on our line
+弘南鉄道大鰐線 (hiroshi-minami-tetsudo.owani): terminus 大鰐温泉駅 is not on our line
+広島電鉄横川線 (hiroshima-dentetsu.hiroden-yokogawa): terminus 横川駅停留場 is not on our line
+伊予鉄道本町線 (iyotetsudo.honmachi): terminus 南堀端停留場 is not on our line
+八高線 (jr-east.hachiko): terminus 高崎駅 is not on our line
+北陸新幹線 (jr-east.hokuriku-shinkansen, jr-west.hokuriku-shinkansen): terminus JR東日本東京駅 is not on our line
+北陸新幹線 (jr-east.hokuriku-shinkansen, jr-west.hokuriku-shinkansen): terminus JR西日本新大阪駅 is not on our line
+常磐線 (jr-east.joban): terminus JR東日本品川駅 is not on our line
+常磐線 (jr-east.joban): terminus JR東日本仙台駅 is not on our line
+上越新幹線 (jr-east.joetsu-shinkansen): terminus JR東日本東京駅 is not on our line
+鹿島線 (jr-east.kashima): terminus 佐原駅 is not on our line
+気仙沼線 (jr-east.kesennuma): terminus 小牛田駅 is not on our line
+武蔵野線 (jr-east.musashino): terminus 鶴見駅 is not on our line
+成田線 (jr-east.narita): terminus JR東日本千葉駅 is not on our line
+成田線 (jr-east.narita): terminus 銚子駅 is not on our line
+高崎線 (jr-east.takasaki): terminus JR東日本東京駅 is not on our line
+山田線 (jr-east.yamada): terminus 釜石駅 is not on our line
+横須賀線 (jr-east.yokosuka): terminus JR東日本東京駅 is not on our line
+北海道新幹線 (jr-hokkaido.hokkaido-shinkansen): terminus 札幌駅 is not on our line
+北海道新幹線 (jr-hokkaido.hokkaido-shinkansen): terminus 旭川駅 is not on our line
+海峡線 (jr-hokkaido.kaikyo): terminus 新中小国信号場 is not on our line
+留萌本線 (jr-hokkaido.rumoi): terminus 留萌駅 is not on our line
+留萌本線 (jr-hokkaido.rumoi): terminus 増毛駅 is not on our line
+札沼線 (jr-hokkaido.sassho): terminus 新十津川駅 is not on our line
+筑肥線 (jr-kyushu.chikuhi): terminus 博多駅 is not on our line
+唐津線 (jr-kyushu.karatsu): terminus 岸嶽駅 is not on our line
+西九州新幹線 (jr-kyushu.nishi-kyushu-shinkansen): terminus 博多駅 is not on our line
+牟岐線 (jr-shikoku.mugi): terminus 海部駅 is not on our line
+播但線 (jr-west.bantan): terminus 飾磨港駅 is not on our line
+福知山線 (jr-west.fukuchiyama): terminus 大阪駅 is not on our line
+北陸本線 (jr-west.hokuriku): terminus 金沢駅 is not on our line
+北陸本線 (jr-west.hokuriku): terminus 直江津駅 is not on our line
+可部線 (jr-west.kabe): terminus 三段峡駅 is not on our line
+可部線 (jr-west.kabe): terminus 浜田駅 is not on our line
+吉備線 (jr-west.kibi): terminus 湛井駅 is not on our line
+湖西線 (jr-west.kosei): terminus 京都駅 is not on our line
+湖西線 (jr-west.kosei): terminus 敦賀駅 is not on our line
+奈良線 (jr-west.nara): terminus 奈良駅 is not on our line
+津山線 (jr-west.tsuyama): terminus 岡山市駅 is not on our line
+鹿島臨海鉄道大洗鹿島線 (kashima-rinkai-tetsudo.oarai-kashima): terminus 鹿島神宮駅 is not on our line
+京急久里浜線 (keikyu.kurihama): terminus 油壺駅 is not on our line
+京急久里浜線 (keikyu.kurihama): terminus 三崎駅 is not on our line
+近鉄奈良線 (kintetsu.nara): terminus 大阪上本町駅 is not on our line
+こうべ未来都市機構摩耶ケーブル線 (kobe-miraitoshi-kiko.maya-cablecar): terminus 虹の駅 is not on our line
+くま川鉄道湯前線 (kuma-kawatetsu-michi.yunomae): terminus 人吉駅 is not on our line
+万葉線高岡軌道線 (manyosen.manyosen-takaoka-kido): terminus 高岡駅停留場 is not on our line
+水島臨海鉄道水島本線 (mizushima-rinkai-tetsudo.mizushima): terminus 倉敷貨物ターミナル駅 is not on our line
+名鉄尾西線 (nagoyatetsudo.meitetsu-bisai): terminus 弥富市 is not on our line
+名鉄尾西線 (nagoyatetsudo.meitetsu-bisai): terminus 一宮市 is not on our line
+名鉄犬山線 (nagoyatetsudo.meitetsu-inuyama): terminus 枇杷島分岐点 is not on our line
+南海加太線 (nankai.kada): terminus 和歌山市駅 is not on our line
+南海高野線 (nankai.koya): terminus 難波駅 is not on our line
+錦川鉄道錦川清流線 (nishikigawatetsudo.nishikigawa-seiryu): terminus 日原駅 is not on our line
+小田急江ノ島線 (odakyu.enoshima): terminus 相模大野分岐点 is not on our line
+小田急多摩線 (odakyu.tama): terminus 相模原駅 is not on our line
+小田急多摩線 (odakyu.tama): terminus 上溝駅 is not on our line
+岡山電気軌道東山本線 (okayama-denki-kido.higashiyama): terminus 東山・おかでんミュージアム駅停留場 is not on our line
+岡山電気軌道清輝橋線 (okayama-denki-kido.okaden-seikibashi): terminus 岡山駅前停留場 is not on our line
+三岐線 (sangi-tetsudo.sangi): terminus 富田駅 is not on our line
+西武国分寺線 (seibu.kokubunji): terminus 本川越駅 is not on our line
+西武国分寺線 (seibu.kokubunji): terminus 西武鉄道高田馬場駅 is not on our line
+西武西武園線 (seibu.seibu-en): terminus 村山貯水池駅 is not on our line
+西武新宿線 (seibu.shinjuku): terminus 国分寺駅 is not on our line
+西武山口線 (seibu.yamaguchi): terminus 遊園地前駅 (埼玉県) is not on our line
+西武山口線 (seibu.yamaguchi): terminus ユネスコ村駅 is not on our line
+多摩都市モノレール線 (tama-monorail.toshi-monorail): terminus 町田駅 is not on our line
+多摩都市モノレール線 (tama-monorail.toshi-monorail): terminus 箱根ケ崎駅 is not on our line
+東京メトロ副都心線 (tokyo-metro.fukutoshin): terminus 和光市駅 is not on our line
+東京メトロ南北線 (tokyo-metro.namboku): terminus 品川駅 is not on our line
+東京メトロ有楽町線 (tokyo-metro.yurakucho): terminus 住吉駅 is not on our line
+東急目黒線 (tokyu.meguro): terminus 日吉駅 is not on our line
+東急大井町線 (tokyu.oimachi): terminus 溝の口駅 is not on our line
+富山港線 (toyamachihotetsudo.toyamako): terminus 富山駅北停留場 is not on our line
+富山港線 (toyamachihotetsudo.toyamako): terminus 富山駅停留場 is not on our line
+津軽鉄道線 (tsugaru-tetsudo.tsugaru-railway): terminus 五所川原駅 is not on our line
+
+## Longer than Wikidata (6): usually branches or freight lines counted in ours
+
+予讃線 (jr-shikoku.yosan): ours 322.4 km, Wikidata 297.6 km (+24.8)
+長崎電気軌道本線 (nagasakidenkikido.nagasaki-electric-tramway): ours 6.9 km, Wikidata 0.0 km (+6.9)
+白新線 (jr-east.hakushin): ours 32.1 km, Wikidata 27.3 km (+4.8)
+中央線 (osakashi-kosoku-denki-kido.osaka-metro-chuo): ours 21.0 km, Wikidata 17.9 km (+3.1)
+小野田線 (jr-west.onoda): ours 13.8 km, Wikidata 11.6 km (+2.2)
+長崎電気軌道蛍茶屋支線 (nagasakidenkikido.nagasaki-electric-tramway-hotarujaya-branch): ours 2.1 km, Wikidata 0.0 km (+2.1)

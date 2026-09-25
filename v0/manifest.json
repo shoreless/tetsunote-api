@@ -1,6 +1,6 @@
 {
  "version": 0,
- "revision": "91ade70d003a",
+ "revision": "6950027ef334",
  "languages": [
   "en",
   "ja"
@@ -245,8 +245,8 @@
    },
    "lines": 2,
    "stations": 45,
-   "bytes": 22828,
-   "sha256": "87e055b65822cd91089af776358c5a5f1846935ad61f17c0017414def0440868"
+   "bytes": 23314,
+   "sha256": "2a19d2b17dbd37ac72e3cfbfb69d062b5176b2d6f81b112e9bc3b205513c9d87"
   },
   {
    "path": "operators/eizandentetsu.json",
@@ -700,9 +700,9 @@
     "ja": "JR東日本"
    },
    "lines": 69,
-   "stations": 1767,
-   "bytes": 1199890,
-   "sha256": "721fe2b8c4bcd48d709cc163b27edce793cd1a9ca1006d39f623a3a4fd4bcb8f"
+   "stations": 1768,
+   "bytes": 1200336,
+   "sha256": "c5adb7614018da204a8e73afc6451b13a4adc447af6d6b2f07dec49bb984a74d"
   },
   {
    "path": "operators/jr-hokkaido.json",
@@ -713,8 +713,8 @@
    },
    "lines": 14,
    "stations": 338,
-   "bytes": 295574,
-   "sha256": "f19241a42b1eb6c8259f6497dbc7e11b20f9fb1a241c025a07915e20228c978f"
+   "bytes": 301731,
+   "sha256": "f3a664930fb3240f0c6d3eb5863f77018b578a5d5d0cdc980bb3ee9a6f9f0749"
   },
   {
    "path": "operators/jr-kyushu.json",
@@ -761,8 +761,8 @@
    },
    "lines": 51,
    "stations": 1246,
-   "bytes": 907924,
-   "sha256": "a2447dbf58d1dac9886b67e58a6c559fc11f4e6c85a6e1afd3e2dad294828c9b"
+   "bytes": 909214,
+   "sha256": "26e4c7b17650131405743229ee09c71202295759211a399ec96f1528d9b4b6df"
   },
   {
    "path": "operators/jukkokutoge-cable.json",
@@ -1099,18 +1099,6 @@
    "stations": 11,
    "bytes": 9128,
    "sha256": "21956cf06289a92655edc89519b5ac365e03a27a16ee96bf4e7afa5517e0b93b"
-  },
-  {
-   "path": "operators/mikuni-ashihara-sen.json",
-   "operator": "mikuni-ashihara-sen",
-   "name": {
-    "en": null,
-    "ja": "三国芦原線"
-   },
-   "lines": 1,
-   "stations": 0,
-   "bytes": 685,
-   "sha256": "3f2d514cd92d2bd803a2d1f39525bf3628cec21d4dcbef13dd032e1e8217fed5"
   },
   {
    "path": "operators/minamiaso-tetsudo.json",
@@ -1503,10 +1491,10 @@
     "en": null,
     "ja": "三岐鉄道"
    },
-   "lines": 3,
-   "stations": 28,
-   "bytes": 16773,
-   "sha256": "5935680b06988a2a2f28e4c273f1f22d07d6909d4167795354f412971df1c909"
+   "lines": 2,
+   "stations": 27,
+   "bytes": 15745,
+   "sha256": "a8adc736e27d2dc483486a89a0015e44bddffa469961860dab8442138ad8a540"
   },
   {
    "path": "operators/sanriku-tetsudo.json",
@@ -1875,10 +1863,10 @@
     "en": null,
     "ja": "富山地方鉄道"
    },
-   "lines": 10,
-   "stations": 116,
-   "bytes": 61075,
-   "sha256": "b6177a0a9940517f995603a6bbf4ea213dea69d9a542a2c822732803161b5e5d"
+   "lines": 9,
+   "stations": 115,
+   "bytes": 60316,
+   "sha256": "bc1f430aa58072d8a0430972d91b177b2ed770645ee75d31322f100a1466b3ed"
   },
   {
    "path": "operators/toyo-rapid.json",
@@ -2146,18 +2134,18 @@
   },
   {
    "path": "lines_wikipedia.json",
-   "bytes": 772538,
-   "sha256": "c35834ad82e262f0f9e2a90a0c7a183da43eee885666b8bd57b576b1b6a17d2a"
+   "bytes": 769316,
+   "sha256": "782d62c90d1afad4fb760eea7a115347846b04dbd3142a7a732a20db3d567252"
   },
   {
    "path": "places.json",
-   "bytes": 45617,
-   "sha256": "f085a355283f9886899ec52163314982dd4b52c2e8a9123d4f2295eae56cda27"
+   "bytes": 42658,
+   "sha256": "570bfeed6f968abcce7f2fe18641423ca62dc19b9b78401289ecaaaa6f3f355e"
   },
   {
    "path": "places_wikipedia.json",
-   "bytes": 39697,
-   "sha256": "0716ebbf6d352f546529d5934bab5804571d25bc0043cb5204b48c24ffe4f7f4"
+   "bytes": 36178,
+   "sha256": "e611c4402127b1bbb64bf678b2bbfa9c7134361f4846eb1d6475cd6e22c23e11"
   },
   {
    "path": "trains/0-thumb.webp",
@@ -4320,16 +4308,6 @@
    "sha256": "8f554a69a17417c3263b4d9ccd1316af5caa82fa92f57bb460fc69f49cf76832"
   },
   {
-   "path": "places/fukuchiyama-railway-museum-poppoland-thumb.webp",
-   "bytes": 17466,
-   "sha256": "3a9d0e207c26d798233f4e8fabe67d7c88d2fceaec68b23aa0a71882df56d684"
-  },
-  {
-   "path": "places/fukuchiyama-railway-museum-poppoland.webp",
-   "bytes": 94704,
-   "sha256": "9de751106f434ea74ccca8bac3dc6e815b77f864a8336b4bd604be4818911451"
-  },
-  {
    "path": "places/handa-railway-museum-thumb.webp",
    "bytes": 10824,
    "sha256": "a6cd4b4e3ac1e7e324fa0969e3df60a3609a07dfb22653b20421cb090fb2d6da"
@@ -4668,16 +4646,6 @@
    "path": "places/usui-pass-railway-heritage-park.webp",
    "bytes": 31370,
    "sha256": "6549a922f9243c903d5ee4e2f21b61370c5b33529189df86931e7768539040fe"
-  },
-  {
-   "path": "places/western-river-railroad-thumb.webp",
-   "bytes": 24554,
-   "sha256": "6905c73b7a7b984b528293981a725b2b0b8b21b9a23db3264c2f5a05218d65b9"
-  },
-  {
-   "path": "places/western-river-railroad.webp",
-   "bytes": 72640,
-   "sha256": "49e3e8ad4215fe16d3c550247c43e182fd67d5cfb5656641d7f6dcc9df3596d2"
   },
   {
    "path": "places/yamanashi-prefectural-maglev-exhibition-center-thumb.webp",

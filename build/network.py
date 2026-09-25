@@ -22,6 +22,7 @@ from pyproj import Geod, Transformer
 from shapely import ops
 from shapely.geometry import LineString, MultiLineString, Point
 
+import borrow
 import commons
 import facts
 import images as train_images
@@ -40,6 +41,7 @@ SNAP_M = 60  # a station belongs to a path if its platform is this close to the 
 ABSORB_M = 1500  # a junction this close to a station along the track happens at that station
 SIMPLIFY_M = 3
 JOIN_M = 30  # track ends this close are the same point (N02 leaves small gaps between pieces)
+BRIDGE_M = 1500  # a line still in pieces is joined across its nearest loose ends up to this far apart
 
 ATTRIBUTION = (
     "「国土数値情報（鉄道データ）」（国土交通省）を加工して作成 / "
@@ -137,6 +139,27 @@ def build_line(sections, stations, to_m, to_deg):
         for b in range(a + 1, len(ends)):
             if ends[a] in g and ends[b] in g and Point(g.nodes[ends[a]]["xy"]).distance(Point(g.nodes[ends[b]]["xy"])) < JOIN_M:
                 nx.contracted_nodes(g, ends[a], ends[b], self_loops=False, copy=False)
+
+    # N02 sometimes leaves a real gap in a line, as on the Sekihoku Line near the closed Kanehana station,
+    # where pieces miss each other by 600 m. Left alone, a station-less stretch there would be trimmed as
+    # a dead end. Bridge the nearest loose ends of separate pieces, and say so in the report.
+    while True:
+        parts = list(nx.connected_components(g))
+        if len(parts) < 2:
+            break
+        loose = [n for n in g.nodes if isinstance(n, tuple) and g.degree(n) == 1]
+        best = None
+        for i, part in enumerate(parts):
+            for a in (n for n in loose if n in part):
+                for b in (n for n in loose if n not in part):
+                    d = Point(g.nodes[a]["xy"]).distance(Point(g.nodes[b]["xy"]))
+                    if best is None or d < best[0]:
+                        best = (d, a, b)
+        if best is None or best[0] > BRIDGE_M:
+            break
+        d, a, b = best
+        g.add_edge(a, b, geom=LineString([g.nodes[a]["xy"], g.nodes[b]["xy"]]), m=d)
+        warnings.append(f"bridged a {d:.0f} m gap in the track at {to_deg.transform(*g.nodes[a]['xy'])}")
 
     changed = True
     while changed:
@@ -314,6 +337,10 @@ def main():
                 "geometry": [[round(x, 5), round(y, 5)] for x, y in lonlat.coords],
             })
         segments.sort(key=lambda s: s["id"])
+        if not segments:
+            # All of its track is drawn under another line (the Kaikyō Line under the Hokkaido Shinkansen).
+            report.append(f"{line_id} ({op_name} {line_name}): no track of its own; left out")
+            continue
 
         shard = shards[op_id]
         shard["operator"] = {
@@ -353,8 +380,13 @@ def main():
                 "point": [round(c[0], 5), round(c[1], 5)],
             }
 
+    # An operator whose only line had no track of its own has nothing to publish.
+    for op_id in [k for k, v in shards.items() if not v["lines"]]:
+        report.append(f"operator {op_id}: no lines with track of their own; left out")
+        del shards[op_id]
     for shard in shards.values():
         name_lines(shard, line_names, report)
+    borrow.apply(shards, report)
 
     line_ids = {line["id"] for shard in shards.values() for line in shard["lines"]}
     all_series, series_by_line, seat_classes = rolling_stock.load(line_ids, report)

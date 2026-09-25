@@ -1,3 +1,4 @@
+echizen-tetsudo.mikuni-ashihara (えちぜん鉄道 三国芦原線): bridged a 105 m gap in the track at (136.23320361, 36.0713185)
 kuma-kawatetsu-michi.yunomae (くま川鉄道 湯前線): station 009916 人吉温泉 has no English name
 kobe-miraitoshi-kiko.maya-keeburu (こうべ未来都市機構 摩耶ケーブル線): station 006940 虹 has no English name
 rakutenchi.beppu-rakutenchikeeburu (ラクテンチ 別府ラクテンチケーブル線): station 009432 雲泉寺 has no English name
@@ -7,6 +8,8 @@ ichibata-densha.taisha (一畑電車 大社線): station 004863 遥堪 has no En
 ippan-zaidanhojin-seikan-tonneru-kinenkan.seikan-tonneru-tappi-shako (一般財団法人青函トンネル記念館 青函トンネル竜飛斜坑線): station 000482 体験坑道 has no English name
 ippan-zaidanhojin-seikan-tonneru-kinenkan.seikan-tonneru-tappi-shako (一般財団法人青函トンネル記念館 青函トンネル竜飛斜坑線): station 000483 青函トンネル記念館 has no English name
 manyosen.shinminato-minato (万葉線 新湊港線): station 001811 第一イン新湊クロスベイ前 has no English name
+mikuni-ashihara-sen.echizen-tetsudo (三国芦原線 えちぜん鉄道): no track of its own; left out
+sangi-tetsudo.kintetsu-renraku (三岐鉄道 近鉄連絡線): no track of its own; left out
 jr-kyushu.hita-hikosan (九州旅客鉄道 日田彦山線): station 009209 豊前桝田 has no English name
 jr-kyushu.hita-hikosan (九州旅客鉄道 日田彦山線): station 009287 筑前岩屋 has no English name
 keisei.chiba (京成電鉄 千葉線): station 003814 京成幕張本郷 has no English name
@@ -16,12 +19,17 @@ keihan-denkitetsudo.kosaku (京阪電気鉄道 鋼索線): station 006352 ケー
 hakodate-shi.omori (函館市 大森線): station 000458 函館駅前 has no English name
 hakodate-shi.hon (函館市 本線): station 000459 函館駅前 has no English name
 jr-hokkaido.hakodate (北海道旅客鉄道 函館線): junction away from any station (3 ways)
+jr-hokkaido.kaikyo (北海道旅客鉄道 海峡線): bridged a 262 m gap in the track at (140.51482012, 41.14581862)
+jr-hokkaido.sekihoku (北海道旅客鉄道 石北線): bridged a 205 m gap in the track at (143.54812, 43.83788)
+jr-hokkaido.sekihoku (北海道旅客鉄道 石北線): bridged a 319 m gap in the track at (143.54973, 43.833510000000004)
 nagoya-gaidoeibasu.gaidoeibasu-shidami (名古屋ガイドウェイバス ガイドウェイバス志段味線): station 005360 守山 has no English name
 shikoku-keeburu.yakuri-keeburu (四国ケーブル 八栗ケーブル): station 008153 八栗登山口 has no English name
 oyama-cable.oyama-kosaku (大山観光電鉄 大山鋼索線): station 004732 阿夫利神社 has no English name
 oyama-cable.oyama-kosaku (大山観光電鉄 大山鋼索線): station 004743 大山寺 has no English name
 oyama-cable.oyama-kosaku (大山観光電鉄 大山鋼索線): station 004749 大山ケーブル has no English name
 toyamachihotetsudo.kureha (富山地方鉄道 呉羽線): station 001947 トヨタモビリティ富山Gスクエア五福前（五福末広町） has no English name
+toyamachihotetsudo.toyamaeki-nanboku-setsuzoku (富山地方鉄道 富山駅南北接続線): no track of its own; left out
+toyamachihotetsudo.hon (富山地方鉄道 本線): bridged a 92 m gap in the track at (137.21382, 36.70001)
 toyamachihotetsudo.hon (富山地方鉄道 本線): station 001991 南富山駅前 has no English name
 okayama-denki-kido.higashiyama-hon (岡山電気軌道 東山本線): station 007397 東山・おかでんミュージアム has no English name
 hiroshi-minami-tetsudo.owani (弘南鉄道 大鰐線): station 000617 大鰐 has no English name
@@ -51,6 +59,7 @@ disney-resort-line.dizuniirizotorain (舞浜リゾートライン ディズニ�
 jr-west.hokuriku (西日本旅客鉄道 北陸線): station 004954 田村 has no English name
 jr-west.hokuriku (西日本旅客鉄道 北陸線): station 005006 坂田 has no English name
 jr-west.kabe (西日本旅客鉄道 可部線): station 007953 下祗園 has no English name
+jr-west.sanyo (西日本旅客鉄道 山陽線): bridged a 833 m gap in the track at (131.68110000000001, 34.05496999999999)
 jr-west.tokaido (西日本旅客鉄道 東海道線): station 006886 立花 has no English name
 nishinihon-tetsudo.kaizuka (西日本鉄道 貝塚線): station 008947 西鉄千早 has no English name
 nagasakidenkikido.hon (長崎電気軌道 本線): station 009816 スタジアムシティノース has no English name
@@ -61,9 +70,9 @@ kurama-tera.kuramayama-kosakutetsudo (鞍馬寺 鞍馬山鋼索鉄道): station 
 kurama-tera.kuramayama-kosakutetsudo (鞍馬寺 鞍馬山鋼索鉄道): station 005650 山門 has no English name
 kako-shima-shi.daiikki (鹿児島市 第一期線): station 010033 鹿児島駅前 has no English name
 kako-shima-shi.taniyama (鹿児島市 谷山線): station 010074 南鹿児島駅前 has no English name
+operator mikuni-ashihara-sen: no lines with track of their own; left out
 rakutenchi.beppu-rakutenchikeeburu (ラクテンチ 別府ラクテンチケーブル線): no English name
 ippan-zaidanhojin-seikan-tonneru-kinenkan.seikan-tonneru-tappi-shako (一般財団法人青函トンネル記念館 青函トンネル竜飛斜坑線): no English name
-mikuni-ashihara-sen.echizen-tetsudo (三国芦原線 えちぜん鉄道): no English name
 iyotetsudo.hanazono (伊予鉄道 花園線): no English name
 hakodate-shi.omori (函館市 大森線): no English name
 hakodate-shi.horai-yachi-atama (函館市 宝来・谷地頭線): no English name
@@ -75,6 +84,7 @@ tateyama-kurobe-kan-hikari.kosaku (立山黒部貫光 鋼索線): no English nam
 disney-resort-line.dizuniirizotorain (舞浜リゾートライン ディズニーリゾートライン): no English name
 kurama-tera.kuramayama-kosakutetsudo (鞍馬寺 鞍馬山鋼索鉄道): no English name
 takao-cable.takao-kosaku (高尾登山電鉄 高尾鋼索線): no English name
+jr-east.chuo: borrowed 1 segment(s) 神田–東京 from jr-east.tohoku
 42 of 255 series have no image
 place mikasa-railway-memorial-museum: no station within 3000 m
 place hokkaido-maruseppu-recreation-forest-park-railway: no station within 3000 m

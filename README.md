@@ -73,6 +73,21 @@ This downloads 国土数値情報 N02 into `sources/` if it is missing, then wri
 `v0/manifest.json`. Anything the build could not resolve, such as a junction away from any
 station, is listed in `build/report.txt`.
 
+## Checking the network
+
+N02 draws shared track once, under one line, and sometimes leaves gaps. Two things keep the network
+honest:
+
+- `data/line_borrow.csv` gives a line track it legally includes but N02 files under another line.
+  The Chūō Main Line borrows Kanda–Tokyo from the Tōhoku Line this way.
+- `uv run build/audit.py` compares every line with Wikidata: our length against Wikidata's, and each
+  terminus Wikidata names against our stations. It writes `build/audit.txt`. Most differences are
+  expected (closed sections, a service drawn where we keep the legal line, planned extensions), so
+  the list is read, not applied.
+
+The build itself also joins track pieces up to 1.5 km apart when a line would otherwise be split,
+and lists each join in `build/report.txt`.
+
 ## Adding a place
 
 Places come from Wikidata where it has them. To add one it lacks, such as a train bar or a photo
