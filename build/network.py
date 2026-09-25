@@ -22,6 +22,7 @@ from pyproj import Geod, Transformer
 from shapely import ops
 from shapely.geometry import LineString, MultiLineString, Point
 
+import series as rolling_stock
 from names import LineNames, Names, ascii_name, line_slug_en
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -346,6 +347,12 @@ def main():
     for shard in shards.values():
         name_lines(shard, line_names, report)
 
+    line_ids = {line["id"] for shard in shards.values() for line in shard["lines"]}
+    all_series, series_by_line = rolling_stock.load(line_ids, report)
+    for shard in shards.values():
+        for line in shard["lines"]:
+            line["series"] = series_by_line.get(line["id"], [])
+
     (OUT / "operators").mkdir(parents=True, exist_ok=True)
     listing = []
     for op_id, shard in sorted(shards.items()):
@@ -371,7 +378,20 @@ def main():
             "sha256": hashlib.sha256(text.encode()).hexdigest(),
         })
 
-    revision = hashlib.sha256("".join(s["sha256"] for s in listing).encode()).hexdigest()[:12]
+    files = []
+    series_text = json.dumps(
+        {"version": 0, "languages": ["en", "ja"], "series": all_series},
+        ensure_ascii=False, separators=(",", ":"),
+    )
+    (OUT / "series.json").write_text(series_text, encoding="utf-8")
+    files.append({
+        "path": "series.json",
+        "bytes": len(series_text.encode()),
+        "sha256": hashlib.sha256(series_text.encode()).hexdigest(),
+    })
+
+    hashes = [s["sha256"] for s in listing + files]
+    revision = hashlib.sha256("".join(hashes).encode()).hexdigest()[:12]
     manifest = {
         "version": 0,
         "revision": revision,
@@ -379,6 +399,7 @@ def main():
         "source": RELEASE,
         "attribution": ATTRIBUTION,
         "shards": listing,
+        "files": files,
     }
     (OUT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
     (ROOT / "build" / "report.txt").write_text("\n".join(report) + "\n", encoding="utf-8")

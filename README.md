@@ -14,6 +14,7 @@ Nothing is published yet. The first release will cover the Tokyo region.
 | --- | --- |
 | `v0/manifest.json` | Every shard with its hash and version, so apps download only what changed |
 | `v0/operators/{id}.json` | One operator's lines, stations and segments (adjacent-station pieces of line with operating km and geometry) |
+| `v0/series.json` | Train models (E235 series, N700S…) with operators, kind and status (active, retiring, retired). Each line lists the models that run or ran on it in `series`, with a status for that line |
 | `v0/places.json` | Museums, notable stations, viewpoints, preserved locomotives and 廃線跡 |
 | `v0/events.json` | Depot open days, festivals, farewell runs and stamp rallies, with `starts` and `ends` |
 
