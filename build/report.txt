@@ -1,0 +1,77 @@
+kuma-kawatetsu-michi.yunomae (くま川鉄道 湯前線): station 009916 人吉温泉 has no English name
+kobe-miraitoshi-kiko.maya-keeburu (こうべ未来都市機構 摩耶ケーブル線): station 006940 虹 has no English name
+rakutenchi.beppu-rakutenchikeeburu (ラクテンチ 別府ラクテンチケーブル線): station 009432 雲泉寺 has no English name
+rakutenchi.beppu-rakutenchikeeburu (ラクテンチ 別府ラクテンチケーブル線): station 009433 乙原 has no English name
+ichibata-densha.kitamatsu-ko (一畑電車 北松江線): station 004673 湖遊館新駅 has no English name
+ichibata-densha.taisha (一畑電車 大社線): station 004863 遥堪 has no English name
+ippan-zaidanhojin-seikan-tonneru-kinenkan.seikan-tonneru-tappi-shako (一般財団法人青函トンネル記念館 青函トンネル竜飛斜坑線): station 000482 体験坑道 has no English name
+ippan-zaidanhojin-seikan-tonneru-kinenkan.seikan-tonneru-tappi-shako (一般財団法人青函トンネル記念館 青函トンネル竜飛斜坑線): station 000483 青函トンネル記念館 has no English name
+manyosen.shinminato-minato (万葉線 新湊港線): station 001811 第一イン新湊クロスベイ前 has no English name
+jr-kyushu.hita-hikosan (九州旅客鉄道 日田彦山線): station 009209 豊前桝田 has no English name
+jr-kyushu.hita-hikosan (九州旅客鉄道 日田彦山線): station 009287 筑前岩屋 has no English name
+keisei.chiba (京成電鉄 千葉線): station 003814 京成幕張本郷 has no English name
+keio.keio (京王電鉄 京王線): station 003806 笹塚 has no English name
+keifuku-denkitetsudo.arashiyama-hon (京福電気鉄道 嵐山本線): station 005998 西院 has no English name
+keihan-denkitetsudo.kosaku (京阪電気鉄道 鋼索線): station 006352 ケーブル八幡宮口 has no English name
+hakodate-shi.omori (函館市 大森線): station 000458 函館駅前 has no English name
+hakodate-shi.hon (函館市 本線): station 000459 函館駅前 has no English name
+jr-hokkaido.hakodate (北海道旅客鉄道 函館線): junction away from any station (3 ways)
+nagoya-gaidoeibasu.gaidoeibasu-shidami (名古屋ガイドウェイバス ガイドウェイバス志段味線): station 005360 守山 has no English name
+shikoku-keeburu.yakuri-keeburu (四国ケーブル 八栗ケーブル): station 008153 八栗登山口 has no English name
+oyama-cable.oyama-kosaku (大山観光電鉄 大山鋼索線): station 004732 阿夫利神社 has no English name
+oyama-cable.oyama-kosaku (大山観光電鉄 大山鋼索線): station 004743 大山寺 has no English name
+oyama-cable.oyama-kosaku (大山観光電鉄 大山鋼索線): station 004749 大山ケーブル has no English name
+toyamachihotetsudo.kureha (富山地方鉄道 呉羽線): station 001947 トヨタモビリティ富山Gスクエア五福前（五福末広町） has no English name
+toyamachihotetsudo.hon (富山地方鉄道 本線): station 001991 南富山駅前 has no English name
+okayama-denki-kido.higashiyama-hon (岡山電気軌道 東山本線): station 007397 東山・おかでんミュージアム has no English name
+hiroshi-minami-tetsudo.owani (弘南鉄道 大鰐線): station 000617 大鰐 has no English name
+jr-east.hakushin (東日本旅客鉄道 白新線): junction away from any station (3 ways)
+jr-east.hakushin (東日本旅客鉄道 白新線): junction away from any station (3 ways)
+jr-east.hakushin (東日本旅客鉄道 白新線): junction away from any station (3 ways)
+tobu.utsunomiya (東武鉄道 宇都宮線): station 002155 江曾島 has no English name
+jr-central.kozan (東海旅客鉄道 高山線): station 002502 飛騨古川 has no English name
+jr-central.kozan (東海旅客鉄道 高山線): station 002534 飛騨国府 has no English name
+jr-central.kozan (東海旅客鉄道 高山線): station 002646 飛騨一ノ宮 has no English name
+jr-central.kozan (東海旅客鉄道 高山線): station 002831 飛騨小坂 has no English name
+jr-central.kozan (東海旅客鉄道 高山線): station 002870 飛騨宮田 has no English name
+jr-central.kozan (東海旅客鉄道 高山線): station 002962 飛騨萩原 has no English name
+jr-central.kozan (東海旅客鉄道 高山線): station 003902 飛騨金山 has no English name
+tsugaru-tetsudo.tsugaru-tetsudo (津軽鉄道 津軽鉄道線): station 000539 津軽五所川原 has no English name
+kumamotoshi.suizenji (熊本市 水前寺線): station 009771 新水前寺駅前 has no English name
+kobeshi.kita-kami (神戸市 北神線): station 006792 谷上 has no English name
+kobedentetsu.arima (神戸電鉄 有馬線): station 006791 谷上 has no English name
+akita-nairiku-jukan-tetsudo.akita-nairiku (秋田内陸縦貫鉄道 秋田内陸線): station 000674 鷹巣 has no English name
+akita-nairiku-jukan-tetsudo.akita-nairiku (秋田内陸縦貫鉄道 秋田内陸線): station 000729 阿仁合 has no English name
+chikuho-denkitetsudo.chikuho-denkitetsudo (筑豊電気鉄道 筑豊電気鉄道線): station 008703 黒崎駅前 has no English name
+nose-dentetsu.myoken (能勢電鉄 妙見線): station 006445 鴬の森 has no English name
+disney-resort-line.dizuniirizotorain (舞浜リゾートライン ディズニーリゾートライン): station 004058 東京ディズニーランド･ステーション has no English name
+disney-resort-line.dizuniirizotorain (舞浜リゾートライン ディズニーリゾートライン): station 004063 リゾートゲートウェイ･ステーション has no English name
+disney-resort-line.dizuniirizotorain (舞浜リゾートライン ディズニーリゾートライン): station 004098 ベイサイド･ステーション has no English name
+disney-resort-line.dizuniirizotorain (舞浜リゾートライン ディズニーリゾートライン): station 004106 東京ディズニーシー･ステーション has no English name
+jr-west.hokuriku (西日本旅客鉄道 北陸線): station 004954 田村 has no English name
+jr-west.hokuriku (西日本旅客鉄道 北陸線): station 005006 坂田 has no English name
+jr-west.kabe (西日本旅客鉄道 可部線): station 007953 下祗園 has no English name
+jr-west.tokaido (西日本旅客鉄道 東海道線): station 006886 立花 has no English name
+nishinihon-tetsudo.kaizuka (西日本鉄道 貝塚線): station 008947 西鉄千早 has no English name
+nagasakidenkikido.hon (長崎電気軌道 本線): station 009816 スタジアムシティノース has no English name
+nagasakidenkikido.hon (長崎電気軌道 本線): station 009817 スタジアムシティサウス has no English name
+hankyudentetsu.kyoto (阪急電鉄 京都線): station 005996 西院 has no English name
+asa-kaigan-tetsudo.asa-higashi (阿佐海岸鉄道 阿佐東線): station 009190 甲浦 has no English name
+kurama-tera.kuramayama-kosakutetsudo (鞍馬寺 鞍馬山鋼索鉄道): station 005641 多宝塔 has no English name
+kurama-tera.kuramayama-kosakutetsudo (鞍馬寺 鞍馬山鋼索鉄道): station 005650 山門 has no English name
+kako-shima-shi.daiikki (鹿児島市 第一期線): station 010033 鹿児島駅前 has no English name
+kako-shima-shi.taniyama (鹿児島市 谷山線): station 010074 南鹿児島駅前 has no English name
+rakutenchi.beppu-rakutenchikeeburu (ラクテンチ 別府ラクテンチケーブル線): no English name
+ippan-zaidanhojin-seikan-tonneru-kinenkan.seikan-tonneru-tappi-shako (一般財団法人青函トンネル記念館 青函トンネル竜飛斜坑線): no English name
+mikuni-ashihara-sen.echizen-tetsudo (三国芦原線 えちぜん鉄道): no English name
+iyotetsudo.hanazono (伊予鉄道 花園線): no English name
+hakodate-shi.omori (函館市 大森線): no English name
+hakodate-shi.horai-yachi-atama (函館市 宝来・谷地頭線): no English name
+hakodate-shi.yu-no-kawa (函館市 湯の川線): no English name
+oyama-cable.oyama-kosaku (大山観光電鉄 大山鋼索線): no English name
+mitake-cable.keeburukaa (御岳登山鉄道 ケーブルカー): no English name
+kobeshi.kita-kami (神戸市 北神線): no English name
+tateyama-kurobe-kan-hikari.kosaku (立山黒部貫光 鋼索線): no English name
+disney-resort-line.dizuniirizotorain (舞浜リゾートライン ディズニーリゾートライン): no English name
+kurama-tera.kuramayama-kosakutetsudo (鞍馬寺 鞍馬山鋼索鉄道): no English name
+takao-cable.takao-kosaku (高尾登山電鉄 高尾鋼索線): no English name

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b22">
+  <meta name="description" content="Explore Japan’s railway network. Open railway data for the Tetsunote logbook, visualized in an interactive atlas.">
+  <title>Tetsunote · Japan Railway Atlas</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="importmap">{"imports":{"three":"./assets/vendor/three.module.js","three/addons/":"./assets/vendor/"}}</script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="./"><span class="brand-icon">鉄</span><span>tetsunote <small>鉄ノート</small></span></a>
+    <div class="header-title">JAPAN RAILWAY ATLAS <span> / 01</span></div>
+    <a class="data-link" href="v0/manifest.json" target="_blank" rel="noopener">Open data <span>↗</span></a>
+  </header>
+  <main>
+    <aside class="sidebar" aria-label="Explore railway data">
+      <div class="intro"><div class="eyebrow"><i></i> A COUNTRY CONNECTED</div><h1>Every line.<br>A new discovery.</h1><p>Follow the tracks across Japan.<br>Your next journey starts here.</p></div>
+      <div class="stats"><div><strong id="operator-count">—</strong><span>operators</span></div><div><strong id="line-count">—</strong><span>lines</span></div><div><strong id="station-count">—</strong><span>station records</span></div></div>
+      <div class="explore-heading"><h2>Explore the network</h2><span>路線を探す</span></div>
+      <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search operators · 事業者" aria-label="Search operators" autocomplete="off"><kbd>/</kbd></label>
+      <div class="list-heading"><span>RAILWAY OPERATOR</span><span id="result-count">—</span></div>
+      <div id="operators" class="operators" aria-label="Railway operators"></div>
+      <section id="details" class="details" hidden aria-label="Selected railway"><button id="back" class="back">← All operators</button><div id="detail-content"></div></section>
+      <div class="sidebar-foot"><span class="status-dot"></span> Open tracks. Open possibilities.<a href="#about" id="about-open" aria-label="About this data">ⓘ</a></div>
+    </aside>
+    <section class="map" aria-label="Interactive map of Japan’s railway network">
+      <div id="viewport" tabindex="0" aria-label="Railway map. Drag to pan, scroll to zoom, right drag to tilt. Use the sidebar to select lines and stations."></div>
+      <div class="map-top"><div class="map-caption"><span class="eyebrow">THE RAILWAY NETWORK</span><h2 id="map-title">Japan <span>日本</span></h2></div><div class="view-switch" aria-label="Map angle"><button id="flat" class="active" aria-pressed="true">2D</button><button id="tilt" aria-pressed="false">3D</button></div></div>
+      <div class="region-bar" aria-label="Jump to region"><button data-region="japan" class="active">All Japan</button><button data-region="tokyo">Tokyo</button><button data-region="kansai">Kansai</button><button data-region="kyushu">Kyushu</button><button data-region="hokkaido">Hokkaido</button></div>
+      <div id="tooltip" class="tooltip" hidden></div>
+      <div id="station-card" class="station-card" hidden></div>
+      <div class="map-controls"><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button><button id="reset" aria-label="Fit selected network">⌖</button></div>
+      <div class="map-bottom"><div><span class="live-dot"></span><span id="load-status" role="status">Preparing the atlas…</span></div><span class="interaction-hint">DRAG TO PAN <b>·</b> SCROLL TO EXPLORE</span></div>
+      <div class="attribution">Railway data: MLIT N02-25 · Coastline: Natural Earth</div>
+      <div id="loading" class="loading"><span class="loader"></span><p>Tracing Japan’s railways…</p><small id="progress">Loading the network</small></div>
+    </section>
+  </main>
+  <dialog id="about"><button id="about-close" class="dialog-close" aria-label="Close">×</button><div class="eyebrow">BUILT FOR EXPLORATION</div><h2>Open data. Endless journeys.</h2><p>Tetsunote is a railway logbook. This atlas explores its reference dataset: operators, registered railway lines, station records, and the track segments that connect them.</p><p>Distances are calculated from geometry, not official operating distances. Line colors come from the dataset where available, with consistent fallback colors for other lines. English names are included where available; Japanese names are preserved throughout.</p><p>The v0 format is experimental. The source snapshot is N02-25; this is not a live service or timetable. Some junctions remain unresolved.</p><p>Railways: processed from National Land Numerical Information, MLIT Japan. See the <a href="v0/manifest.json">manifest and attribution</a>. Coastlines: <a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noopener">Natural Earth, public domain</a>.</p><a class="api-button" href="v0/manifest.json" target="_blank" rel="noopener">Explore the JSON API ↗</a></dialog>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2136 @@
+{
+ "version": 0,
+ "revision": "fbdfa75a09da",
+ "languages": [
+  "en",
+  "ja"
+ ],
+ "source": "N02-25",
+ "attribution": "「国土数値情報（鉄道データ）」（国土交通省）を加工して作成 / Processed from National Land Numerical Information (Railway), MLIT Japan, CC BY 4.0. English station names and readings from Wikidata, CC0",
+ "shards": [
+  {
+   "path": "operators/abukumakyuko.json",
+   "operator": "abukumakyuko",
+   "name": {
+    "en": null,
+    "ja": "阿武隈急行"
+   },
+   "lines": 1,
+   "stations": 24,
+   "bytes": 12774,
+   "sha256": "45eb25f945d6b266c42d7541ce7c3f094210b2f4862764bb8ad1829719c78c42"
+  },
+  {
+   "path": "operators/aichi-kosoku-kotsu.json",
+   "operator": "aichi-kosoku-kotsu",
+   "name": {
+    "en": null,
+    "ja": "愛知高速交通"
+   },
+   "lines": 1,
+   "stations": 9,
+   "bytes": 5066,
+   "sha256": "22c8cf063d8a8e75603e841056b4b2fffeb21e2a368370f321cf2a886eff5164"
+  },
+  {
+   "path": "operators/aichikanjotetsudo.json",
+   "operator": "aichikanjotetsudo",
+   "name": {
+    "en": null,
+    "ja": "愛知環状鉄道"
+   },
+   "lines": 1,
+   "stations": 23,
+   "bytes": 12141,
+   "sha256": "da885d9ddab8d5172ceef3f1a94066bc2abedada4f77b34f63e4255e1b56dbc3"
+  },
+  {
+   "path": "operators/aijiiaaru-iwate-gingatetsudo.json",
+   "operator": "aijiiaaru-iwate-gingatetsudo",
+   "name": {
+    "en": null,
+    "ja": "アイジーアールいわて銀河鉄道"
+   },
+   "lines": 1,
+   "stations": 18,
+   "bytes": 13927,
+   "sha256": "3f33e6eb26a25010a6379d28d60d69ef37e7b97a1dd5e8720f3b636a26eba7d1"
+  },
+  {
+   "path": "operators/aino-kaze-toyama-tetsudo.json",
+   "operator": "aino-kaze-toyama-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "あいの風とやま鉄道"
+   },
+   "lines": 1,
+   "stations": 23,
+   "bytes": 14812,
+   "sha256": "c4b1fc42b97bfca0eea2d8e94155bae5083f2bf66faa0e6fbfc71bffbc29d71f"
+  },
+  {
+   "path": "operators/aizutetsudo.json",
+   "operator": "aizutetsudo",
+   "name": {
+    "en": null,
+    "ja": "会津鉄道"
+   },
+   "lines": 1,
+   "stations": 21,
+   "bytes": 14470,
+   "sha256": "aec843d4d123a5c6d6de95843863dc68c06630d38a7ecedb39c226c21e010679"
+  },
+  {
+   "path": "operators/akita-nairiku-jukan-tetsudo.json",
+   "operator": "akita-nairiku-jukan-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "秋田内陸縦貫鉄道"
+   },
+   "lines": 1,
+   "stations": 29,
+   "bytes": 21417,
+   "sha256": "1dc1ba66443b7334c1bc5c122410c87524033df3b27f2060d1d9862aac1e1ce4"
+  },
+  {
+   "path": "operators/amagi-tetsudo.json",
+   "operator": "amagi-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "甘木鉄道"
+   },
+   "lines": 1,
+   "stations": 11,
+   "bytes": 5516,
+   "sha256": "4c143d7a8818fb52b15b3160d54ba2b877289298a06d871d7bc144b5f7ab6f1e"
+  },
+  {
+   "path": "operators/aoi-mori-tetsudo.json",
+   "operator": "aoi-mori-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "青い森鉄道"
+   },
+   "lines": 1,
+   "stations": 27,
+   "bytes": 17748,
+   "sha256": "d570e99ab6247b347e2fb1ada58c06a25e1d67938f566f2433b7aa0422a92466"
+  },
+  {
+   "path": "operators/arupiko-kotsu.json",
+   "operator": "arupiko-kotsu",
+   "name": {
+    "en": null,
+    "ja": "アルピコ交通"
+   },
+   "lines": 1,
+   "stations": 14,
+   "bytes": 6749,
+   "sha256": "67b2e03bff592a6d3eb2d7bc519d7f1df46a4a995dc5bdad65d9b54eeae6c28e"
+  },
+  {
+   "path": "operators/asa-kaigan-tetsudo.json",
+   "operator": "asa-kaigan-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "阿佐海岸鉄道"
+   },
+   "lines": 1,
+   "stations": 4,
+   "bytes": 2823,
+   "sha256": "801fd8c7d0867ad3d767fe61057fed7b7c355eb3277659248c61326f958e06bf"
+  },
+  {
+   "path": "operators/chiba-monorail.json",
+   "operator": "chiba-monorail",
+   "name": {
+    "en": "Chiba Urban Monorail",
+    "ja": "千葉都市モノレール"
+   },
+   "lines": 2,
+   "stations": 19,
+   "bytes": 10233,
+   "sha256": "464c6394888b57364e36bf3e9fbd6526153b77748feadf7515f138a47c744226"
+  },
+  {
+   "path": "operators/chichibu.json",
+   "operator": "chichibu",
+   "name": {
+    "en": "Chichibu Railway",
+    "ja": "秩父鉄道"
+   },
+   "lines": 1,
+   "stations": 37,
+   "bytes": 19297,
+   "sha256": "40da0f3e5d8d412ddfb1e29c0041a5bb84b6c70f82314f563fad7a84725abb14"
+  },
+  {
+   "path": "operators/chikuho-denkitetsudo.json",
+   "operator": "chikuho-denkitetsudo",
+   "name": {
+    "en": null,
+    "ja": "筑豊電気鉄道"
+   },
+   "lines": 1,
+   "stations": 21,
+   "bytes": 10531,
+   "sha256": "fb2068ec75a9126532b4840cc16dd7c305a7f37bfa52a2245436e340cbe42442"
+  },
+  {
+   "path": "operators/chizu-kyuko.json",
+   "operator": "chizu-kyuko",
+   "name": {
+    "en": null,
+    "ja": "智頭急行"
+   },
+   "lines": 1,
+   "stations": 14,
+   "bytes": 10429,
+   "sha256": "8925f8d60b87526f8464e3d657d32e3ca2dedd82f7a059894b6ae30f2960478d"
+  },
+  {
+   "path": "operators/choshi-denkitetsudo.json",
+   "operator": "choshi-denkitetsudo",
+   "name": {
+    "en": null,
+    "ja": "銚子電気鉄道"
+   },
+   "lines": 1,
+   "stations": 10,
+   "bytes": 5387,
+   "sha256": "6905a160a3162a441fe275f50235da1340971ba468d2e14b62191459163380c1"
+  },
+  {
+   "path": "operators/disney-resort-line.json",
+   "operator": "disney-resort-line",
+   "name": {
+    "en": "Disney Resort Line",
+    "ja": "ディズニーリゾートライン"
+   },
+   "lines": 1,
+   "stations": 4,
+   "bytes": 2869,
+   "sha256": "794ccc7ec1bb5e58911b5608af3f5411b3a2b591f9d21865a950aecfa3581630"
+  },
+  {
+   "path": "operators/donan-isaribi-tetsudo.json",
+   "operator": "donan-isaribi-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "道南いさりび鉄道"
+   },
+   "lines": 1,
+   "stations": 12,
+   "bytes": 9428,
+   "sha256": "72ffa108c903fb56a92f67f1d74e3cdb7faacd31f511eb3b40e2a6c4d703041a"
+  },
+  {
+   "path": "operators/echigo-toki-meki-tetsudo.json",
+   "operator": "echigo-toki-meki-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "えちごトキめき鉄道"
+   },
+   "lines": 2,
+   "stations": 23,
+   "bytes": 16410,
+   "sha256": "92d5ebcfa90161f1cee22eea7506f5c7b38228ca1a8435138eafecfb0007bcf2"
+  },
+  {
+   "path": "operators/echizen-tetsudo.json",
+   "operator": "echizen-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "えちぜん鉄道"
+   },
+   "lines": 2,
+   "stations": 45,
+   "bytes": 21514,
+   "sha256": "27f531f3a22f1fd157758a098b4b0fee5940e2e7f3fc55563c9ee05f09bd982c"
+  },
+  {
+   "path": "operators/eizandentetsu.json",
+   "operator": "eizandentetsu",
+   "name": {
+    "en": null,
+    "ja": "叡山電鉄"
+   },
+   "lines": 2,
+   "stations": 18,
+   "bytes": 9052,
+   "sha256": "c1f8196ea2142020c48b70ac4f49ca8caff6ea0a826190dde4cf6e2a486a9433"
+  },
+  {
+   "path": "operators/enoden.json",
+   "operator": "enoden",
+   "name": {
+    "en": "Enoshima Electric Railway",
+    "ja": "江ノ島電鉄"
+   },
+   "lines": 1,
+   "stations": 15,
+   "bytes": 7657,
+   "sha256": "8aa81c7d86ff89a885bf9e4a4e23e208c109e5053ad6f0a31ab41fbf18d190f1"
+  },
+  {
+   "path": "operators/enshutetsudo.json",
+   "operator": "enshutetsudo",
+   "name": {
+    "en": null,
+    "ja": "遠州鉄道"
+   },
+   "lines": 1,
+   "stations": 18,
+   "bytes": 8862,
+   "sha256": "bd18ac32413ba8b39c0cf0327910132bbdad5865697f54ecc2878e77f46108bd"
+  },
+  {
+   "path": "operators/fujisanroku-denkitetsudo.json",
+   "operator": "fujisanroku-denkitetsudo",
+   "name": {
+    "en": null,
+    "ja": "富士山麓電気鉄道"
+   },
+   "lines": 2,
+   "stations": 19,
+   "bytes": 11660,
+   "sha256": "55bf90fdc4c79d68add5f364f88bf91f631c36b2101e80e8e5a105275b8760f5"
+  },
+  {
+   "path": "operators/fukui-tetsudo.json",
+   "operator": "fukui-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "福井鉄道"
+   },
+   "lines": 1,
+   "stations": 25,
+   "bytes": 10916,
+   "sha256": "3657c9c52a8d86d4b23ca7eed04313403bba3fe4d18a97fd6e10ef9bffaf9b42"
+  },
+  {
+   "path": "operators/fukuokashi.json",
+   "operator": "fukuokashi",
+   "name": {
+    "en": null,
+    "ja": "福岡市"
+   },
+   "lines": 3,
+   "stations": 38,
+   "bytes": 16934,
+   "sha256": "58f9db81fed1e29c884a406ef295795410d20e3110d7a37ea4ef8fab54159ab8"
+  },
+  {
+   "path": "operators/fukushima-kotsu.json",
+   "operator": "fukushima-kotsu",
+   "name": {
+    "en": null,
+    "ja": "福島交通"
+   },
+   "lines": 1,
+   "stations": 12,
+   "bytes": 5582,
+   "sha256": "e6b41bcfbc4589e582be66b75aac019133128c34c1a205b9377dbd63769823f6"
+  },
+  {
+   "path": "operators/gakunan-densha.json",
+   "operator": "gakunan-densha",
+   "name": {
+    "en": null,
+    "ja": "岳南電車"
+   },
+   "lines": 1,
+   "stations": 10,
+   "bytes": 5341,
+   "sha256": "7992977d54b853bb276ffe266bfdd14298f58999f91c2434c4fea6726c44b852"
+  },
+  {
+   "path": "operators/hakodate-shi.json",
+   "operator": "hakodate-shi",
+   "name": {
+    "en": null,
+    "ja": "函館市"
+   },
+   "lines": 4,
+   "stations": 29,
+   "bytes": 12305,
+   "sha256": "5012859159f3c513d2109cb913095dace5cb13811a6bb0d4127b9605ebb2281c"
+  },
+  {
+   "path": "operators/hankai-denki-kido.json",
+   "operator": "hankai-denki-kido",
+   "name": {
+    "en": null,
+    "ja": "阪堺電気軌道"
+   },
+   "lines": 2,
+   "stations": 41,
+   "bytes": 16564,
+   "sha256": "0f7f1f63e837a27019298991afd8180c9890711a1879f46a0a84b8fdc7cf3265"
+  },
+  {
+   "path": "operators/hankyudentetsu.json",
+   "operator": "hankyudentetsu",
+   "name": {
+    "en": null,
+    "ja": "阪急電鉄"
+   },
+   "lines": 10,
+   "stations": 102,
+   "bytes": 48667,
+   "sha256": "88f4e94ba906d4f9b622458b95acfa3a48bcf0ccd9b49cc6d535c57e86180076"
+  },
+  {
+   "path": "operators/hanshindenkitetsudo.json",
+   "operator": "hanshindenkitetsudo",
+   "name": {
+    "en": null,
+    "ja": "阪神電気鉄道"
+   },
+   "lines": 4,
+   "stations": 55,
+   "bytes": 24862,
+   "sha256": "447db6c88f9cdff4230ab3547da098361fc302deb8d05e194bd1273cdbfbae43"
+  },
+  {
+   "path": "operators/hapirain-fukui.json",
+   "operator": "hapirain-fukui",
+   "name": {
+    "en": null,
+    "ja": "ハピラインふくい"
+   },
+   "lines": 1,
+   "stations": 19,
+   "bytes": 12441,
+   "sha256": "ffd517a90dba75a0f38d2daf1500aeed0a12e775098dd237c72c857b802ede13"
+  },
+  {
+   "path": "operators/heiseichikuhotetsudo.json",
+   "operator": "heiseichikuhotetsudo",
+   "name": {
+    "en": null,
+    "ja": "平成筑豊鉄道"
+   },
+   "lines": 4,
+   "stations": 42,
+   "bytes": 21747,
+   "sha256": "6b861be2e3caa1180a89b83cb94f2eddb05757a011faca433aced5a5c4376db4"
+  },
+  {
+   "path": "operators/hieizan-tetsudo.json",
+   "operator": "hieizan-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "比叡山鉄道"
+   },
+   "lines": 1,
+   "stations": 4,
+   "bytes": 2250,
+   "sha256": "1b45b6ad5526d440237b49feb7d1622602b218d7b0b64994b5e34fd4d5cf1e24"
+  },
+  {
+   "path": "operators/hiroshi-minami-tetsudo.json",
+   "operator": "hiroshi-minami-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "弘南鉄道"
+   },
+   "lines": 2,
+   "stations": 27,
+   "bytes": 13148,
+   "sha256": "91a94970aa0ce04ce467c957a9a770f90ff11ce053551477640809053fbd6bd0"
+  },
+  {
+   "path": "operators/hiroshima-dentetsu.json",
+   "operator": "hiroshima-dentetsu",
+   "name": {
+    "en": null,
+    "ja": "広島電鉄"
+   },
+   "lines": 7,
+   "stations": 87,
+   "bytes": 37850,
+   "sha256": "b1bcb7580969857cb539b66ba079a19d6ffca052030eb25d1b89f90e8b27ca68"
+  },
+  {
+   "path": "operators/hiroshima-kosoku-kotsu.json",
+   "operator": "hiroshima-kosoku-kotsu",
+   "name": {
+    "en": null,
+    "ja": "広島高速交通"
+   },
+   "lines": 1,
+   "stations": 22,
+   "bytes": 10276,
+   "sha256": "97022a272db8c08b7860820e237f36ef9eff6981d16f02230ff0240ff37b45df"
+  },
+  {
+   "path": "operators/hisatsu-orenji-tetsudo.json",
+   "operator": "hisatsu-orenji-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "肥薩おれんじ鉄道"
+   },
+   "lines": 1,
+   "stations": 28,
+   "bytes": 25103,
+   "sha256": "15e8ad6ce34d7bdac3f9935ecd7d256e0f517fc9c2e1859a158356eea866713c"
+  },
+  {
+   "path": "operators/hitachinaka-kaihin-tetsudo.json",
+   "operator": "hitachinaka-kaihin-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "ひたちなか海浜鉄道"
+   },
+   "lines": 1,
+   "stations": 11,
+   "bytes": 5958,
+   "sha256": "69ff5a80285c10f1a830c99afe35ff3085459708ddde6843032a51c5610ee5f1"
+  },
+  {
+   "path": "operators/hojo-tetsudo.json",
+   "operator": "hojo-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "北条鉄道"
+   },
+   "lines": 1,
+   "stations": 8,
+   "bytes": 4183,
+   "sha256": "1e2998ee81200d8f86f1bcf58c442592724ea2f7ca9968dcb7764649f7b138d2"
+  },
+  {
+   "path": "operators/hokuetsu-kyuko.json",
+   "operator": "hokuetsu-kyuko",
+   "name": {
+    "en": null,
+    "ja": "北越急行"
+   },
+   "lines": 1,
+   "stations": 12,
+   "bytes": 7167,
+   "sha256": "6408e9c29eec518c1a10069203cb69d2035465bdc43ac25bcc81e6c550b37dc6"
+  },
+  {
+   "path": "operators/hokurikutetsudo.json",
+   "operator": "hokurikutetsudo",
+   "name": {
+    "en": null,
+    "ja": "北陸鉄道"
+   },
+   "lines": 2,
+   "stations": 29,
+   "bytes": 13560,
+   "sha256": "e6adf7a8eaa090b66d558b1f2a70338f7c8639d8b844dd1e11fc07834652886f"
+  },
+  {
+   "path": "operators/hokuso.json",
+   "operator": "hokuso",
+   "name": {
+    "en": "Hokuso Railway",
+    "ja": "北総鉄道"
+   },
+   "lines": 1,
+   "stations": 15,
+   "bytes": 7746,
+   "sha256": "4c0d483c0f4a6d5ccb1954013d8abe7f86e6c77ca0b450e924ac395600c9cb61"
+  },
+  {
+   "path": "operators/ichibata-densha.json",
+   "operator": "ichibata-densha",
+   "name": {
+    "en": null,
+    "ja": "一畑電車"
+   },
+   "lines": 2,
+   "stations": 27,
+   "bytes": 14144,
+   "sha256": "9c1dd95086de9466e11ed22ce6453b4f7b32d825404deb6fae436c5a1a60f294"
+  },
+  {
+   "path": "operators/iga-tetsudo.json",
+   "operator": "iga-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "伊賀鉄道"
+   },
+   "lines": 1,
+   "stations": 15,
+   "bytes": 7775,
+   "sha256": "8f68b5bda56d7b63761eeb38d5b9b8d723c026656880301eafdaadf882cfd7e2"
+  },
+  {
+   "path": "operators/ihara-tetsudo.json",
+   "operator": "ihara-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "井原鉄道"
+   },
+   "lines": 1,
+   "stations": 15,
+   "bytes": 8797,
+   "sha256": "3bea444fb42a8224202b5ba386bfe995784b13479e8243be39f4e1ec0e9f9c6d"
+  },
+  {
+   "path": "operators/ippan-shadanhojin-sapporoshi-kotsu-jigyo-shinko-kosha.json",
+   "operator": "ippan-shadanhojin-sapporoshi-kotsu-jigyo-shinko-kosha",
+   "name": {
+    "en": null,
+    "ja": "一般社団法人札幌市交通事業振興公社"
+   },
+   "lines": 4,
+   "stations": 28,
+   "bytes": 14016,
+   "sha256": "1d0c803d793230673c3b55ddf6844f2100a567411cc565c72aa824fae6ed9bd8"
+  },
+  {
+   "path": "operators/ippan-zaidanhojin-seikan-tonneru-kinenkan.json",
+   "operator": "ippan-zaidanhojin-seikan-tonneru-kinenkan",
+   "name": {
+    "en": null,
+    "ja": "一般財団法人青函トンネル記念館"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1424,
+   "sha256": "df8ae5c24b9ab02e17b9031ae5874bd715ae115f0404d27e5207aff1b73e2834"
+  },
+  {
+   "path": "operators/ir-ishikawa-tetsudo.json",
+   "operator": "ir-ishikawa-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "IRいしかわ鉄道"
+   },
+   "lines": 1,
+   "stations": 19,
+   "bytes": 11007,
+   "sha256": "72d1bffd8e703eeabaf24046154b0ce027e40f1950dda5780f432563760bbecd"
+  },
+  {
+   "path": "operators/isetetsudo.json",
+   "operator": "isetetsudo",
+   "name": {
+    "en": null,
+    "ja": "伊勢鉄道"
+   },
+   "lines": 1,
+   "stations": 10,
+   "bytes": 5353,
+   "sha256": "ee6ee714b80a56e7d23eee1b785c8d0126d743aa76879a9b42258d45b2c359e4"
+  },
+  {
+   "path": "operators/isumi.json",
+   "operator": "isumi",
+   "name": {
+    "en": "Isumi Railway",
+    "ja": "いすみ鉄道"
+   },
+   "lines": 1,
+   "stations": 14,
+   "bytes": 8905,
+   "sha256": "d9825cd3031d6cbd74fb1246a3afeda07c2d3cff308ca1eb761057c6a21bf369"
+  },
+  {
+   "path": "operators/iyotetsudo.json",
+   "operator": "iyotetsudo",
+   "name": {
+    "en": null,
+    "ja": "伊予鉄道"
+   },
+   "lines": 9,
+   "stations": 72,
+   "bytes": 30266,
+   "sha256": "5b575b71a21b2b7cb62d1efe0220717b4c91b7d312c0043960662e39d8e264bb"
+  },
+  {
+   "path": "operators/izuhakone.json",
+   "operator": "izuhakone",
+   "name": {
+    "en": "Izuhakone Railway",
+    "ja": "伊豆箱根鉄道"
+   },
+   "lines": 2,
+   "stations": 25,
+   "bytes": 11651,
+   "sha256": "d76d4037c166addafc0d4923f7ba4e06f13a8467d713bf22b433b7b7d2e2f9f4"
+  },
+  {
+   "path": "operators/izukyuko.json",
+   "operator": "izukyuko",
+   "name": {
+    "en": null,
+    "ja": "伊豆急行"
+   },
+   "lines": 1,
+   "stations": 16,
+   "bytes": 11033,
+   "sha256": "a39ffb6099667950f14f444ab87dfeb86b8da831089be8a83c3d1f0bffee9bf2"
+  },
+  {
+   "path": "operators/joshindentetsu.json",
+   "operator": "joshindentetsu",
+   "name": {
+    "en": null,
+    "ja": "上信電鉄"
+   },
+   "lines": 1,
+   "stations": 21,
+   "bytes": 10842,
+   "sha256": "a5707bb8b73132bc1be7bedfd8a47e45a9590109d92fa4394fb68897db087322"
+  },
+  {
+   "path": "operators/jr-central.json",
+   "operator": "jr-central",
+   "name": {
+    "en": "JR Central",
+    "ja": "JR東海"
+   },
+   "lines": 13,
+   "stations": 433,
+   "bytes": 315974,
+   "sha256": "a4ece1d640cadd1b791a0daf14efc3205fa96a8a4a90fde724210e4c32f9ea2f"
+  },
+  {
+   "path": "operators/jr-east.json",
+   "operator": "jr-east",
+   "name": {
+    "en": "JR East",
+    "ja": "JR東日本"
+   },
+   "lines": 69,
+   "stations": 1767,
+   "bytes": 1151539,
+   "sha256": "4ca0b0d06d19c9d3d37157634569c8d53c585d4c338b4dbbe7531d638d73335b"
+  },
+  {
+   "path": "operators/jr-hokkaido.json",
+   "operator": "jr-hokkaido",
+   "name": {
+    "en": "JR Hokkaido",
+    "ja": "JR北海道"
+   },
+   "lines": 14,
+   "stations": 338,
+   "bytes": 286372,
+   "sha256": "c7838f73257b76a89a96e79489ad060c296b4d3fa3d747c64284ad605063ab1c"
+  },
+  {
+   "path": "operators/jr-kyushu.json",
+   "operator": "jr-kyushu",
+   "name": {
+    "en": "JR Kyushu",
+    "ja": "JR九州"
+   },
+   "lines": 23,
+   "stations": 617,
+   "bytes": 442733,
+   "sha256": "fc355e215d5b23000b2eb84ce6fda90bd7c3df6428caab106868bd60eecb473a"
+  },
+  {
+   "path": "operators/jr-shikoku.json",
+   "operator": "jr-shikoku",
+   "name": {
+    "en": "JR Shikoku",
+    "ja": "JR四国"
+   },
+   "lines": 9,
+   "stations": 271,
+   "bytes": 189555,
+   "sha256": "def245e4462ed88384e4d72964cf66523e7dce4fd151c3b209e4ed4f053bbccd"
+  },
+  {
+   "path": "operators/jr-tokai-kotsu-jigyo.json",
+   "operator": "jr-tokai-kotsu-jigyo",
+   "name": {
+    "en": null,
+    "ja": "JR東海交通事業"
+   },
+   "lines": 1,
+   "stations": 6,
+   "bytes": 3542,
+   "sha256": "d01c89a0e6622e4b9190ce9a6336359265ffc80905d54331b5e370961473aa5b"
+  },
+  {
+   "path": "operators/jr-west.json",
+   "operator": "jr-west",
+   "name": {
+    "en": "JR West",
+    "ja": "JR西日本"
+   },
+   "lines": 51,
+   "stations": 1246,
+   "bytes": 872985,
+   "sha256": "da32420716ab7b5515489956c2bdf5de1d2f04358aeef8252503fd823a3f19db"
+  },
+  {
+   "path": "operators/jukkokutoge-cable.json",
+   "operator": "jukkokutoge-cable",
+   "name": {
+    "en": "Jukkokutoge Cable Car",
+    "ja": "十国峠ケーブルカー"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1270,
+   "sha256": "1dd4339f5bf5d70a7935d9798ae6a5ce3c1075ff9a5a9aefa34f2ebc7c0e90bf"
+  },
+  {
+   "path": "operators/kako-shima-shi.json",
+   "operator": "kako-shima-shi",
+   "name": {
+    "en": null,
+    "ja": "鹿児島市"
+   },
+   "lines": 4,
+   "stations": 39,
+   "bytes": 15750,
+   "sha256": "a4051e6bf83b13186e6ae6303ea2be489e9afc70841d16380572d9a117d53f20"
+  },
+  {
+   "path": "operators/kantetsu.json",
+   "operator": "kantetsu",
+   "name": {
+    "en": "Kanto Railway",
+    "ja": "関東鉄道"
+   },
+   "lines": 2,
+   "stations": 28,
+   "bytes": 12489,
+   "sha256": "35516fabd97f5771359c67139c0c759ad7a613d7109fba2ebf7ec4060daeff7f"
+  },
+  {
+   "path": "operators/kashima-rinkai-tetsudo.json",
+   "operator": "kashima-rinkai-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "鹿島臨海鉄道"
+   },
+   "lines": 1,
+   "stations": 15,
+   "bytes": 8913,
+   "sha256": "fbde4264b4c0ba82a45f17813a9375e73c0f31dd1aea0b44838ca748383c10f1"
+  },
+  {
+   "path": "operators/keifuku-denkitetsudo.json",
+   "operator": "keifuku-denkitetsudo",
+   "name": {
+    "en": null,
+    "ja": "京福電気鉄道"
+   },
+   "lines": 3,
+   "stations": 25,
+   "bytes": 12142,
+   "sha256": "c935790b06ff0b43b2f3ad4f5f18c269591faf5c8e4a7cb2e6bc102eb0106fe9"
+  },
+  {
+   "path": "operators/keihan-denkitetsudo.json",
+   "operator": "keihan-denkitetsudo",
+   "name": {
+    "en": null,
+    "ja": "京阪電気鉄道"
+   },
+   "lines": 8,
+   "stations": 94,
+   "bytes": 46048,
+   "sha256": "fc95b9eeefcd83a770147c46ffa4a8726c34c83bd5f43d5b0c355f29632dcebe"
+  },
+  {
+   "path": "operators/keikyu.json",
+   "operator": "keikyu",
+   "name": {
+    "en": "Keikyu",
+    "ja": "京急電鉄"
+   },
+   "lines": 5,
+   "stations": 77,
+   "bytes": 36560,
+   "sha256": "a2d4e890ad452d3799a237185acb85c8d580da16f243730a0b9c7ac3176f90a0"
+  },
+  {
+   "path": "operators/keio.json",
+   "operator": "keio",
+   "name": {
+    "en": "Keio Corporation",
+    "ja": "京王電鉄"
+   },
+   "lines": 6,
+   "stations": 74,
+   "bytes": 33434,
+   "sha256": "406f78d52d051e143b53205ebdb82ff22f61988a5d166aa05e704a0fb06d8b05"
+  },
+  {
+   "path": "operators/keisei.json",
+   "operator": "keisei",
+   "name": {
+    "en": "Keisei Electric Railway",
+    "ja": "京成電鉄"
+   },
+   "lines": 8,
+   "stations": 101,
+   "bytes": 52753,
+   "sha256": "f17c77b5fe458b00df68ff1d70151931d5d187bea414b78fe72c4bbb81412973"
+  },
+  {
+   "path": "operators/kinkinihontetsudo.json",
+   "operator": "kinkinihontetsudo",
+   "name": {
+    "en": null,
+    "ja": "近畿日本鉄道"
+   },
+   "lines": 23,
+   "stations": 308,
+   "bytes": 160494,
+   "sha256": "b78c7364428a3f275d7241a50875c148a8299d055373cdee19fb6a349f20d5c4"
+  },
+  {
+   "path": "operators/kishutetsudo.json",
+   "operator": "kishutetsudo",
+   "name": {
+    "en": null,
+    "ja": "紀州鉄道"
+   },
+   "lines": 1,
+   "stations": 5,
+   "bytes": 2635,
+   "sha256": "0af3333960c4b85bc855edd99d896ab42b041357c213cb42343b66947a0b71dd"
+  },
+  {
+   "path": "operators/kitakyushu-kosokutetsudo.json",
+   "operator": "kitakyushu-kosokutetsudo",
+   "name": {
+    "en": null,
+    "ja": "北九州高速鉄道"
+   },
+   "lines": 1,
+   "stations": 13,
+   "bytes": 5920,
+   "sha256": "073540f066d96c0a2f68c2e70edc569afc02c06ff00b7f599015e53ab68ac300"
+  },
+  {
+   "path": "operators/kitaosakakyuko-dentetsu.json",
+   "operator": "kitaosakakyuko-dentetsu",
+   "name": {
+    "en": null,
+    "ja": "北大阪急行電鉄"
+   },
+   "lines": 1,
+   "stations": 6,
+   "bytes": 3977,
+   "sha256": "7a508c750b08cb6a6a1e09834ded957cfc1bc75346d8f0476bb1aae11e7d908e"
+  },
+  {
+   "path": "operators/kobe-miraitoshi-kiko.json",
+   "operator": "kobe-miraitoshi-kiko",
+   "name": {
+    "en": null,
+    "ja": "こうべ未来都市機構"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1343,
+   "sha256": "810565595c473c3562c24aabd6aaaaba48eba12e590c1730d257e7a1ec3f8fd4"
+  },
+  {
+   "path": "operators/kobe-rokko-tetsudo.json",
+   "operator": "kobe-rokko-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "神戸六甲鉄道"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1593,
+   "sha256": "155075c70ca0aba6e85f848807b1a5d4debccbb8ce72aec9ceafe9f50670dd33"
+  },
+  {
+   "path": "operators/kobedentetsu.json",
+   "operator": "kobedentetsu",
+   "name": {
+    "en": null,
+    "ja": "神戸電鉄"
+   },
+   "lines": 5,
+   "stations": 51,
+   "bytes": 29258,
+   "sha256": "ef8f166b179145b586f22262b425d7221bdff04a4e0369e1563a6c9c35b82605"
+  },
+  {
+   "path": "operators/kobeshi.json",
+   "operator": "kobeshi",
+   "name": {
+    "en": null,
+    "ja": "神戸市"
+   },
+   "lines": 5,
+   "stations": 30,
+   "bytes": 14284,
+   "sha256": "2ab8b261d06ae9c7c520c7500423be849b20f6526e073febb354b52a35ec0efd"
+  },
+  {
+   "path": "operators/kobeshinkotsu.json",
+   "operator": "kobeshinkotsu",
+   "name": {
+    "en": null,
+    "ja": "神戸新交通"
+   },
+   "lines": 2,
+   "stations": 18,
+   "bytes": 9242,
+   "sha256": "d905d92f300dbfcfe1dd6662174f599e3ac698c6190a32d98e389359af3ae079"
+  },
+  {
+   "path": "operators/kominato.json",
+   "operator": "kominato",
+   "name": {
+    "en": "Kominato Railway",
+    "ja": "小湊鐵道"
+   },
+   "lines": 1,
+   "stations": 18,
+   "bytes": 11726,
+   "sha256": "4eb608bb60d9ac57cd872674f8ed5919e2f90e67f41439bbbb951a5a22d395bd"
+  },
+  {
+   "path": "operators/kuma-kawatetsu-michi.json",
+   "operator": "kuma-kawatetsu-michi",
+   "name": {
+    "en": null,
+    "ja": "くま川鉄道"
+   },
+   "lines": 1,
+   "stations": 14,
+   "bytes": 7662,
+   "sha256": "75bba237317a2e29a5b11334e41d8ba363d121a07259b819f6e78bc706817226"
+  },
+  {
+   "path": "operators/kumamoto-denkitetsudo.json",
+   "operator": "kumamoto-denkitetsudo",
+   "name": {
+    "en": null,
+    "ja": "熊本電気鉄道"
+   },
+   "lines": 2,
+   "stations": 19,
+   "bytes": 9089,
+   "sha256": "6e51a0e4e59ecab2f5853edffe6fffc73234811db44a85c509b6241e1bb43d34"
+  },
+  {
+   "path": "operators/kumamotoshi.json",
+   "operator": "kumamotoshi",
+   "name": {
+    "en": null,
+    "ja": "熊本市"
+   },
+   "lines": 5,
+   "stations": 39,
+   "bytes": 16280,
+   "sha256": "37e702368b3a53b6634258d2dfdf4cec90c00e131788b66fee2a84b828fe3786"
+  },
+  {
+   "path": "operators/kurama-tera.json",
+   "operator": "kurama-tera",
+   "name": {
+    "en": null,
+    "ja": "鞍馬寺"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1160,
+   "sha256": "55035827c3bc7f695306a569ea393cc684e910b9c61d9b2acee8d7d270fcdde5"
+  },
+  {
+   "path": "operators/kurobekyokokutetsudo.json",
+   "operator": "kurobekyokokutetsudo",
+   "name": {
+    "en": null,
+    "ja": "黒部峡谷鉄道"
+   },
+   "lines": 1,
+   "stations": 10,
+   "bytes": 10243,
+   "sha256": "8c04527ae2df9fa248dacac2ccaeb7ba82add35f27b7c27be3cfd39707074b6d"
+  },
+  {
+   "path": "operators/kyotoshi.json",
+   "operator": "kyotoshi",
+   "name": {
+    "en": null,
+    "ja": "京都市"
+   },
+   "lines": 2,
+   "stations": 32,
+   "bytes": 13767,
+   "sha256": "b00cf328f70506aa67b5b28fb2d134578b96fce24be7e5d444d395af6888ebed"
+  },
+  {
+   "path": "operators/manyosen.json",
+   "operator": "manyosen",
+   "name": {
+    "en": null,
+    "ja": "万葉線"
+   },
+   "lines": 2,
+   "stations": 26,
+   "bytes": 11425,
+   "sha256": "799c61c07ed4b7f24f2502ee66a5a0899f453bd045e471159372287a62d019e1"
+  },
+  {
+   "path": "operators/matsuratetsudo.json",
+   "operator": "matsuratetsudo",
+   "name": {
+    "en": null,
+    "ja": "松浦鉄道"
+   },
+   "lines": 1,
+   "stations": 57,
+   "bytes": 34976,
+   "sha256": "54040ee24b0fb37ab9945e3ee0bda09cf603ff433ae52104593ea0bebe139317"
+  },
+  {
+   "path": "operators/meichi-tetsudo.json",
+   "operator": "meichi-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "明知鉄道"
+   },
+   "lines": 1,
+   "stations": 11,
+   "bytes": 8588,
+   "sha256": "a7c33a32bd49004a02c0d76aa8766db8829b74af89aba5e4cd09c79f79c159c6"
+  },
+  {
+   "path": "operators/mikuni-ashihara-sen.json",
+   "operator": "mikuni-ashihara-sen",
+   "name": {
+    "en": null,
+    "ja": "三国芦原線"
+   },
+   "lines": 1,
+   "stations": 0,
+   "bytes": 628,
+   "sha256": "bb727c4ce932acbfa7f12c426d6d316b6ac3acb413221813bef790a266663fad"
+  },
+  {
+   "path": "operators/minamiaso-tetsudo.json",
+   "operator": "minamiaso-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "南阿蘇鉄道"
+   },
+   "lines": 1,
+   "stations": 10,
+   "bytes": 6610,
+   "sha256": "43dd8d70a87d9e01944d4f2f7f2ff2e1fd2463f69839041c70645d3fd15622df"
+  },
+  {
+   "path": "operators/minatomirai.json",
+   "operator": "minatomirai",
+   "name": {
+    "en": "Yokohama Minatomirai Railway",
+    "ja": "みなとみらい線"
+   },
+   "lines": 1,
+   "stations": 6,
+   "bytes": 3303,
+   "sha256": "2bffb74c1f43a0270e6972ad81479c194711b9bae53782e749cbf44f236f5e61"
+  },
+  {
+   "path": "operators/mitake-cable.json",
+   "operator": "mitake-cable",
+   "name": {
+    "en": "Mitake Tozan Railway",
+    "ja": "御岳登山鉄道"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1203,
+   "sha256": "08deb808dfc241e2024892aa102b2dd56e9fb40b664c71ac67cf1e023c884f1e"
+  },
+  {
+   "path": "operators/mizuma-tetsudo.json",
+   "operator": "mizuma-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "水間鉄道"
+   },
+   "lines": 1,
+   "stations": 10,
+   "bytes": 4594,
+   "sha256": "6e354b19ab5cafa96be59d88a730ec1451ab8a71b38571feaf2166465a541433"
+  },
+  {
+   "path": "operators/mizushima-rinkai-tetsudo.json",
+   "operator": "mizushima-rinkai-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "水島臨海鉄道"
+   },
+   "lines": 1,
+   "stations": 10,
+   "bytes": 5034,
+   "sha256": "986075f1e429e2e5fff38697edc8d18af7244107b57db1931ceb2d51e2b65296"
+  },
+  {
+   "path": "operators/mokatetsudo.json",
+   "operator": "mokatetsudo",
+   "name": {
+    "en": null,
+    "ja": "真岡鐵道"
+   },
+   "lines": 1,
+   "stations": 17,
+   "bytes": 9354,
+   "sha256": "b50a68dfba03b8961a0691151c5c2688c2fa27cdc2ef7a4310001d517218acd7"
+  },
+  {
+   "path": "operators/naganodentetsu.json",
+   "operator": "naganodentetsu",
+   "name": {
+    "en": null,
+    "ja": "長野電鉄"
+   },
+   "lines": 1,
+   "stations": 24,
+   "bytes": 12537,
+   "sha256": "a7ea0ec8dc2514fcaaab56cf24bb43535933b8d71ce10f3c9f105d5bc4e22a87"
+  },
+  {
+   "path": "operators/nagaragawa-tetsudo.json",
+   "operator": "nagaragawa-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "長良川鉄道"
+   },
+   "lines": 1,
+   "stations": 38,
+   "bytes": 23606,
+   "sha256": "a33b5498b811554be92593c71b73f0e93268c8cecdda7a2deb396a529bbacc39"
+  },
+  {
+   "path": "operators/nagasakidenkikido.json",
+   "operator": "nagasakidenkikido",
+   "name": {
+    "en": null,
+    "ja": "長崎電気軌道"
+   },
+   "lines": 5,
+   "stations": 43,
+   "bytes": 20540,
+   "sha256": "17b859adda91ab461695a4da940eb713957cda74018be424e1a5137ffa5de27e"
+  },
+  {
+   "path": "operators/nagoya-gaidoeibasu.json",
+   "operator": "nagoya-gaidoeibasu",
+   "name": {
+    "en": null,
+    "ja": "名古屋ガイドウェイバス"
+   },
+   "lines": 1,
+   "stations": 9,
+   "bytes": 4618,
+   "sha256": "7c0339f084b58f3203cbb4cc4cc7c07501ad83e876b647feafccc46159240680"
+  },
+  {
+   "path": "operators/nagoya-rinkai-kosokutetsudo.json",
+   "operator": "nagoya-rinkai-kosokutetsudo",
+   "name": {
+    "en": null,
+    "ja": "名古屋臨海高速鉄道"
+   },
+   "lines": 1,
+   "stations": 11,
+   "bytes": 6059,
+   "sha256": "d2000ea68bf406480023346adb4a15f543026d35b975940f93cffa27d6600ed7"
+  },
+  {
+   "path": "operators/nagoyashi.json",
+   "operator": "nagoyashi",
+   "name": {
+    "en": null,
+    "ja": "名古屋市"
+   },
+   "lines": 7,
+   "stations": 102,
+   "bytes": 42530,
+   "sha256": "f997247ac369ec1c451c1134bd0f32fdf3aff8f1a58a39608ffb6ebcd241514f"
+  },
+  {
+   "path": "operators/nagoyatetsudo.json",
+   "operator": "nagoyatetsudo",
+   "name": {
+    "en": null,
+    "ja": "名古屋鉄道"
+   },
+   "lines": 20,
+   "stations": 295,
+   "bytes": 140355,
+   "sha256": "3f06667d0c8cd57f370caa269b6b6be2b9b540d8020fe005d05d915098005846"
+  },
+  {
+   "path": "operators/nankai-denkitetsudo.json",
+   "operator": "nankai-denkitetsudo",
+   "name": {
+    "en": null,
+    "ja": "南海電気鉄道"
+   },
+   "lines": 9,
+   "stations": 113,
+   "bytes": 59859,
+   "sha256": "77f363f8d315ae0bab69be6705801193c6084d0833fd41348679528e44d642e3"
+  },
+  {
+   "path": "operators/new-shuttle.json",
+   "operator": "new-shuttle",
+   "name": {
+    "en": "Saitama New Urban Transit",
+    "ja": "埼玉新都市交通"
+   },
+   "lines": 1,
+   "stations": 13,
+   "bytes": 5808,
+   "sha256": "3c61baabfa146e2ddff13bfaec31a4277de214d6259873cfb049f5ce22152c5f"
+  },
+  {
+   "path": "operators/nishikigawatetsudo.json",
+   "operator": "nishikigawatetsudo",
+   "name": {
+    "en": null,
+    "ja": "錦川鉄道"
+   },
+   "lines": 1,
+   "stations": 13,
+   "bytes": 11255,
+   "sha256": "bcbc0cc4f1367b9ee2f28d4934fdfe81f930813b3e223167a7c02e034a1272ea"
+  },
+  {
+   "path": "operators/nishinihon-tetsudo.json",
+   "operator": "nishinihon-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "西日本鉄道"
+   },
+   "lines": 4,
+   "stations": 75,
+   "bytes": 35639,
+   "sha256": "bc276d947da7840ce303756bbb1e4eea9bbc3b61f5cf1e72c65df5d2dc884249"
+  },
+  {
+   "path": "operators/nose-dentetsu.json",
+   "operator": "nose-dentetsu",
+   "name": {
+    "en": null,
+    "ja": "能勢電鉄"
+   },
+   "lines": 2,
+   "stations": 16,
+   "bytes": 8242,
+   "sha256": "7dbeca6b5f6114c5375568fd010a1c4098f83e1de7be39df9db307895c05bca3"
+  },
+  {
+   "path": "operators/noto-tetsudo.json",
+   "operator": "noto-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "のと鉄道"
+   },
+   "lines": 1,
+   "stations": 8,
+   "bytes": 8322,
+   "sha256": "731cc01ec4d52e7f03340a45f570b92c9e03b0fb6305af5c2b30b88fe37e00a5"
+  },
+  {
+   "path": "operators/odakyu.json",
+   "operator": "odakyu",
+   "name": {
+    "en": "Odakyu Electric Railway",
+    "ja": "小田急電鉄"
+   },
+   "lines": 3,
+   "stations": 72,
+   "bytes": 34348,
+   "sha256": "9fd9de3cf020f598dc483d47f1a1cd9f62eda87b1f49ab2817085c551740ba40"
+  },
+  {
+   "path": "operators/odakyu-hakone.json",
+   "operator": "odakyu-hakone",
+   "name": {
+    "en": "Odakyu Hakone",
+    "ja": "小田急箱根"
+   },
+   "lines": 2,
+   "stations": 17,
+   "bytes": 10059,
+   "sha256": "8998dc7cc9fee4bf4310c4a55d5dde30bc7949237a6b52cf13a61458f634e5c1"
+  },
+  {
+   "path": "operators/oigawatetsudo.json",
+   "operator": "oigawatetsudo",
+   "name": {
+    "en": null,
+    "ja": "大井川鐵道"
+   },
+   "lines": 2,
+   "stations": 34,
+   "bytes": 25899,
+   "sha256": "2152117a674dfd859e77f8907d5e352f1d8f619fbade3660b037584ead65708a"
+  },
+  {
+   "path": "operators/okayama-denki-kido.json",
+   "operator": "okayama-denki-kido",
+   "name": {
+    "en": null,
+    "ja": "岡山電気軌道"
+   },
+   "lines": 2,
+   "stations": 17,
+   "bytes": 7363,
+   "sha256": "28eb2a938c23928c90aa6b68b1e2500b3f3914cb7d7b974185ee48a883bf684f"
+  },
+  {
+   "path": "operators/okinawa-toshi-monoreeru.json",
+   "operator": "okinawa-toshi-monoreeru",
+   "name": {
+    "en": null,
+    "ja": "沖縄都市モノレール"
+   },
+   "lines": 1,
+   "stations": 19,
+   "bytes": 10703,
+   "sha256": "ac2a8ecc268ed0cfbfe50c1a3ed4fafa23793359d11c804d1e80616191ad7677"
+  },
+  {
+   "path": "operators/omitetsudo.json",
+   "operator": "omitetsudo",
+   "name": {
+    "en": null,
+    "ja": "近江鉄道"
+   },
+   "lines": 3,
+   "stations": 35,
+   "bytes": 16555,
+   "sha256": "08a5bd349ed1ba79efd97ec088873c0ac15638361716cb8644b43e3a5581bb20"
+  },
+  {
+   "path": "operators/osaka-monoreeru.json",
+   "operator": "osaka-monoreeru",
+   "name": {
+    "en": null,
+    "ja": "大阪モノレール"
+   },
+   "lines": 2,
+   "stations": 19,
+   "bytes": 10936,
+   "sha256": "0f7a47a3b806a6e23462d8cc1366ab58f82b26f8e8a1416cc67545e087a3f962"
+  },
+  {
+   "path": "operators/osakashi-kosoku-denki-kido.json",
+   "operator": "osakashi-kosoku-denki-kido",
+   "name": {
+    "en": null,
+    "ja": "大阪市高速電気軌道"
+   },
+   "lines": 9,
+   "stations": 134,
+   "bytes": 63951,
+   "sha256": "5b800fd6966e242c4c0599829b1776f2e530a518495446ebed2dec6d7f4662c1"
+  },
+  {
+   "path": "operators/oyama-cable.json",
+   "operator": "oyama-cable",
+   "name": {
+    "en": "Oyama Cable Car",
+    "ja": "大山ケーブルカー"
+   },
+   "lines": 1,
+   "stations": 3,
+   "bytes": 1529,
+   "sha256": "ad102521dc47cb0281efa6a7fccf2144024da9b472fd8e6069d0aef776ddd154"
+  },
+  {
+   "path": "operators/rakutenchi.json",
+   "operator": "rakutenchi",
+   "name": {
+    "en": null,
+    "ja": "ラクテンチ"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1176,
+   "sha256": "ad06f2e0d84afb78bb40570e524d487b05e98c79b51ea1a227ed77b148858563"
+  },
+  {
+   "path": "operators/ryutetsu.json",
+   "operator": "ryutetsu",
+   "name": {
+    "en": "Ryutetsu",
+    "ja": "流鉄"
+   },
+   "lines": 1,
+   "stations": 6,
+   "bytes": 2793,
+   "sha256": "5d667b24f803274c25ed115e362f7e4f722716d783511397d3a4e0fb5dbc862d"
+  },
+  {
+   "path": "operators/sagano-kankotetsudo.json",
+   "operator": "sagano-kankotetsudo",
+   "name": {
+    "en": null,
+    "ja": "嵯峨野観光鉄道"
+   },
+   "lines": 1,
+   "stations": 4,
+   "bytes": 3456,
+   "sha256": "a1ce918842116d05bc7bc18f7c06aa2d8b59bcc77e8e85b7bd4730fe8fd7c203"
+  },
+  {
+   "path": "operators/saitama-railway.json",
+   "operator": "saitama-railway",
+   "name": {
+    "en": "Saitama Railway",
+    "ja": "埼玉高速鉄道"
+   },
+   "lines": 1,
+   "stations": 8,
+   "bytes": 5162,
+   "sha256": "242e85fc1c3492e8aed1e637a5951e9d830b3d7990bb069d25a38e1570e4d634"
+  },
+  {
+   "path": "operators/sangi-tetsudo.json",
+   "operator": "sangi-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "三岐鉄道"
+   },
+   "lines": 3,
+   "stations": 28,
+   "bytes": 15047,
+   "sha256": "b980f1b49625a036556308b129897737cc5c3c3ca97d0933397669ef386126d3"
+  },
+  {
+   "path": "operators/sanriku-tetsudo.json",
+   "operator": "sanriku-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "三陸鉄道"
+   },
+   "lines": 3,
+   "stations": 43,
+   "bytes": 31790,
+   "sha256": "6445462b8196d8c49d5d5aa7071a9106dd33c72f436d1080a3fd22dc420df859"
+  },
+  {
+   "path": "operators/sanyo-denkitetsudo.json",
+   "operator": "sanyo-denkitetsudo",
+   "name": {
+    "en": null,
+    "ja": "山陽電気鉄道"
+   },
+   "lines": 2,
+   "stations": 50,
+   "bytes": 24808,
+   "sha256": "347622e1eaa8971fecec75636f54f8bc505a8af2eb89911087c91170872109c8"
+  },
+  {
+   "path": "operators/sapporoshi.json",
+   "operator": "sapporoshi",
+   "name": {
+    "en": null,
+    "ja": "札幌市"
+   },
+   "lines": 3,
+   "stations": 49,
+   "bytes": 21105,
+   "sha256": "bbd06b64dd57df23399be9cfbe1db5a59f504ad019e93cce4a8da1dccaee6cdf"
+  },
+  {
+   "path": "operators/sara-kura-tozantetsudo.json",
+   "operator": "sara-kura-tozantetsudo",
+   "name": {
+    "en": null,
+    "ja": "皿倉登山鉄道"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1382,
+   "sha256": "e236463d97be73a09bb26c06f604950dee845006efcf6660af789ff6546fe944"
+  },
+  {
+   "path": "operators/seaside-line.json",
+   "operator": "seaside-line",
+   "name": {
+    "en": "Yokohama Seaside Line",
+    "ja": "横浜シーサイドライン"
+   },
+   "lines": 1,
+   "stations": 14,
+   "bytes": 7618,
+   "sha256": "c933e6e94a753b5f3ba0fb69213d810d2749b5faddf3bf0d8b5f1458e4c723d9"
+  },
+  {
+   "path": "operators/seibu.json",
+   "operator": "seibu",
+   "name": {
+    "en": "Seibu Railway",
+    "ja": "西武鉄道"
+   },
+   "lines": 12,
+   "stations": 105,
+   "bytes": 53863,
+   "sha256": "ccad83bba7909ee38cb0c9aab15f87c6b41a0d47bd3e9333b58b843ea6d238e3"
+  },
+  {
+   "path": "operators/sendaikuko-tetsudo.json",
+   "operator": "sendaikuko-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "仙台空港鉄道"
+   },
+   "lines": 1,
+   "stations": 4,
+   "bytes": 2687,
+   "sha256": "e0892f469df41ee9607918d9cf7e95038c995388fce37c691d089508d1e3f0a8"
+  },
+  {
+   "path": "operators/sendaishi.json",
+   "operator": "sendaishi",
+   "name": {
+    "en": null,
+    "ja": "仙台市"
+   },
+   "lines": 2,
+   "stations": 30,
+   "bytes": 14615,
+   "sha256": "b9563e844d9bf3be0206a92933ed237ba033bcfef96cd5fe662272f00ef5ee67"
+  },
+  {
+   "path": "operators/shibayamatetsudo.json",
+   "operator": "shibayamatetsudo",
+   "name": {
+    "en": null,
+    "ja": "芝山鉄道"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1478,
+   "sha256": "3bca8d7dba312a2f711149a5b2617803b548cde21570e002bbc9ac83bcbb839b"
+  },
+  {
+   "path": "operators/shigaraki-kogen-tetsudo.json",
+   "operator": "shigaraki-kogen-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "信楽高原鐵道"
+   },
+   "lines": 1,
+   "stations": 6,
+   "bytes": 4904,
+   "sha256": "f923d5c4b664136c679cb2cf96a33e13d0ae170767def611bd0e41be225ef7fb"
+  },
+  {
+   "path": "operators/shikoku-keeburu.json",
+   "operator": "shikoku-keeburu",
+   "name": {
+    "en": null,
+    "ja": "四国ケーブル"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1221,
+   "sha256": "ce8c34ee9dccb982e75867090602aa236ed64be4592de58e5e92eb5e60abd4a2"
+  },
+  {
+   "path": "operators/shimabara-tetsudo.json",
+   "operator": "shimabara-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "島原鉄道"
+   },
+   "lines": 1,
+   "stations": 24,
+   "bytes": 14949,
+   "sha256": "c6aec9b574cf7170bb9ecc61ae2757e754e51885b0255d0156d9cde325ff361b"
+  },
+  {
+   "path": "operators/shinano-tetsudo.json",
+   "operator": "shinano-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "しなの鉄道"
+   },
+   "lines": 2,
+   "stations": 27,
+   "bytes": 19443,
+   "sha256": "b6512a9cb2073ada3dd51bb69cb04696dbb79e619e57924c7d1f9a4691131e0a"
+  },
+  {
+   "path": "operators/shizuokatetsudo.json",
+   "operator": "shizuokatetsudo",
+   "name": {
+    "en": null,
+    "ja": "静岡鉄道"
+   },
+   "lines": 1,
+   "stations": 15,
+   "bytes": 7059,
+   "sha256": "0b170a2315f88de57fdf019bf3cc9320a4f8250165a410b4e5101158649d2ba0"
+  },
+  {
+   "path": "operators/shonan-monorail.json",
+   "operator": "shonan-monorail",
+   "name": {
+    "en": "Shonan Monorail",
+    "ja": "湘南モノレール"
+   },
+   "lines": 1,
+   "stations": 8,
+   "bytes": 4608,
+   "sha256": "e9cb024077e92ae4db2a2304c378d1884a5af732fc49794d2ac2222af9919117"
+  },
+  {
+   "path": "operators/sotetsu.json",
+   "operator": "sotetsu",
+   "name": {
+    "en": "Sotetsu",
+    "ja": "相鉄"
+   },
+   "lines": 3,
+   "stations": 29,
+   "bytes": 14920,
+   "sha256": "c6b3f4f5de83cced6b6440bcbb418c5a17fc862139fdbc1205bfaaa170360fee"
+  },
+  {
+   "path": "operators/takamatsu-kotohira-denkitetsudo.json",
+   "operator": "takamatsu-kotohira-denkitetsudo",
+   "name": {
+    "en": null,
+    "ja": "高松琴平電気鉄道"
+   },
+   "lines": 3,
+   "stations": 55,
+   "bytes": 26121,
+   "sha256": "5b8271c5920d8b95c17f804e0884452d1563d5c688e3ebd30d066d703efdadf0"
+  },
+  {
+   "path": "operators/takao-cable.json",
+   "operator": "takao-cable",
+   "name": {
+    "en": "Takao Tozan Railway",
+    "ja": "高尾登山電鉄"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1250,
+   "sha256": "f02adce72e9d648d783d357eca6d1a89eb8786e16012335b6bfefe3304ef699b"
+  },
+  {
+   "path": "operators/tama-monorail.json",
+   "operator": "tama-monorail",
+   "name": {
+    "en": "Tama Toshi Monorail",
+    "ja": "多摩モノレール"
+   },
+   "lines": 1,
+   "stations": 19,
+   "bytes": 9744,
+   "sha256": "3b146ee3139f1ed8a2df4a824bd50825e4c2021cd365f3389e32eb60fdf94ccf"
+  },
+  {
+   "path": "operators/tango-kairiku-kotsu.json",
+   "operator": "tango-kairiku-kotsu",
+   "name": {
+    "en": null,
+    "ja": "丹後海陸交通"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1277,
+   "sha256": "d0da08d599167c353be64aa99a7d2237696aea39deae51d741f4e8b5e642b47e"
+  },
+  {
+   "path": "operators/tarumi-tetsudo.json",
+   "operator": "tarumi-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "樽見鉄道"
+   },
+   "lines": 1,
+   "stations": 19,
+   "bytes": 10329,
+   "sha256": "8d18fe8f1336d8d117b72a33fd4db73732a36b7a423f117c131724368bf2580d"
+  },
+  {
+   "path": "operators/tateyama-kurobe-kan-hikari.json",
+   "operator": "tateyama-kurobe-kan-hikari",
+   "name": {
+    "en": null,
+    "ja": "立山黒部貫光"
+   },
+   "lines": 1,
+   "stations": 4,
+   "bytes": 1940,
+   "sha256": "3699373cf527dafdbd6a9d496d3159b17a8856e057db9ee1e95e12d3f2d97cdc"
+  },
+  {
+   "path": "operators/tenryu-hamanako-tetsudo.json",
+   "operator": "tenryu-hamanako-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "天竜浜名湖鉄道"
+   },
+   "lines": 1,
+   "stations": 39,
+   "bytes": 23402,
+   "sha256": "4e980a9d4b23baf7cf1e1b70962944cd325292a2ad791af5f18fadde975a4c9f"
+  },
+  {
+   "path": "operators/tobu.json",
+   "operator": "tobu",
+   "name": {
+    "en": "Tobu Railway",
+    "ja": "東武鉄道"
+   },
+   "lines": 12,
+   "stations": 217,
+   "bytes": 104066,
+   "sha256": "84026dad1d5964fb0d667dae09cd7a74bcea7c42df3cb258fd8c3dcc3362ea80"
+  },
+  {
+   "path": "operators/toei.json",
+   "operator": "toei",
+   "name": {
+    "en": "Toei",
+    "ja": "都営"
+   },
+   "lines": 6,
+   "stations": 149,
+   "bytes": 66266,
+   "sha256": "4604bb69de77feb935b2a4e38204d284910c77ed05e02fe4025f65b636bb29e1"
+  },
+  {
+   "path": "operators/tokyo-metro.json",
+   "operator": "tokyo-metro",
+   "name": {
+    "en": "Tokyo Metro",
+    "ja": "東京メトロ"
+   },
+   "lines": 10,
+   "stations": 181,
+   "bytes": 87463,
+   "sha256": "35439a0bce5f86d875832b7507c0dae1ad3256428ca6a948bd7d0985d1f6c17e"
+  },
+  {
+   "path": "operators/tokyo-monorail.json",
+   "operator": "tokyo-monorail",
+   "name": {
+    "en": "Tokyo Monorail",
+    "ja": "東京モノレール"
+   },
+   "lines": 1,
+   "stations": 11,
+   "bytes": 7337,
+   "sha256": "ddaec3f013472d9ae300452805c9dd21ff2e9cdd54e758e4b9accc288560c8de"
+  },
+  {
+   "path": "operators/tokyu.json",
+   "operator": "tokyu",
+   "name": {
+    "en": "Tokyu Railways",
+    "ja": "東急電鉄"
+   },
+   "lines": 9,
+   "stations": 109,
+   "bytes": 48208,
+   "sha256": "31ec0b53399e77d1271bb78c32bc59d5a9d8447a069f866bb8b983b68a013555"
+  },
+  {
+   "path": "operators/tosa-kuroshio-tetsudo.json",
+   "operator": "tosa-kuroshio-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "土佐くろしお鉄道"
+   },
+   "lines": 3,
+   "stations": 44,
+   "bytes": 27976,
+   "sha256": "bc2aadb9420a4afd35319fc03b457d77dc23e8c877dae380a95aa17d187c7791"
+  },
+  {
+   "path": "operators/tosaden-kotsu.json",
+   "operator": "tosaden-kotsu",
+   "name": {
+    "en": null,
+    "ja": "とさでん交通"
+   },
+   "lines": 4,
+   "stations": 79,
+   "bytes": 31664,
+   "sha256": "bf6d4cd6b30215808dfbb483a7b4b3ed732614796eb0839cbe9e562c7975201a"
+  },
+  {
+   "path": "operators/toyamachihotetsudo.json",
+   "operator": "toyamachihotetsudo",
+   "name": {
+    "en": null,
+    "ja": "富山地方鉄道"
+   },
+   "lines": 10,
+   "stations": 116,
+   "bytes": 56037,
+   "sha256": "31fac7c97bdcd45119909b29462dcea005878f8626fe5a0b81487dbd8f978dea"
+  },
+  {
+   "path": "operators/toyo-rapid.json",
+   "operator": "toyo-rapid",
+   "name": {
+    "en": "Toyo Rapid Railway",
+    "ja": "東葉高速鉄道"
+   },
+   "lines": 1,
+   "stations": 9,
+   "bytes": 5024,
+   "sha256": "0d49624202f2aa106f3f85bdda7afff3a65f389c4ea43fc664cb268480a34055"
+  },
+  {
+   "path": "operators/toyohashi-tetsudo.json",
+   "operator": "toyohashi-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "豊橋鉄道"
+   },
+   "lines": 2,
+   "stations": 30,
+   "bytes": 13995,
+   "sha256": "6e6c8bbe8fb1db5950e00e276a1f2e17fe3781eabfe741f14340b4db17f2fc96"
+  },
+  {
+   "path": "operators/tsugaru-tetsudo.json",
+   "operator": "tsugaru-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "津軽鉄道"
+   },
+   "lines": 1,
+   "stations": 12,
+   "bytes": 6580,
+   "sha256": "c874be3aecc4d3ae118b543cfe3e5bbe5e633f9a135fd2bff5b55531c7bd038d"
+  },
+  {
+   "path": "operators/tsukuba-express.json",
+   "operator": "tsukuba-express",
+   "name": {
+    "en": "Tsukuba Express",
+    "ja": "つくばエクスプレス"
+   },
+   "lines": 1,
+   "stations": 20,
+   "bytes": 12234,
+   "sha256": "dfe75205d184594cb4ff36a5bbf2baee561500791ddda160330fbf6addce3094"
+  },
+  {
+   "path": "operators/tsukuba-kankotetsudo.json",
+   "operator": "tsukuba-kankotetsudo",
+   "name": {
+    "en": null,
+    "ja": "筑波観光鉄道"
+   },
+   "lines": 1,
+   "stations": 2,
+   "bytes": 1490,
+   "sha256": "0ec1dfa5352340b8e55a884c83afd513d3637e136f524d3a903aad5eee904196"
+  },
+  {
+   "path": "operators/twr.json",
+   "operator": "twr",
+   "name": {
+    "en": "Tokyo Waterfront Area Rapid Transit",
+    "ja": "りんかい線"
+   },
+   "lines": 1,
+   "stations": 8,
+   "bytes": 4241,
+   "sha256": "eaf2141670382c2d4e4e1422b9b33311518f1bc69d4195c9a38b393ea33c188c"
+  },
+  {
+   "path": "operators/ueda-dentetsu.json",
+   "operator": "ueda-dentetsu",
+   "name": {
+    "en": null,
+    "ja": "上田電鉄"
+   },
+   "lines": 1,
+   "stations": 15,
+   "bytes": 6729,
+   "sha256": "8b317ccb73b9da821f2219648edbaa2b904172818c5137a848415f682ce621d1"
+  },
+  {
+   "path": "operators/utsunomiya-raitoreeru.json",
+   "operator": "utsunomiya-raitoreeru",
+   "name": {
+    "en": null,
+    "ja": "宇都宮ライトレール"
+   },
+   "lines": 1,
+   "stations": 19,
+   "bytes": 10508,
+   "sha256": "7f4462f05b64f0b710a9d826130fe046fec585c43af0dc3c21d386b2549776d0"
+  },
+  {
+   "path": "operators/uwage-denkitetsudo.json",
+   "operator": "uwage-denkitetsudo",
+   "name": {
+    "en": null,
+    "ja": "上毛電気鉄道"
+   },
+   "lines": 1,
+   "stations": 23,
+   "bytes": 10720,
+   "sha256": "df93fc430d749fec2c3df43e3ac3ba6efe7f3b69dceba1cd74347b517e961fa8"
+  },
+  {
+   "path": "operators/wakasa-tetsudo.json",
+   "operator": "wakasa-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "若桜鉄道"
+   },
+   "lines": 1,
+   "stations": 9,
+   "bytes": 5272,
+   "sha256": "f20d1456e0b2123684cae428c9397e1b6ea54f8d11b896885febb9b860865075"
+  },
+  {
+   "path": "operators/wakayama-dentetsu.json",
+   "operator": "wakayama-dentetsu",
+   "name": {
+    "en": null,
+    "ja": "和歌山電鐵"
+   },
+   "lines": 1,
+   "stations": 14,
+   "bytes": 7132,
+   "sha256": "f2550fe0de22bfb379830aa386ac7c1c1032a3c7371697bbecb5cad4a0f213aa"
+  },
+  {
+   "path": "operators/watarase-keikokutetsudo.json",
+   "operator": "watarase-keikokutetsudo",
+   "name": {
+    "en": null,
+    "ja": "わたらせ渓谷鐵道"
+   },
+   "lines": 1,
+   "stations": 17,
+   "bytes": 15198,
+   "sha256": "2e3960144394e130588e210c42262823e76fa5806cc97d327d1dde899ecf19b7"
+  },
+  {
+   "path": "operators/willer-trains.json",
+   "operator": "willer-trains",
+   "name": {
+    "en": null,
+    "ja": "WILLER　TRAINS"
+   },
+   "lines": 2,
+   "stations": 33,
+   "bytes": 27111,
+   "sha256": "ae5b5a57e345cc0872d0e0fd90d171178330bfb7f4b81362e8567b101665a4ff"
+  },
+  {
+   "path": "operators/yagan-tetsudo.json",
+   "operator": "yagan-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "野岩鉄道"
+   },
+   "lines": 1,
+   "stations": 9,
+   "bytes": 6408,
+   "sha256": "2aacfe05cfa7ebdeee812cdde51ace5874349548d9914217522b8904552fc8a9"
+  },
+  {
+   "path": "operators/yamagata-tetsudo.json",
+   "operator": "yamagata-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "山形鉄道"
+   },
+   "lines": 1,
+   "stations": 17,
+   "bytes": 8956,
+   "sha256": "d7a4d4b68e5cdb2e44a8303b623b418620affe1186a36979c9598803996b6a87"
+  },
+  {
+   "path": "operators/yamaman.json",
+   "operator": "yamaman",
+   "name": {
+    "en": "Yamaman",
+    "ja": "山万"
+   },
+   "lines": 1,
+   "stations": 6,
+   "bytes": 3339,
+   "sha256": "9272171c6606f6cb933588e7222aae62ed53448b0b6ea2e38f7407f86ae10bc1"
+  },
+  {
+   "path": "operators/yokkaichi-asunaro-tetsudo.json",
+   "operator": "yokkaichi-asunaro-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "四日市あすなろう鉄道"
+   },
+   "lines": 2,
+   "stations": 10,
+   "bytes": 4970,
+   "sha256": "8bbc780837e6624b40333aee0a9c0c9085c4053d5d5860be285066fd6cafe016"
+  },
+  {
+   "path": "operators/yokohama-subway.json",
+   "operator": "yokohama-subway",
+   "name": {
+    "en": "Yokohama Municipal Subway",
+    "ja": "横浜市営地下鉄"
+   },
+   "lines": 3,
+   "stations": 43,
+   "bytes": 21760,
+   "sha256": "09729a4e3ea706059e7a613aeaf07b12d6c1755fbd286ef175f8eaa685b8ded8"
+  },
+  {
+   "path": "operators/yoro-tetsudo.json",
+   "operator": "yoro-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "養老鉄道"
+   },
+   "lines": 1,
+   "stations": 27,
+   "bytes": 14631,
+   "sha256": "bbbc275e92b20e1292547ae951e6f151bdb0252a10b0c9e5b99d5fa97b45ae5b"
+  },
+  {
+   "path": "operators/yuri-kogen-tetsudo.json",
+   "operator": "yuri-kogen-tetsudo",
+   "name": {
+    "en": null,
+    "ja": "由利高原鉄道"
+   },
+   "lines": 1,
+   "stations": 12,
+   "bytes": 7558,
+   "sha256": "9da5f0c410d33d07a36d5b9d44fcff9563a0f00c95a74aa6514cf3d394fd80dd"
+  },
+  {
+   "path": "operators/yurikamome.json",
+   "operator": "yurikamome",
+   "name": {
+    "en": "Yurikamome",
+    "ja": "ゆりかもめ"
+   },
+   "lines": 1,
+   "stations": 16,
+   "bytes": 8494,
+   "sha256": "1f4347e46d51f3bcae3d10686e8db75c0851e2bd587600d27037f84e1c42cd19"
+  }
+ ]
+}
