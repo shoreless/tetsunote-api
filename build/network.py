@@ -280,6 +280,10 @@ def main():
         op = operators.get(op_name)
         op_id = op["id"] if op else romaji_slug(op_name)
         line_id = f"{op_id}.{line_slug(line_name)}"
+        # line_slug drops a leading 号線 number, so Nagoya's 2号線名城線 and 4号線名城線 would share an id:
+        # a second line of the same slug takes its whole legal name, number included.
+        if any(l["id"] == line_id for l in shards[op_id]["lines"]):
+            line_id = f"{op_id}.{romaji_slug(line_name)}"
         stations = {c: ops.unary_union(geoms) for c, geoms in station_parts[(op_name, line_name)].items()}
         lon = MultiLineString(parts).centroid.x
         to_m, to_deg = utm_for(lon)

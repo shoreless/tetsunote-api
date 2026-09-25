@@ -1,6 +1,6 @@
 {
  "version": 0,
- "revision": "d8211f43678a",
+ "revision": "91ade70d003a",
  "languages": [
   "en",
   "ja"
@@ -1253,8 +1253,8 @@
    },
    "lines": 7,
    "stations": 102,
-   "bytes": 46890,
-   "sha256": "2170c22f78dfbf4d10007497bdee042ac2c27a86a3f977ae8814679e69226103"
+   "bytes": 47286,
+   "sha256": "83cc15d9c11d4615683a26774bb8bbd2968da41deb8178b0f8d41d7d6f5bb8e0"
   },
   {
    "path": "operators/nagoyatetsudo.json",
@@ -2146,8 +2146,8 @@
   },
   {
    "path": "lines_wikipedia.json",
-   "bytes": 770759,
-   "sha256": "a986b5e22a841919379adbfb051bf4b0cf621aec9da56159869f087982b513e3"
+   "bytes": 772538,
+   "sha256": "c35834ad82e262f0f9e2a90a0c7a183da43eee885666b8bd57b576b1b6a17d2a"
   },
   {
    "path": "places.json",
