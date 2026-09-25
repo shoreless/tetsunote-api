@@ -26,6 +26,7 @@ import borrow
 import commons
 import facts
 import images as train_images
+import manual
 import places
 import wikipedia
 import series as rolling_stock
@@ -101,11 +102,34 @@ def km(line_lonlat):
     return geod.geometry_length(line_lonlat) / 1000
 
 
+def split_at_tees(paths):
+    """Split paths where another path's end meets their middle.
+
+    linemerge joins pieces only at their ends, so a branch that meets a line part-way along a piece
+    (the old Nagayo route of the Nagasaki Line meeting the new one before Kikitsu) would otherwise
+    look like a dead end and be trimmed.
+    """
+    ends = [Point(p.coords[0]) for p in paths] + [Point(p.coords[-1]) for p in paths]
+    out = []
+    for path in paths:
+        cuts = sorted({
+            path.project(e) for e in ends
+            if path.distance(e) < JOIN_M and JOIN_M < path.project(e) < path.length - JOIN_M
+        })
+        if not cuts:
+            out.append(path)
+            continue
+        marks = [0.0] + cuts + [path.length]
+        out += [ops.substring(path, a, b) for a, b in zip(marks, marks[1:]) if b - a > 0]
+    return out
+
+
 def build_line(sections, stations, to_m, to_deg):
     """Return (graph, warnings). Graph nodes are station codes; edges carry metric geometry."""
     warnings = []
     merged = ops.linemerge(MultiLineString([transform(s, to_m) for s in sections]))
     paths = list(merged.geoms) if merged.geom_type == "MultiLineString" else [merged]
+    paths = split_at_tees(paths)
 
     platforms = {code: transform(geom, to_m) for code, geom in stations.items()}
     g = nx.MultiGraph()
@@ -387,6 +411,17 @@ def main():
     for shard in shards.values():
         name_lines(shard, line_names, report)
     borrow.apply(shards, report)
+    # Official 営業キロ where the operator publishes it: what fare tables and noritsubushi count by.
+    with open(ROOT / "data" / "official_km.csv", encoding="utf-8") as f:
+        official = {row["line"]: row for row in csv.DictReader(f)}
+    for shard in shards.values():
+        for line in shard["lines"]:
+            row = official.get(line["id"])
+            line["official_km"] = float(row["official_km"]) if row else None
+            line["official_source"] = row["source"] if row else None
+    for missing in sorted(official.keys() - {l["id"] for sh in shards.values() for l in sh["lines"]}):
+        report.append(f"data/official_km.csv: unknown line {missing}")
+    manual.apply(shards, names, stations_path, report)
 
     line_ids = {line["id"] for shard in shards.values() for line in shard["lines"]}
     all_series, series_by_line, seat_classes = rolling_stock.load(line_ids, report)

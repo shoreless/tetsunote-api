@@ -79,14 +79,33 @@ def main():
             if not any(o and (name == o or name.lower() == o or (len(o) >= 2 and name.endswith(o))) for o in on_ours):
                 ends.append(f"{label(qid)} ({ids}): terminus {label(end)} is not on our line")
 
+    # Against the operators' own published 営業キロ (data/official_km.csv). Shinkansen are counted in
+    # the parallel conventional line's km, so theirs differ by design and are listed apart.
+    official_rows = []
+    for line in lines:
+        km = line.get("official_km")
+        if not km:
+            continue
+        gap = line["km"] - km
+        if abs(gap) > max(1.0, 0.03 * km):
+            official_rows.append((("shinkansen" in line["id"]), gap, f"{line['name']['ja']} ({line['id']}): ours {line['km']:.1f} km, official {km:.1f} km ({gap:+.1f})"))
+
     out = ["# Network audit against Wikidata", ""]
     out += [f"## Shorter than Wikidata ({len(short)}): possibly missing track", ""]
     out += [row for _, row in sorted(short)] + [""]
     out += [f"## Missing termini ({len(ends)})", ""] + ends + [""]
+    rail = sorted((r for r in official_rows if not r[0]), key=lambda r: r[1])
+    shinkansen = sorted((r for r in official_rows if r[0]), key=lambda r: r[1])
+    checked = sum(1 for l in lines if l.get("official_km"))
+    out += [f"## Against official 営業キロ: {len(rail)} of {checked} lines differ by more than 3%", ""]
+    out += [r[2] for r in rail] + [""]
+    out += [f"## Shinkansen against official 営業キロ ({len(shinkansen)}): official km follow the parallel line", ""]
+    out += [r[2] for r in shinkansen] + [""]
     out += [f"## Longer than Wikidata ({len(long_)}): usually branches or freight lines counted in ours", ""]
     out += [row for _, row in sorted(long_, reverse=True)] + [""]
     (ROOT / "build" / "audit.txt").write_text("\n".join(out), encoding="utf-8")
-    print(f"{len(short)} shorter, {len(ends)} missing termini, {len(long_)} longer; see build/audit.txt")
+    print(f"{len(short)} shorter, {len(ends)} missing termini, {len(long_)} longer; "
+          f"{len([r for r in official_rows if not r[0]])} off official km; see build/audit.txt")
 
 
 if __name__ == "__main__":
