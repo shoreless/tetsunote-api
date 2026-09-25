@@ -101,12 +101,13 @@
 富山港線 (toyamachihotetsudo.toyamako): terminus 富山駅停留場 is not on our line
 津軽鉄道線 (tsugaru-tetsudo.tsugaru-railway): terminus 五所川原駅 is not on our line
 
-## Against official 営業キロ: 6 of 109 lines differ by more than 3%
+## Against official 営業キロ: 7 of 176 lines differ by more than 3%
 
 東海道線 (jr-west.tokaido): ours 143.7 km, official 155.8 km (-12.1)
 片町線 (jr-west.katamachi): ours 44.9 km, official 50.0 km (-5.1)
 千歳線 (jr-hokkaido.chitose): ours 56.4 km, official 59.2 km (-2.9)
 北陸線 (jr-west.hokuriku): ours 43.8 km, official 45.9 km (-2.1)
+犬山線 (nagoyatetsudo.meitetsu-inuyama): ours 25.8 km, official 26.8 km (-1.0)
 大阪環状線 (jr-west.osaka-loop): ours 21.8 km, official 20.7 km (+1.1)
 おおさか東線 (jr-west.osaka-higashi): ours 20.4 km, official 18.6 km (+1.8)
 

@@ -81,7 +81,10 @@ honest:
 - `data/line_borrow.csv` gives a line track it legally includes but N02 files under another line.
   The Chūō Main Line borrows Kanda–Tokyo from the Tōhoku Line this way.
 - `data/official_km.csv` holds the operators' published 営業キロ for each line, with the source:
-  JR Hokkaido, JR Central, JR West, JR Kyushu, and JR Shikoku via the MLIT Shikoku Transport Bureau.
+  JR Hokkaido, JR Central, JR West and JR Kyushu from their own figures, and the lines listed by the
+  MLIT Chūbu and Shikoku transport bureaus (every operator in those regions). `uv run
+  build/official_import.py` reads the bureau tables in `sources/official/` and adds a line only when
+  both ends of its section are stations on it.
   Lines carry it as `official_km`. Our `km` is measured from N02's geometry; `official_km` is what
   fares and noritsubushi count by (for shinkansen it follows the parallel conventional line).
 - `data/track.geojson` holds passenger track N02 lacks, drawn by hand: the link that takes Sangi Line
