@@ -57,15 +57,15 @@ def opening(raw, lang):
     return text.strip()
 
 
-def build(series):
-    """Return the contents of v0/series_wikipedia.json."""
+def build(records, key):
+    """Return a Wikipedia document for records (train models or lines), under `key`, by record id."""
     CACHE.mkdir(parents=True, exist_ok=True)
     caches = {}
     for lang in ("ja", "en"):
         path = CACHE / f"{lang}.json"
         caches[lang] = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
     articles = {}
-    for record in series:
+    for record in records:
         found = {}
         for lang, title in titles(record).items():
             cache = caches[lang]
@@ -86,5 +86,5 @@ def build(series):
         "licence_url": LICENCE_URL,
         "attribution": "Text from Wikipedia, the free encyclopedia; each entry links to its article, "
                        "whose history lists the authors. Shortened. / 出典: ウィキペディア（各記事の履歴に執筆者）。一部省略。",
-        "series": articles,
+        key: articles,
     }

@@ -354,7 +354,10 @@ def main():
     line_ids = {line["id"] for shard in shards.values() for line in shard["lines"]}
     all_series, series_by_line, seat_classes = rolling_stock.load(line_ids, report)
     facts.build(all_series, report)
-    articles = wikipedia.build(all_series)
+    articles = wikipedia.build(all_series, "series")
+    all_lines = [line for shard in shards.values() for line in shard["lines"]]
+    facts.build_lines(all_lines, report)
+    line_articles = wikipedia.build(all_lines, "lines")
     photos = commons.photos(all_series, facts.entities(), train_images.listed(), report)
     pictures, line_pictures = train_images.build({s["id"] for s in all_series}, line_ids, report, photos)
     for record in all_series:
@@ -411,13 +414,14 @@ def main():
         "sha256": hashlib.sha256(series_text.encode()).hexdigest(),
     })
 
-    articles_text = json.dumps(articles, ensure_ascii=False, separators=(",", ":"))
-    (OUT / "series_wikipedia.json").write_text(articles_text, encoding="utf-8")
-    files.append({
-        "path": "series_wikipedia.json",
-        "bytes": len(articles_text.encode()),
-        "sha256": hashlib.sha256(articles_text.encode()).hexdigest(),
-    })
+    for name, doc in (("series_wikipedia.json", articles), ("lines_wikipedia.json", line_articles)):
+        doc_text = json.dumps(doc, ensure_ascii=False, separators=(",", ":"))
+        (OUT / name).write_text(doc_text, encoding="utf-8")
+        files.append({
+            "path": name,
+            "bytes": len(doc_text.encode()),
+            "sha256": hashlib.sha256(doc_text.encode()).hexdigest(),
+        })
 
     for picture in sorted(train_images.OUT.glob("*.webp")):
         data = picture.read_bytes()
