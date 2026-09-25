@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鉄ノート Tetsunote · Android</title>
+<meta name="description" content="鉄ノート (Tetsunote): a railway logbook for Japan. Log every ride, collect trains, lines and railway museums, and watch the map fill in. Free for Android.">
+<meta property="og:title" content="鉄ノート Tetsunote">
+<meta property="og:description" content="A railway logbook for Japan: rides, trains, lines, sightings and railway museums.">
+<meta property="og:image" content="https://shoreless.github.io/tetsunote-api/app/screens/logbook.webp">
+<meta name="theme-color" content="#10242d">
+<style>
+  :root {
+    --ink: #10242d; --panel: #17323d; --high: #214452; --chalk: #e8eef0; --muted: #8fa7b0;
+    --lime: #9acd32; --amber: #ffb02e; --paper: #f3eee1; --paper-ink: #26343a; --hanko: #d7263d;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--ink); color: var(--chalk);
+    font: 16px/1.6 "Hiragino Sans", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  a { color: var(--lime); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  header { display: flex; align-items: baseline; gap: 12px; padding: 24px 0 8px; }
+  header h1 { margin: 0; font-size: 34px; font-weight: 900; letter-spacing: .02em; }
+  header .latin { color: var(--muted); font-family: ui-monospace, Menlo, monospace; font-size: 13px; letter-spacing: .12em; }
+  header .lang { margin-left: auto; }
+  button.lang-toggle {
+    background: none; color: var(--chalk); border: 1px solid var(--muted); border-radius: 999px;
+    padding: 6px 14px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
+  }
+  .hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: center; padding: 24px 0 40px; }
+  .tagline { font-size: clamp(26px, 5vw, 40px); font-weight: 900; line-height: 1.25; margin: 0 0 16px; }
+  .lead { color: var(--muted); margin: 0 0 24px; font-size: 17px; }
+
+  /* 発車標: the departure board */
+  .board {
+    background: #050807; border: 2px solid #2a2f2e; border-radius: 14px; padding: 14px 16px;
+    font-family: ui-monospace, Menlo, monospace; margin-bottom: 24px;
+  }
+  .board .head { color: #6d7773; font-size: 11px; display: grid; grid-template-columns: 64px 1fr; }
+  .board .row { display: grid; grid-template-columns: 64px 1fr; align-items: center; margin-top: 6px; }
+  .board .kind { font-family: inherit; font-weight: 900; font-size: 15px; }
+  .board .dest { color: var(--amber); font-weight: 700; font-size: 17px; }
+  .board .cursor { display: inline-block; width: 7px; height: 12px; background: var(--amber); margin-left: 6px; animation: blink 1.2s steps(2) infinite; vertical-align: -1px; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  /* 乗車券: the download ticket */
+  .ticket {
+    position: relative; display: grid; grid-template-columns: 1fr 120px; background: var(--paper); color: var(--paper-ink);
+    border-radius: 12px; overflow: hidden; max-width: 460px;
+  }
+  .ticket .band { grid-column: 1 / -1; background: var(--lime); color: #fff; font-weight: 700; font-size: 13px; padding: 6px 14px; }
+  .ticket .body { padding: 14px; }
+  .ticket .stub {
+    padding: 14px 10px; border-left: 3px dashed rgba(38, 52, 58, .35); display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center; font-family: ui-monospace, Menlo, monospace; font-size: 12px;
+  }
+  .ticket::before, .ticket::after {
+    content: ""; position: absolute; right: 108px; width: 22px; height: 22px; border-radius: 50%; background: var(--ink);
+  }
+  .ticket::before { top: 20px; }
+  .ticket::after { bottom: -11px; }
+  .from-to { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 22px; color: #000; }
+  .from-to small { display: block; font-weight: 400; font-size: 11px; color: var(--paper-ink); }
+  .download {
+    display: inline-block; margin-top: 12px; background: var(--ink); color: var(--lime); text-decoration: none;
+    font-weight: 900; padding: 12px 18px; border-radius: 999px; font-size: 16px;
+  }
+  .download:hover { background: #0b1a21; }
+  .meta { font-size: 12px; margin-top: 8px; color: var(--paper-ink); }
+  .hanko {
+    width: 72px; height: 72px; border: 3px solid var(--hanko); border-radius: 50%; color: var(--hanko);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; transform: rotate(-14deg);
+    font-weight: 900; font-size: 11px; line-height: 1.2; opacity: .8; margin-bottom: 6px;
+  }
+  .hanko span { font-size: 9px; font-weight: 700; }
+
+  .phone { justify-self: center; width: min(300px, 80vw); border-radius: 28px; border: 8px solid #0b1a21; box-shadow: 0 20px 60px rgba(0,0,0,.45); display: block; }
+
+  section { padding: 32px 0; }
+  h2 { font-size: 13px; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); margin: 0 0 16px; }
+  .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .feature { background: var(--panel); border-radius: 16px; padding: 18px; }
+  .feature .icon { font-size: 26px; }
+  .feature h3 { margin: 6px 0 6px; font-size: 18px; }
+  .feature p { margin: 0; color: var(--muted); font-size: 14px; }
+
+  .shots { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+  .shots figure { margin: 0; flex: 0 0 auto; width: 200px; scroll-snap-align: start; }
+  .shots img { width: 100%; border-radius: 16px; border: 5px solid #0b1a21; display: block; }
+  .shots figcaption { color: var(--muted); font-size: 13px; margin-top: 6px; text-align: center; }
+
+  .steps { counter-reset: step; list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .steps li { counter-increment: step; background: var(--panel); border-radius: 12px; padding: 12px 14px 12px 52px; position: relative; }
+  .steps li::before {
+    content: counter(step); position: absolute; left: 14px; top: 11px; width: 26px; height: 26px; border-radius: 50%;
+    background: var(--lime); color: var(--ink); font-weight: 900; display: flex; align-items: center; justify-content: center; font-size: 14px;
+  }
+  .note { color: var(--muted); font-size: 14px; }
+  code, .hash { font-family: ui-monospace, Menlo, monospace; font-size: 12px; word-break: break-all; }
+  .credits { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .credits div { background: var(--panel); border-radius: 12px; padding: 12px 14px; font-size: 14px; }
+  .credits b { display: block; }
+  footer { padding: 32px 0 48px; color: var(--muted); font-size: 13px; }
+
+  [data-en] { display: none; }
+  html[lang="en"] [data-en] { display: revert; }
+  html[lang="en"] [data-ja] { display: none; }
+
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; }
+    .phone { order: -1; width: min(260px, 70vw); }
+    .features { grid-template-columns: 1fr; }
+    .credits { grid-template-columns: 1fr; }
+    .ticket { grid-template-columns: 1fr 96px; }
+    .ticket::before, .ticket::after { right: 85px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>鉄ノート</h1>
+    <span class="latin">TETSUNOTE</span>
+    <span class="lang"><button class="lang-toggle" type="button" onclick="toggleLang()"><span data-ja>English</span><span data-en>日本語</span></button></span>
+  </header>
+
+  <div class="hero">
+    <div>
+      <p class="tagline">
+        <span data-ja>乗った列車を、全部ノートに。</span>
+        <span data-en>Every train you ride, in one notebook.</span>
+      </p>
+      <p class="lead">
+        <span data-ja>日本の鉄道のための乗車記録アプリ。乗った区間、車両、座席、駅弁、写真を記録して、乗りつぶし地図を塗っていこう。</span>
+        <span data-en>A railway logbook for Japan. Log the line, the stations, the train and your seat, add photos and ekiben, and watch your 乗りつぶし map fill in.</span>
+      </p>
+
+      <div class="board" aria-hidden="true">
+        <div class="head"><span>種別</span><span>DESTINATION</span></div>
+        <div class="row"><span class="kind" style="color:#b8c4c2">普通</span><span class="dest">LINES      594</span></div>
+        <div class="row"><span class="kind" style="color:#f15a22">快速</span><span class="dest">STATIONS 10154</span></div>
+        <div class="row"><span class="kind" style="color:#e53935">特急</span><span class="dest">TRAINS     255</span></div>
+        <div class="row" style="color:#6d7773;font-size:11px">まもなく&nbsp; NEXT RIDE<span class="cursor"></span></div>
+      </div>
+
+      <div class="ticket">
+        <div class="band">乗車券 No. 1 · Android</div>
+        <div class="body">
+          <div class="from-to">
+            <div>ここ<small data-ja>いま</small><small data-en>here</small></div>
+            <div>→</div>
+            <div>全線<small data-ja>乗りつぶし</small><small data-en>every line</small></div>
+          </div>
+          <a class="download" href="https://github.com/shoreless/tetsunote-api/releases/latest/download/tetsunote.apk">
+            <span data-ja>⬇ ダウンロード（APK）</span><span data-en>⬇ Download the APK</span>
+          </a>
+          <div class="meta">
+            <span data-ja>バージョン 0.1.0 · 2.5 MB · Android 10 以上</span>
+            <span data-en>Version 0.1.0 · 2.5 MB · Android 10 or later</span>
+          </div>
+        </div>
+        <div class="stub">
+          <div class="hanko">乗車記念<span>26.09.26</span></div>
+          2026.09.26<br>v0.1.0
+        </div>
+      </div>
+    </div>
+    <img class="phone" src="screens/logbook.webp" width="540" height="1200" alt="The Tetsunote logbook: a departure board and a ride ticket from Shibuya to Ikebukuro">
+  </div>
+
+  <section>
+    <h2><span data-ja>できること</span><span data-en>What it does</span></h2>
+    <div class="features">
+      <div class="feature"><div class="icon">🎫</div>
+        <h3><span data-ja>乗車券で記録</span><span data-en>Rides as tickets</span></h3>
+        <p><span data-ja>路線と区間を選ぶだけで営業キロを計算。乗車中は「発車!」、到着したら乗車記念スタンプ。</span><span data-en>Pick the line and stations and the km work themselves out. Tap 発車! on the train; arriving stamps your ticket.</span></p></div>
+      <div class="feature"><div class="icon">🚃</div>
+        <h3><span data-ja>車両図鑑</span><span data-en>Collect the trains</span></h3>
+        <p><span data-ja>255形式。乗った・見た車両がカラーに。車両ごとの豆知識、データ、写真、あなたの乗車歴。</span><span data-en>255 models that turn from grey to colour as you ride or see them, each with facts, photos and your history with it.</span></p></div>
+      <div class="feature"><div class="icon">🗾</div>
+        <h3><span data-ja>乗りつぶし地図</span><span data-en>The 乗りつぶし map</span></h3>
+        <p><span data-ja>全国594路線。乗った区間がラインカラーで光り、路線ごとの達成率がわかる。</span><span data-en>All 594 lines in Japan. What you've ridden glows in each line's colour, with completion for every line.</span></p></div>
+      <div class="feature"><div class="icon">👁</div>
+        <h3><span data-ja>目撃記録</span><span data-en>Sightings</span></h3>
+        <p><span data-ja>ドクターイエロー、East i、ALFA-X、SL…見かけた特別な列車を記録。</span><span data-en>Doctor Yellow, East i, ALFA-X, steam specials: log the special trains you spot.</span></p></div>
+      <div class="feature"><div class="icon">🏛️</div>
+        <h3><span data-ja>鉄道スポット</span><span data-en>Railway places</span></h3>
+        <p><span data-ja>鉄道博物館、リニア見学センターなど。最寄り駅と徒歩時間、沿線のおすすめも。</span><span data-en>Railway museums, the maglev centre and more, with the nearest station and walk, and suggestions along your ride.</span></p></div>
+      <div class="feature"><div class="icon">🔒</div>
+        <h3><span data-ja>記録は端末の中だけ</span><span data-en>Your log stays on your phone</span></h3>
+        <p><span data-ja>アカウント不要、広告なし、追跡なし。鉄道データを一度読み込めばオフラインで使えます。</span><span data-en>No account, no ads, no tracking. Once the railway data has loaded, it works offline.</span></p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span data-ja>画面</span><span data-en>Screens</span></h2>
+    <div class="shots">
+      <figure><img src="screens/stations.webp" width="540" height="1200" loading="lazy" alt="Choosing stations shown as station nameboards"><figcaption><span data-ja>駅名標で区間を選ぶ</span><span data-en>Stations as nameboards</span></figcaption></figure>
+      <figure><img src="screens/arrival.webp" width="540" height="1200" loading="lazy" alt="The arrival stamp with confetti"><figcaption><span data-ja>到着で乗車記念</span><span data-en>The arrival stamp</span></figcaption></figure>
+      <figure><img src="screens/train.webp" width="540" height="1200" loading="lazy" alt="The E235 page in Japanese"><figcaption><span data-ja>車両のページ</span><span data-en>Every train's page</span></figcaption></figure>
+      <figure><img src="screens/line.webp" width="540" height="1200" loading="lazy" alt="The Yamanote Line with the ridden stretch coloured"><figcaption><span data-ja>路線図と達成率</span><span data-en>Lines and progress</span></figcaption></figure>
+      <figure><img src="screens/place.webp" width="540" height="1200" loading="lazy" alt="The Railway Museum page"><figcaption><span data-ja>鉄道スポット</span><span data-en>Railway places</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2><span data-ja>インストール方法</span><span data-en>How to install</span></h2>
+    <ol class="steps">
+      <li><span data-ja>Android 端末でこのページを開き、「ダウンロード（APK）」をタップ。</span><span data-en>On your Android phone, open this page and tap “Download the APK”.</span></li>
+      <li><span data-ja>ダウンロードした <code>tetsunote.apk</code> を開く。</span><span data-en>Open the downloaded <code>tetsunote.apk</code>.</span></li>
+      <li><span data-ja>「提供元不明のアプリ」の許可を求められたら、ブラウザ（またはファイルアプリ）に許可する。</span><span data-en>If asked, allow your browser (or files app) to install unknown apps.</span></li>
+      <li><span data-ja>インストールして開くと、最初に鉄道データ（約6 MB）を読み込みます。</span><span data-en>Install and open it. The first launch downloads the railway data (about 6 MB).</span></li>
+    </ol>
+    <p class="note">
+      <span data-ja>Google Play 版ではなく、直接配布している試験版です。新しい版は同じ署名なので、上書きインストールで記録はそのまま残ります。</span>
+      <span data-en>This is an early test build shared directly, not through Google Play. New versions carry the same signature, so installing over the top keeps your log.</span>
+    </p>
+    <p class="note">
+      SHA-256 <span class="hash">ef55afa4dd8343542270c410ec01ed37da0a3a415fd810d3552d42c1a4098f2e</span><br>
+      <span data-ja>署名証明書</span><span data-en>Signing certificate</span> SHA-256
+      <span class="hash">e89837f4f4999d6d023ec6dd3eec423a84d178108a9a97c3420bfc603cd49258</span><br>
+      <a href="https://github.com/shoreless/tetsunote-api/releases"><span data-ja>すべてのリリース</span><span data-en>All releases</span></a>
+    </p>
+  </section>
+
+  <section>
+    <h2><span data-ja>データの出典</span><span data-en>Where the data comes from</span></h2>
+    <div class="credits">
+      <div><b><span data-ja>路線・駅</span><span data-en>Lines and stations</span></b>「国土数値情報（鉄道データ）」（国土交通省）を加工して作成 · CC BY 4.0</div>
+      <div><b><span data-ja>営業キロ</span><span data-en>Official km</span></b><span data-ja>JR各社および国土交通省地方運輸局の公表値</span><span data-en>Published by the JR companies and MLIT regional transport bureaus</span></div>
+      <div><b><span data-ja>名称・データ・ラインカラー</span><span data-en>Names, facts and colours</span></b>Wikidata · CC0</div>
+      <div><b><span data-ja>解説・写真</span><span data-en>Descriptions and photos</span></b><span data-ja>ウィキペディア（CC BY-SA 4.0）、ウィキメディア・コモンズ（撮影者とライセンスをアプリ内に表示）</span><span data-en>Wikipedia (CC BY-SA 4.0) and Wikimedia Commons, with each photo's author and licence shown in the app</span></div>
+    </div>
+    <p class="note">
+      <span data-ja>鉄道データはオープンデータとして公開しています：</span><span data-en>The railway data is open:</span>
+      <a href="https://github.com/shoreless/tetsunote-api">tetsunote-api</a> ·
+      <a href="../"><span data-ja>鉄道アトラス</span><span data-en>railway atlas</span></a>
+    </p>
+  </section>
+
+  <footer>
+    <span data-ja>鉄ノートは個人の開発による非公式アプリで、鉄道事業者とは関係ありません。</span>
+    <span data-en>Tetsunote is an independent app, not affiliated with any railway company.</span>
+  </footer>
+</div>
+<script>
+  // Japanese unless the browser prefers another language; remembered once chosen.
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    try { localStorage.setItem("tetsunote-lang", lang); } catch (e) {}
+  }
+  function toggleLang() { setLang(document.documentElement.lang === "ja" ? "en" : "ja"); }
+  let saved = null;
+  try { saved = localStorage.getItem("tetsunote-lang"); } catch (e) {}
+  setLang(saved || ((navigator.language || "ja").toLowerCase().startsWith("ja") ? "ja" : "en"));
+</script>
+</body>
+</html>
