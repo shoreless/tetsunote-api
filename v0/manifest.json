@@ -1,6 +1,6 @@
 {
  "version": 0,
- "revision": "14d10357aece",
+ "revision": "d8211f43678a",
  "languages": [
   "en",
   "ja"
@@ -2150,6 +2150,16 @@
    "sha256": "a986b5e22a841919379adbfb051bf4b0cf621aec9da56159869f087982b513e3"
   },
   {
+   "path": "places.json",
+   "bytes": 45617,
+   "sha256": "f085a355283f9886899ec52163314982dd4b52c2e8a9123d4f2295eae56cda27"
+  },
+  {
+   "path": "places_wikipedia.json",
+   "bytes": 39697,
+   "sha256": "0716ebbf6d352f546529d5934bab5804571d25bc0043cb5204b48c24ffe4f7f4"
+  },
+  {
    "path": "trains/0-thumb.webp",
    "bytes": 23912,
    "sha256": "a69a3ce25abee1c5456168055dbb3b5073a55adbbbfb3f17c13dc33698c89f96"
@@ -4278,6 +4288,406 @@
    "path": "trains/yc1.webp",
    "bytes": 112488,
    "sha256": "08481b8ddc1d970349378694d2171205a5a286a9086612d632c62b19e0e38705"
+  },
+  {
+   "path": "places/boso-chuo-tetsudokan-thumb.webp",
+   "bytes": 24162,
+   "sha256": "18cc3590b4b4cd61009008280505437814f04f2825acc3e0ada42e3ed4a70982"
+  },
+  {
+   "path": "places/boso-chuo-tetsudokan.webp",
+   "bytes": 121166,
+   "sha256": "7a5e6e333b8c4ebb2842b68a12c283d9dd4ff8894d2c383e3d3bf122dda1898b"
+  },
+  {
+   "path": "places/diorama-kyoto-japan-thumb.webp",
+   "bytes": 13034,
+   "sha256": "dcb5f8b1dac7714d134fd806b0aeb6fc731e05fb319bfe2c8b79218f71db67d5"
+  },
+  {
+   "path": "places/diorama-kyoto-japan.webp",
+   "bytes": 78860,
+   "sha256": "988b58f5f423d2298219223b98f114a4770910b5403406436df035de62e88ba9"
+  },
+  {
+   "path": "places/former-tsuruga-port-station-building-thumb.webp",
+   "bytes": 12716,
+   "sha256": "0b70e40d08e73a2afd6cd039a88bafdf7e072a5db78b1c869195a561f476b678"
+  },
+  {
+   "path": "places/former-tsuruga-port-station-building.webp",
+   "bytes": 59436,
+   "sha256": "8f554a69a17417c3263b4d9ccd1316af5caa82fa92f57bb460fc69f49cf76832"
+  },
+  {
+   "path": "places/fukuchiyama-railway-museum-poppoland-thumb.webp",
+   "bytes": 17466,
+   "sha256": "3a9d0e207c26d798233f4e8fabe67d7c88d2fceaec68b23aa0a71882df56d684"
+  },
+  {
+   "path": "places/fukuchiyama-railway-museum-poppoland.webp",
+   "bytes": 94704,
+   "sha256": "9de751106f434ea74ccca8bac3dc6e815b77f864a8336b4bd604be4818911451"
+  },
+  {
+   "path": "places/handa-railway-museum-thumb.webp",
+   "bytes": 10824,
+   "sha256": "a6cd4b4e3ac1e7e324fa0969e3df60a3609a07dfb22653b20421cb090fb2d6da"
+  },
+  {
+   "path": "places/handa-railway-museum.webp",
+   "bytes": 54848,
+   "sha256": "05b452aa6fd6414ec9b22119b35d576652af8e65249112aa40920e4ecab48783"
+  },
+  {
+   "path": "places/hara-model-railway-museum-thumb.webp",
+   "bytes": 15848,
+   "sha256": "10b5885ea74cd831f81b6c7938d26adc7abeb52d47ef6bbcf78e7383e8130e8d"
+  },
+  {
+   "path": "places/hara-model-railway-museum.webp",
+   "bytes": 37434,
+   "sha256": "b1cb3ef85a2c5646ca1a1d9a51a94998a7a44962ccb33093d07ec3ded22d25f6"
+  },
+  {
+   "path": "places/hokkaido-maruseppu-recreation-forest-park-railway-thumb.webp",
+   "bytes": 27844,
+   "sha256": "9eed5ffd910b1b8eb11d7c35929c8d0d308865e6444c6710feb1bcedfbbb247e"
+  },
+  {
+   "path": "places/hokkaido-maruseppu-recreation-forest-park-railway.webp",
+   "bytes": 170600,
+   "sha256": "10863cb133fd832311d46d3ff5ffb36a83e30fcee4622bdefa25489eda20d3d6"
+  },
+  {
+   "path": "places/kaya-railway-museum-thumb.webp",
+   "bytes": 11896,
+   "sha256": "b060c72dda92b49d8a2e8d205f4c76f8ed9c62912df54eaae70210303c87630d"
+  },
+  {
+   "path": "places/kaya-railway-museum.webp",
+   "bytes": 54894,
+   "sha256": "9cb5920c31791e3d6a382d90812374d0b70add9842c3076e9d33f7877de04e0a"
+  },
+  {
+   "path": "places/keikyu-museum-thumb.webp",
+   "bytes": 14556,
+   "sha256": "5237958078f0a0163b2b7f01ba9c6aa2346a8546d0e16064287fbe1953485e1e"
+  },
+  {
+   "path": "places/keikyu-museum.webp",
+   "bytes": 66824,
+   "sha256": "552999741a0debe2ff72985fd1f3ec3e58f93c66f88b33be8a305dd912934953"
+  },
+  {
+   "path": "places/keio-rail-land-thumb.webp",
+   "bytes": 22954,
+   "sha256": "59265f5b70f30aa57ec79ad8ced614fd5f868ab9084a5bdd8cfc76e8220c5a02"
+  },
+  {
+   "path": "places/keio-rail-land.webp",
+   "bytes": 105630,
+   "sha256": "9b56a6a86942626ee7364d92b11d161a06107a3e97f990870da1a1832f39a20a"
+  },
+  {
+   "path": "places/kurayoshi-line-railway-memorial-thumb.webp",
+   "bytes": 21810,
+   "sha256": "58282575d839c530bc76e0085e1e627c0d82bb667fb3be91df0175f7adf28547"
+  },
+  {
+   "path": "places/kurayoshi-line-railway-memorial.webp",
+   "bytes": 146130,
+   "sha256": "257027f72a9901ac003571f65eda56654a956315e3e9324b3cf6456201b2ff33"
+  },
+  {
+   "path": "places/kyoto-railway-museum-thumb.webp",
+   "bytes": 12542,
+   "sha256": "96a1a83e3f37e85f56ed152e03474646c80f55918d8953c7a0bb64cf7eb64a68"
+  },
+  {
+   "path": "places/kyoto-railway-museum.webp",
+   "bytes": 58516,
+   "sha256": "77aeb0ee43a8b52f705b04c8cf06c4eeaec1fa62425979710b862e6020427072"
+  },
+  {
+   "path": "places/kyushu-railway-history-museum-thumb.webp",
+   "bytes": 13164,
+   "sha256": "308911854e7f8f10882f1b359a024801d251c2f2fdc533e0f5420033d0324195"
+  },
+  {
+   "path": "places/kyushu-railway-history-museum.webp",
+   "bytes": 81094,
+   "sha256": "a408f42ba80b76cca32aeb71e0a87fc20b70862775089b3e6605e18c3b12ef92"
+  },
+  {
+   "path": "places/mikasa-railway-memorial-museum-thumb.webp",
+   "bytes": 9484,
+   "sha256": "522bd269937621cbe8ff6cb881af92351260dde557628a8fbefcee775c114f55"
+  },
+  {
+   "path": "places/mikasa-railway-memorial-museum.webp",
+   "bytes": 59678,
+   "sha256": "28e229b5dc7d0b08945b58bcea33829b0346c83682ea0e49207e43af356e3e65"
+  },
+  {
+   "path": "places/nagahama-railway-square-thumb.webp",
+   "bytes": 24380,
+   "sha256": "d48b6f37bc8dae802cdf8c99e06c8350dba388a71bba65bf1501d8a64b07c3f0"
+  },
+  {
+   "path": "places/nagahama-railway-square.webp",
+   "bytes": 154690,
+   "sha256": "7e35363700180a035bd66b37fca611ce461b3e380f8981dd19e856fc8dbc9382"
+  },
+  {
+   "path": "places/nagoya-city-tram-subway-museum-thumb.webp",
+   "bytes": 12470,
+   "sha256": "488ffe822a22b2d74f4e651931f955c3e929aa38f070d8a82b14fbf2e9840ece"
+  },
+  {
+   "path": "places/nagoya-city-tram-subway-museum.webp",
+   "bytes": 78644,
+   "sha256": "68ca9f0fe5116e83847c937fc9f03f4ca04302bf63abc56107958f872cb47082"
+  },
+  {
+   "path": "places/nansatsu-railway-museum-thumb.webp",
+   "bytes": 14960,
+   "sha256": "1759df9a57bd99274f55d62b30b692d1317c2884964312bf9c25ae6b4c02cd5a"
+  },
+  {
+   "path": "places/nansatsu-railway-museum.webp",
+   "bytes": 56060,
+   "sha256": "3e6dddedb10f673995bca665a751142888660bb0881ecf491c725efe5a2804b2"
+  },
+  {
+   "path": "places/niigata-city-niitsu-railway-museum-thumb.webp",
+   "bytes": 12578,
+   "sha256": "e5e04ed1c062bf0f27c5808378c0d137a2f0a64f562e06ded6297773580313c1"
+  },
+  {
+   "path": "places/niigata-city-niitsu-railway-museum.webp",
+   "bytes": 51808,
+   "sha256": "3998b2ed935d8e3bf427716697d819b1921ff613179a478a074995f39394ac38"
+  },
+  {
+   "path": "places/old-shimbashi-station-railway-history-exhibition-hall-thumb.webp",
+   "bytes": 22284,
+   "sha256": "7f71442b2dc3ca92887ddd1189a852f183c35454b8af5072324c1b438f403ca3"
+  },
+  {
+   "path": "places/old-shimbashi-station-railway-history-exhibition-hall.webp",
+   "bytes": 123832,
+   "sha256": "d0149db01a89ed8f276143089b17f8e6038b846072fdc0c05418e5e84ee9858c"
+  },
+  {
+   "path": "places/ome-railway-park-thumb.webp",
+   "bytes": 23738,
+   "sha256": "c06934260e54b6c7589533475ad2eb713f75a06a103e4ec45a5a6573efe0ffd5"
+  },
+  {
+   "path": "places/ome-railway-park.webp",
+   "bytes": 125388,
+   "sha256": "96f67e5f2ae8d49722e92e72eb239bb651e08bee3a466d044829ffd315720213"
+  },
+  {
+   "path": "places/poppo-no-oka-thumb.webp",
+   "bytes": 21092,
+   "sha256": "45d313a89f71a2653d78fd26532b6726c495c80f6aa639d64925f17b3dda9511"
+  },
+  {
+   "path": "places/poppo-no-oka.webp",
+   "bytes": 118428,
+   "sha256": "8b6b1ae8fe682ef2fe64f388040a214a0a1f78570f5bb2690cdb6b6f32126e15"
+  },
+  {
+   "path": "places/poppo-train-museum-thumb.webp",
+   "bytes": 27006,
+   "sha256": "8a6ec4b534a1a72b9824f0b132dfa345f1f9d5a5aeb35f17501639ad1bf9451f"
+  },
+  {
+   "path": "places/poppo-train-museum.webp",
+   "bytes": 136778,
+   "sha256": "e0bec6cd65d9f22dd6c44de75a522202ade53e6eec5be0ae9dfb7fd515eb3a5d"
+  },
+  {
+   "path": "places/railway-museum-thumb.webp",
+   "bytes": 16948,
+   "sha256": "9f6f52c0b2a82f5977167bec30aee80cbadedc089cb1ee89e283941a9fbad3bb"
+  },
+  {
+   "path": "places/railway-museum.webp",
+   "bytes": 40272,
+   "sha256": "87702d206def794d2b810ae3cec2a7a441523ec283611be192d367e9754b0499"
+  },
+  {
+   "path": "places/romancecar-museum-thumb.webp",
+   "bytes": 13014,
+   "sha256": "e7640e20448bfc7239cb004e96d3d4c00f02b1117b70f8a8fa6daf4786c0b55e"
+  },
+  {
+   "path": "places/romancecar-museum.webp",
+   "bytes": 51920,
+   "sha256": "39fefe254627077d322be537c14012976f79cfc5e3e62ecf541716bc642acdf4"
+  },
+  {
+   "path": "places/sapporo-transportation-museum-thumb.webp",
+   "bytes": 17948,
+   "sha256": "45b51bd8b1deb9c387087765b00e5d36540a2769a6e06854e39eaccd2d295ffb"
+  },
+  {
+   "path": "places/sapporo-transportation-museum.webp",
+   "bytes": 81040,
+   "sha256": "dcd503d5086a25c31b98c08e039540727533324acaae59d5438075fefa822455"
+  },
+  {
+   "path": "places/scmaglev-and-railway-park-thumb.webp",
+   "bytes": 11766,
+   "sha256": "1c04facce8417cfe591d0afe53c11a2dd6bb2ea6b6ed33cefde2bf533c3267c6"
+  },
+  {
+   "path": "places/scmaglev-and-railway-park.webp",
+   "bytes": 77956,
+   "sha256": "c44575de9e00acf4c0f88b38d9561194f0b92ea4b4f888b46d854d88e7f96e60"
+  },
+  {
+   "path": "places/shikoku-railway-cultural-center-thumb.webp",
+   "bytes": 22994,
+   "sha256": "4185a056580c89d37dcfcb17372d64c9879a2f50ad06ba015d48e7ebda6036f9"
+  },
+  {
+   "path": "places/shikoku-railway-cultural-center.webp",
+   "bytes": 124898,
+   "sha256": "6778912e216e350ee27838bf50afb6d8be4dacac81e9eec5d6e73eeebeb7d575"
+  },
+  {
+   "path": "places/shuzenji-niji-no-sato-thumb.webp",
+   "bytes": 19896,
+   "sha256": "0bc75aecffa9ab84a9157e6b3a6a063b33ba1686f73b8c7d50365feb3ab58e2b"
+  },
+  {
+   "path": "places/shuzenji-niji-no-sato.webp",
+   "bytes": 99502,
+   "sha256": "cd3203666d30eaea64e8e4ed3752a71fd21b80b1da6fc15f8e725d0eee21555c"
+  },
+  {
+   "path": "places/tegarayama-exchange-station-thumb.webp",
+   "bytes": 10368,
+   "sha256": "d8bf686b96642fc6103ae29c444868539f8c4e070255aa5635bd99ca20f65ad4"
+  },
+  {
+   "path": "places/tegarayama-exchange-station.webp",
+   "bytes": 21696,
+   "sha256": "60682d6861b443158aac01848525c030b3ccb2e86b0ae6ea3f9cf33d2a2de345"
+  },
+  {
+   "path": "places/tobu-museum-thumb.webp",
+   "bytes": 15326,
+   "sha256": "ead0fa2ccdbca205f568452bcac733958cbfeb2110d853df80dee6692a4626fc"
+  },
+  {
+   "path": "places/tobu-museum.webp",
+   "bytes": 68178,
+   "sha256": "6dc49a8071876ccc0b8f924161b75a022020b1f40309ab024fc3a0ac69c428e2"
+  },
+  {
+   "path": "places/tokyo-metro-museum-thumb.webp",
+   "bytes": 11382,
+   "sha256": "f666b5c4823cf678c689be75007d73c7a922b51d4021c4c4b0824252d9609050"
+  },
+  {
+   "path": "places/tokyo-metro-museum.webp",
+   "bytes": 56610,
+   "sha256": "d81f09f804ed94778d412ad088e403f851c209c83b88768ed296794f3a9f38fd"
+  },
+  {
+   "path": "places/toyohashi-city-children-s-transportation-center-thumb.webp",
+   "bytes": 21546,
+   "sha256": "a7a470690c4e017be698823b84e64c395e234d0eb519f854cf9e86015d549993"
+  },
+  {
+   "path": "places/toyohashi-city-children-s-transportation-center.webp",
+   "bytes": 102330,
+   "sha256": "267f0faa538b867640e86acaed09edbdbb53c6872ebec3a037b29d966723d19f"
+  },
+  {
+   "path": "places/train-and-bus-museum-thumb.webp",
+   "bytes": 20124,
+   "sha256": "836ddbc97f8bf55a0f094a106a139d05360147cb5da7b934a0f91827a2c49c0f"
+  },
+  {
+   "path": "places/train-and-bus-museum.webp",
+   "bytes": 98796,
+   "sha256": "19de3efc7881301fa7999fd299b935dd0aece3e1e078daf22b218e6c8d28c588"
+  },
+  {
+   "path": "places/train-park-hakusan-thumb.webp",
+   "bytes": 11598,
+   "sha256": "f6b608001b2ae05b0b3d3385c87b0c35a0c861c2345d2bced48b4367022c2d97"
+  },
+  {
+   "path": "places/train-park-hakusan.webp",
+   "bytes": 67244,
+   "sha256": "d1c1b14a99e1ab0f05279002f002fb479d0aeea81605e54a6cc20e8e5649efe8"
+  },
+  {
+   "path": "places/transportation-bureau-exhibition-center-thumb.webp",
+   "bytes": 17194,
+   "sha256": "a870dbc9296dba80b08f8a96ef9b42ae8c499b970fd6319062b45127d5867235"
+  },
+  {
+   "path": "places/transportation-bureau-exhibition-center.webp",
+   "bytes": 68668,
+   "sha256": "0214bae9504bb3266eaa54b34449d1ddef3cfd5cda4ae9df70408dacbe829a70"
+  },
+  {
+   "path": "places/tsuruga-port-lamp-hut-thumb.webp",
+   "bytes": 11232,
+   "sha256": "75e4c603948f20882444a28bff04bdc581bb62a7610a517a130371d8d700ef37"
+  },
+  {
+   "path": "places/tsuruga-port-lamp-hut.webp",
+   "bytes": 41242,
+   "sha256": "c638138653473f3ede291775aa45233b263ed98ed4fbef715965d7220515e985"
+  },
+  {
+   "path": "places/tsuyama-railroad-educational-museum-thumb.webp",
+   "bytes": 10134,
+   "sha256": "bf94813755404d2e530f0182e8e3de3a39a505958ca8904168f60e13f09a0c7e"
+  },
+  {
+   "path": "places/tsuyama-railroad-educational-museum.webp",
+   "bytes": 64886,
+   "sha256": "08d1bc176794596956733820ff258470fc79fea0667cf2f3b5ad6a2781e70a11"
+  },
+  {
+   "path": "places/usui-pass-railway-heritage-park-thumb.webp",
+   "bytes": 7832,
+   "sha256": "2cc28ffd752024508c1e02b440851f4005d2e31ed54d78c0e713e20563465240"
+  },
+  {
+   "path": "places/usui-pass-railway-heritage-park.webp",
+   "bytes": 31370,
+   "sha256": "6549a922f9243c903d5ee4e2f21b61370c5b33529189df86931e7768539040fe"
+  },
+  {
+   "path": "places/western-river-railroad-thumb.webp",
+   "bytes": 24554,
+   "sha256": "6905c73b7a7b984b528293981a725b2b0b8b21b9a23db3264c2f5a05218d65b9"
+  },
+  {
+   "path": "places/western-river-railroad.webp",
+   "bytes": 72640,
+   "sha256": "49e3e8ad4215fe16d3c550247c43e182fd67d5cfb5656641d7f6dcc9df3596d2"
+  },
+  {
+   "path": "places/yamanashi-prefectural-maglev-exhibition-center-thumb.webp",
+   "bytes": 11200,
+   "sha256": "42b040add93156d6180b60eceb4ffecce3ff8b200563c9c4ff3db4203a7c5ac6"
+  },
+  {
+   "path": "places/yamanashi-prefectural-maglev-exhibition-center.webp",
+   "bytes": 36120,
+   "sha256": "344350c56a8b504254c6bccda42e0afc81b3488e96ae87743c1dad02f3ce7d6f"
   }
  ]
 }

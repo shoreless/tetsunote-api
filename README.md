@@ -18,7 +18,8 @@ Nothing is published yet. The first release will cover the Tokyo region.
 | `v0/series.json` | Train models (E235 series, N700S…) with operators, kind and status (active, retiring, retired). Where known: `facts` (entered service, retired, top speed, car length, number built, manufacturers), a one-line `description` and `links` from Wikidata, what it `replaces` and was `replaced_by`, and a short bilingual `about` of our own (marked `draft` until checked). Each line lists the models that run or ran on it in `series`, with a status for that line. A model with a picture has `image`: `url` and `thumb` (WebP, relative to `v0/`), size, `generated` (true for AI illustrations, which apps should label) and `credit`. A picture in the livery of particular lines is given only on those lines, as `image` on the model's entry in that line's `series`; prefer it over the model's own `image` |
 | `v0/series_wikipedia.json` | The opening of each model's Japanese and English Wikipedia article, shortened. **Licensed CC BY-SA 4.0**, unlike the rest of this data; each entry links to its article. Apps showing it should credit Wikipedia and link the article |
 | `v0/trains/*.webp` | Train pictures: our illustrations (1200 px), and for models without one, a photo from Wikimedia Commons (960 px), each with a `-thumb.webp` at 400 px. A photo's `image` has `credit` (the photographer), `licence`, `licence_url` and `source_url` (its Commons page); apps must show the credit and licence. Photos stay under their own licences. Every file is in the manifest with its hash |
-| `v0/places.json` | Museums, notable stations, viewpoints, preserved locomotives and 廃線跡 |
+| `v0/places.json` | Places for railway fans: museums, maglev and heritage railways, historic stations, and curated places such as train bars. Each has `kind`, `name`, `point` [lon, lat], its nearest `stations` (id and metres, within 3 km), `website`, a Wikidata `description` and `links`, and a Commons `image` with its credit |
+| `v0/places_wikipedia.json` | The opening of each place's Wikipedia article, under CC BY-SA 4.0 |
 | `v0/events.json` | Depot open days, festivals, farewell runs and stamp rallies, with `starts` and `ends` |
 
 Every text field a reader might see is given in both languages as `{"en": "…", "ja": "…"}`.
@@ -71,6 +72,14 @@ uv run build/network.py
 This downloads 国土数値情報 N02 into `sources/` if it is missing, then writes `v0/operators/` and
 `v0/manifest.json`. Anything the build could not resolve, such as a junction away from any
 station, is listed in `build/report.txt`.
+
+## Adding a place
+
+Places come from Wikidata where it has them. To add one it lacks, such as a train bar or a photo
+spot, add a row to `data/places.csv` with `kind` (museum, maglev, heritage-railway, railway-park,
+historic-station, bar, cafe, shop, viewpoint, other), `ja`, `en`, `lat`, `lon`, `website`, `source`
+and the date you `checked` it. To hide a Wikidata place (closed, not open to the public), give its
+`wikidata` id and `hide` = yes, with a `note` saying why.
 
 ## Corrections and submissions
 

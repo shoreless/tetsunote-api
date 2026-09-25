@@ -187,3 +187,22 @@ def build_lines(lines, report):
             "wikipedia_ja": wiki_url("ja", sitelinks.get("jawiki", {}).get("title")),
             "wikipedia_en": wiki_url("en", sitelinks.get("enwiki", {}).get("title")),
         }
+
+
+def describe(records):
+    """Add a description and links (and the photo file name, for commons) to records with a Wikidata id."""
+    cache = entities()
+    fetch(sorted({r["wikidata"] for r in records if r.get("wikidata")}), cache)
+    CACHE.write_text(json.dumps(cache, ensure_ascii=False, sort_keys=True), encoding="utf-8")
+    for record in records:
+        entity = cache.get(record.get("wikidata") or "")
+        if not entity or "missing" in entity:
+            record.update(description=None, links=None)
+            continue
+        record["description"] = {"en": text(entity, "descriptions", "en"), "ja": text(entity, "descriptions", "ja")}
+        sitelinks = entity.get("sitelinks", {})
+        record["links"] = {
+            "wikidata": f"https://www.wikidata.org/wiki/{record['wikidata']}",
+            "wikipedia_ja": wiki_url("ja", sitelinks.get("jawiki", {}).get("title")),
+            "wikipedia_en": wiki_url("en", sitelinks.get("enwiki", {}).get("title")),
+        }

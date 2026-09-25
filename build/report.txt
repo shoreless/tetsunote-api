@@ -76,3 +76,12 @@ disney-resort-line.dizuniirizotorain (舞浜リゾートライン ディズニ�
 kurama-tera.kuramayama-kosakutetsudo (鞍馬寺 鞍馬山鋼索鉄道): no English name
 takao-cable.takao-kosaku (高尾登山電鉄 高尾鋼索線): no English name
 42 of 255 series have no image
+place mikasa-railway-memorial-museum: no station within 3000 m
+place hokkaido-maruseppu-recreation-forest-park-railway: no station within 3000 m
+place shuzenji-niji-no-sato: no station within 3000 m
+place kurayoshi-line-railway-memorial: no station within 3000 m
+place kaya-railway-museum: no station within 3000 m
+place nansatsu-railway-museum: no station within 3000 m
+place poppo-train-museum: no station within 3000 m
+place japan-heritage-yuzu-road-museum: no station within 3000 m
+place makiba-line: no station within 3000 m

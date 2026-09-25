@@ -25,6 +25,7 @@ from shapely.geometry import LineString, MultiLineString, Point
 import commons
 import facts
 import images as train_images
+import places
 import wikipedia
 import series as rolling_stock
 from names import LineNames, Names, ascii_name, line_slug_en
@@ -414,7 +415,40 @@ def main():
         "sha256": hashlib.sha256(series_text.encode()).hexdigest(),
     })
 
-    for name, doc in (("series_wikipedia.json", articles), ("lines_wikipedia.json", line_articles)):
+    # Places for railway fans, with their photos and Wikipedia openings.
+    all_stations = [st for shard in shards.values() for st in shard["stations"].values()]
+    place_records = places.build(all_stations, report)
+    facts.describe(place_records)
+    place_articles = wikipedia.build(place_records, "places")
+    place_photos = {row["id"]: row for row in commons.photos(place_records, facts.entities(), set(), report)}
+    place_dir = OUT / "places"
+    place_dir.mkdir(parents=True, exist_ok=True)
+    keep = set()
+    for record in place_records:
+        row = place_photos.get(record["id"])
+        record["image"] = None
+        if row:
+            image = train_images.Image.open(row["path"]).convert("RGB")
+            full = train_images.resized(image, train_images.PHOTO_W)
+            thumb = train_images.resized(image, train_images.THUMB_W)
+            full.save(place_dir / f"{record['id']}.webp", "WEBP", quality=train_images.PHOTO_QUALITY, method=6)
+            thumb.save(place_dir / f"{record['id']}-thumb.webp", "WEBP", quality=train_images.PHOTO_QUALITY, method=6)
+            keep |= {f"{record['id']}.webp", f"{record['id']}-thumb.webp"}
+            record["image"] = {
+                "url": f"places/{record['id']}.webp", "thumb": f"places/{record['id']}-thumb.webp",
+                "width": full.width, "height": full.height, "generated": False,
+                "credit": row["credit"], "licence": row["licence"],
+                "licence_url": row["licence_url"], "source_url": row["source_url"],
+            }
+    for stale in place_dir.glob("*.webp"):
+        if stale.name not in keep:
+            stale.unlink()
+    places_doc = {"version": 0, "languages": ["en", "ja"], "places": place_records}
+
+    for name, doc in (
+        ("series_wikipedia.json", articles), ("lines_wikipedia.json", line_articles),
+        ("places.json", places_doc), ("places_wikipedia.json", place_articles),
+    ):
         doc_text = json.dumps(doc, ensure_ascii=False, separators=(",", ":"))
         (OUT / name).write_text(doc_text, encoding="utf-8")
         files.append({
@@ -423,10 +457,10 @@ def main():
             "sha256": hashlib.sha256(doc_text.encode()).hexdigest(),
         })
 
-    for picture in sorted(train_images.OUT.glob("*.webp")):
+    for picture in sorted(train_images.OUT.glob("*.webp")) + sorted((OUT / "places").glob("*.webp")):
         data = picture.read_bytes()
         files.append({
-            "path": f"trains/{picture.name}",
+            "path": f"{picture.parent.name}/{picture.name}",
             "bytes": len(data),
             "sha256": hashlib.sha256(data).hexdigest(),
         })

@@ -96,6 +96,7 @@ def photos(series, entities, pictured, report):
             continue
         rows.append({
             "series": series_id,
+            "id": series_id,
             "path": download(m["thumb"]),
             "generated": False,
             "credit": f"{m['artist'] or 'Unknown author'} / Wikimedia Commons",
