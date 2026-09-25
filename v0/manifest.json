@@ -1,6 +1,6 @@
 {
  "version": 0,
- "revision": "5244d7698b2c",
+ "revision": "ef0be58b95e7",
  "languages": [
   "en",
   "ja"
@@ -77,8 +77,8 @@
    },
    "lines": 1,
    "stations": 21,
-   "bytes": 14648,
-   "sha256": "e46ac93b6730d7ae39ca5cdedaae2536af5cd987f14649367a77a5224c6ce53f"
+   "bytes": 14717,
+   "sha256": "4e9c0c6445df70d70c17df4a268125de6db508e67a0947a76b75f7e21f159aef"
   },
   {
    "path": "operators/akita-nairiku-jukan-tetsudo.json",
@@ -293,8 +293,8 @@
    },
    "lines": 2,
    "stations": 19,
-   "bytes": 11391,
-   "sha256": "45b7c9482db5c0841619d0909383ea7ec417e6be1cbb61d6721ed3aad9b5f762"
+   "bytes": 11637,
+   "sha256": "6a26693ea99bb446716404c4fdddcdfd781e0ecf6ccc7d0b8006999fdc778076"
   },
   {
    "path": "operators/fukui-tetsudo.json",
@@ -533,8 +533,8 @@
    },
    "lines": 1,
    "stations": 15,
-   "bytes": 8104,
-   "sha256": "486106d84823a9e082076c7ffc4a88fee0dc15ecb94723f85d25fd92a792c464"
+   "bytes": 8311,
+   "sha256": "f5654709b3303e11e81b82988446f9c7bb874dc6745976d9f218bd6dab313b77"
   },
   {
    "path": "operators/ichibata-densha.json",
@@ -665,8 +665,8 @@
    },
    "lines": 1,
    "stations": 16,
-   "bytes": 11227,
-   "sha256": "d650e06c1b22da79585e558d9d404cfab31caf83b791d0e8e554a2602c665fa9"
+   "bytes": 11440,
+   "sha256": "af5981b6cd50ad1c3efcdefd6e6d9c2922aeac11858b8d8383f4800dd69280a3"
   },
   {
    "path": "operators/joshindentetsu.json",
@@ -689,8 +689,8 @@
    },
    "lines": 13,
    "stations": 433,
-   "bytes": 317420,
-   "sha256": "49972541586fb8a6864cc96952d6a196eca4f026f648d43668cf6248ed993cb5"
+   "bytes": 318595,
+   "sha256": "8210774665e65bfe20a8f43350381388203f921c08caaa60ece6a66bed27e546"
   },
   {
    "path": "operators/jr-east.json",
@@ -701,8 +701,8 @@
    },
    "lines": 69,
    "stations": 1767,
-   "bytes": 1158283,
-   "sha256": "9917f92d1d26b44f89797a85afc7f38a5f692b62fd7e37f573c1a02b7ad47b40"
+   "bytes": 1162773,
+   "sha256": "60b09fe97d23b2ab60f78f7dd40a869b28d6295a7374b556f9e59304a277011c"
   },
   {
    "path": "operators/jr-hokkaido.json",
@@ -713,8 +713,8 @@
    },
    "lines": 14,
    "stations": 338,
-   "bytes": 287335,
-   "sha256": "814dbe2036cfa6e1e6eaf5d41173ae19512ffe0da71c42426bd15ecbe4128b7a"
+   "bytes": 287992,
+   "sha256": "c0a6f4d4c2a22122a0d12bc1e1cabbf62116e7d0ad996c617323cbb866c9ce20"
   },
   {
    "path": "operators/jr-kyushu.json",
@@ -725,8 +725,8 @@
    },
    "lines": 23,
    "stations": 617,
-   "bytes": 443988,
-   "sha256": "3f92313c69d2229585913df23b8ec79ce277bf997a45dcb511515be089dac57f"
+   "bytes": 444805,
+   "sha256": "98cd18e4ea719282320c847ed2b064f049b8fd73fa92c5ab11af74542d68ae4f"
   },
   {
    "path": "operators/jr-shikoku.json",
@@ -737,8 +737,8 @@
    },
    "lines": 9,
    "stations": 271,
-   "bytes": 189908,
-   "sha256": "80ddc98dde3fabb9ae0279b1342a80b4b5df5456e587d0d6f53230074d0b2f02"
+   "bytes": 190173,
+   "sha256": "3c8661d288461525e515caef1000f2f478bd401a8f8810b3dbe348041b16eeda"
   },
   {
    "path": "operators/jr-tokai-kotsu-jigyo.json",
@@ -761,8 +761,8 @@
    },
    "lines": 51,
    "stations": 1246,
-   "bytes": 876712,
-   "sha256": "a2ef815a08711e60118dd8e03795ab1db64917abb4ec7626f9ec424f94b158cb"
+   "bytes": 880031,
+   "sha256": "6d870db5af431e1f564638c8d189b3244b9418ed0646fb3a88cec20ae0303e82"
   },
   {
    "path": "operators/jukkokutoge-cable.json",
@@ -857,8 +857,8 @@
    },
    "lines": 6,
    "stations": 74,
-   "bytes": 34361,
-   "sha256": "fb866bdf011b999db61d259abfc57329678a8b8ecb40ca197849d3267e866d56"
+   "bytes": 34890,
+   "sha256": "5fd0df7fe6be19c70048343ef46fb11d825ce5a77993634b3da5f8d4c8fc50ec"
   },
   {
    "path": "operators/keisei.json",
@@ -869,8 +869,8 @@
    },
    "lines": 8,
    "stations": 101,
-   "bytes": 53585,
-   "sha256": "d80eb6e3e496b2e79b7f18d59a56aca547206e62eabaab9a32a97584668832b9"
+   "bytes": 54022,
+   "sha256": "4ae01779398267a94f3f6ce87cc9b53b6ae3d7a76d41ff7be3562c9b74ae37fc"
   },
   {
    "path": "operators/kintetsu.json",
@@ -881,8 +881,8 @@
    },
    "lines": 23,
    "stations": 308,
-   "bytes": 152884,
-   "sha256": "1344b6aad955629d695e03a7ed0487d493ab9b074c4f480bc9a49c69a3321cba"
+   "bytes": 154892,
+   "sha256": "77c32a19fad1e85ff0dcc1c504d545a9728b39fb391d7a5af6b68a5b7eb375f5"
   },
   {
    "path": "operators/kishutetsudo.json",
@@ -1277,8 +1277,8 @@
    },
    "lines": 9,
    "stations": 113,
-   "bytes": 56610,
-   "sha256": "eb5f305221af053bba2a923caa2597f6d09c9b3c883e6209b9436f693bd1a443"
+   "bytes": 56912,
+   "sha256": "67daa0b8aadad2d08f0fc270802bb067db3fdcdcdcf7790f7594f389079f4325"
   },
   {
    "path": "operators/new-shuttle.json",
@@ -1349,8 +1349,8 @@
    },
    "lines": 3,
    "stations": 72,
-   "bytes": 35530,
-   "sha256": "d97441762a4871237e77c91d604020a58459537411d3fc5514615ebf4fd795c4"
+   "bytes": 36174,
+   "sha256": "44370280c4a5bbaf069f82e5f3963995a4bd9e276f4c6d81943af008c628188d"
   },
   {
    "path": "operators/odakyu-hakone.json",
@@ -1577,8 +1577,8 @@
    },
    "lines": 12,
    "stations": 105,
-   "bytes": 54872,
-   "sha256": "85bb27670e26671fd4dfcf6a68181d7c027199fc6282b65ada16c97678b0819d"
+   "bytes": 55378,
+   "sha256": "7f67d326856fb5796f79ed47363c29474f7b89d4b881d36a4f986f2fe4ec4eaa"
   },
   {
    "path": "operators/sendaikuko-tetsudo.json",
@@ -1793,8 +1793,8 @@
    },
    "lines": 12,
    "stations": 217,
-   "bytes": 105609,
-   "sha256": "1dd8741cb0373092d679397d28a857ce3af2284ad2b437e664d54473c0fc4bbf"
+   "bytes": 106734,
+   "sha256": "36812a3475837feb7a84c72adf1401b82bebf7261317551634cd754cdb910202"
   },
   {
    "path": "operators/toei.json",
@@ -1805,8 +1805,8 @@
    },
    "lines": 6,
    "stations": 149,
-   "bytes": 67384,
-   "sha256": "b10a969d67edc4afc9807ed1aabc291e14f37ab6eeb34b61907fde97b7dd8403"
+   "bytes": 68005,
+   "sha256": "3c43c8d43e91c9576f7a06d6ac8f5fa93807aa627cafe8bc43bcc08a6649a4da"
   },
   {
    "path": "operators/tokyo-metro.json",
@@ -1817,8 +1817,8 @@
    },
    "lines": 10,
    "stations": 181,
-   "bytes": 89760,
-   "sha256": "9669e5d962464a71bc117ac099817c22a02f9411aa7f58e556050d9124fef410"
+   "bytes": 90979,
+   "sha256": "60eaa6493c67e49c0ab3f5bfd0cf919757325becbd92fbae4641a65873db0ca5"
   },
   {
    "path": "operators/tokyo-monorail.json",
@@ -2045,8 +2045,8 @@
    },
    "lines": 1,
    "stations": 9,
-   "bytes": 6583,
-   "sha256": "3c5b1a2c5d2f25cc7baae10ba32c20c219440dd5055236efb8dbdc7e30ede3ca"
+   "bytes": 6675,
+   "sha256": "aa8735ca31dd5a6e285349848a5d8f740e62960e9d5c7816bf0fb3d89552a9eb"
   },
   {
    "path": "operators/yamagata-tetsudo.json",
@@ -2136,8 +2136,8 @@
  "files": [
   {
    "path": "series.json",
-   "bytes": 50228,
-   "sha256": "7aeb3bb0513a611be7fc284fbd3b5dbd1475115c9455a2244b9be2d834689855"
+   "bytes": 57991,
+   "sha256": "c550671928e25efe1fa7489c257c5664b145d929a45ea45bbaae425ee612a460"
   },
   {
    "path": "trains/e231--jr-east.chuo-thumb.webp",

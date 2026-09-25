@@ -48,9 +48,24 @@ def wikidata_ids():
     return found
 
 
+def seat_classes():
+    with open(ROOT / "data" / "seat_classes.csv", encoding="utf-8") as f:
+        return [{"id": r["id"], "name": {"en": r["en"], "ja": r["ja"]}} for r in csv.DictReader(f)]
+
+
+def parse_classes(text, known, where):
+    classes = text.split()
+    for c in classes:
+        if c not in known:
+            raise SystemExit(f"{where}: unknown seat class {c!r} (see data/seat_classes.csv)")
+    return classes
+
+
 def load(line_ids, report):
-    """Return (series records for v0/series.json, {line id: [{"id", "status"}]})."""
+    """Return (series records, {line id: [{"id", "classes", "status"}]}, seat classes)."""
     qids = wikidata_ids()
+    classes = seat_classes()
+    known = {c["id"] for c in classes}
     series = {}
     with open(ROOT / "data" / "series.csv", encoding="utf-8") as f:
         for row in csv.DictReader(f):
@@ -63,6 +78,7 @@ def load(line_ids, report):
                 "name": {"en": row["en"], "ja": row["ja"]},
                 "operators": row["operator"].split(),
                 "kind": row["kind"],
+                "classes": parse_classes(row["classes"] or "ordinary", known, f"data/series.csv {row['id']}"),
                 "status": row["status"],
                 "wikidata": qids.get(key(row["en"])),
                 "checked": row["checked"] or None,
@@ -80,9 +96,12 @@ def load(line_ids, report):
             if row["line"] not in line_ids:
                 report.append(f"{where}: unknown line {row['line']!r}")
                 continue
-            by_line.setdefault(row["line"], []).append({"id": row["series"], "status": row["status"]})
+            on_line = parse_classes(row["classes"], known, where) or series[row["series"]]["classes"]
+            by_line.setdefault(row["line"], []).append(
+                {"id": row["series"], "classes": on_line, "status": row["status"]}
+            )
 
     order = {"active": 0, "retiring": 1, "retired": 2}
     for items in by_line.values():
         items.sort(key=lambda s: order[s["status"]])
-    return [series[k] for k in sorted(series)], by_line
+    return [series[k] for k in sorted(series)], by_line, classes

@@ -1,244 +1,244 @@
-id,operator,en,ja,kind,status,checked,source
-0,jr-central jr-west,0 Series Shinkansen,0系新幹線,shinkansen,retired,,draft
-100,jr-central jr-west,100 Series Shinkansen,100系新幹線,shinkansen,retired,,draft
-300,jr-central jr-west,300 Series Shinkansen,300系新幹線,shinkansen,retired,,draft
-500,jr-west,500 Series Shinkansen,500系新幹線,shinkansen,active,,draft
-700,jr-central jr-west,700 Series Shinkansen,700系新幹線,shinkansen,active,,draft
-n700,jr-central jr-west jr-kyushu,N700 Series Shinkansen,N700系新幹線,shinkansen,active,,draft
-n700s,jr-central jr-west jr-kyushu,N700S Series Shinkansen,N700S新幹線,shinkansen,active,,draft
-800,jr-kyushu,800 Series Shinkansen,800系新幹線,shinkansen,active,,draft
-200,jr-east,200 Series Shinkansen,200系新幹線,shinkansen,retired,,draft
-400,jr-east,400 Series Shinkansen,400系新幹線,shinkansen,retired,,draft
-e1,jr-east,E1 Series Shinkansen,E1系新幹線,shinkansen,retired,,draft
-e2,jr-east,E2 Series Shinkansen,E2系新幹線,shinkansen,retiring,,draft
-e3,jr-east,E3 Series Shinkansen,E3系新幹線,shinkansen,retiring,,draft
-e4,jr-east,E4 Series Shinkansen,E4系新幹線,shinkansen,retired,,draft
-e5,jr-east,E5 Series Shinkansen,E5系新幹線,shinkansen,active,,draft
-e6,jr-east,E6 Series Shinkansen,E6系新幹線,shinkansen,active,,draft
-e7,jr-east,E7 Series Shinkansen,E7系新幹線,shinkansen,active,,draft
-w7,jr-west,W7 Series Shinkansen,W7系新幹線,shinkansen,active,,draft
-e8,jr-east,E8 Series Shinkansen,E8系新幹線,shinkansen,active,,draft
-h5,jr-hokkaido,H5 Series Shinkansen,H5系新幹線,shinkansen,active,,draft
-103,jr-east,103 series,103系,commuter,retired,,draft
-201,jr-east,201 series,201系,commuter,retired,,draft
-205,jr-east,205 series,205系,commuter,retiring,,draft
-211,jr-east jr-central,211 series,211系,commuter,retiring,,draft
-e231,jr-east,E231 series,E231系,commuter,active,,draft
-e233,jr-east,E233 series,E233系,commuter,active,,draft
-e235,jr-east,E235 series,E235系,commuter,active,,draft
-e257,jr-east,E257 series,E257系,limited-express,active,,draft
-e351,jr-east,E351 series,E351系,limited-express,retired,,draft
-e353,jr-east,E353 series,E353系,limited-express,active,,draft
-tokyo-metro-01,tokyo-metro,Tokyo Metro 01 series,営団01系,commuter,retired,,draft
-tokyo-metro-02,tokyo-metro,Tokyo Metro 02 series,営団02系,commuter,retiring,,draft
-tokyo-metro-03,tokyo-metro,Tokyo Metro 03 series,営団03系,commuter,retired,,draft
-tokyo-metro-05,tokyo-metro,Tokyo Metro 05 series,営団05系,commuter,active,,draft
-tokyo-metro-06,tokyo-metro,Tokyo Metro 06 series,営団06系,commuter,retired,,draft
-tokyo-metro-07,tokyo-metro,Tokyo Metro 07 series,営団07系,commuter,active,,draft
-tokyo-metro-08,tokyo-metro,Tokyo Metro 08 series,営団08系,commuter,active,,draft
-tokyo-metro-1000,tokyo-metro,Tokyo Metro 1000 series,東京メトロ1000系,commuter,active,,draft
-tokyo-metro-2000,tokyo-metro,Tokyo Metro 2000 series,東京メトロ2000系,commuter,active,,draft
-tokyo-metro-5000,tokyo-metro,Tokyo Metro 5000 series,営団5000系,commuter,retired,,draft
-tokyo-metro-6000,tokyo-metro,Tokyo Metro 6000 series,営団6000系,commuter,retired,,draft
-tokyo-metro-7000,tokyo-metro,Tokyo Metro 7000 series,営団7000系,commuter,retired,,draft
-tokyo-metro-8000,tokyo-metro,Tokyo Metro 8000 series,営団8000系,commuter,retiring,,draft
-tokyo-metro-9000,tokyo-metro,Tokyo Metro 9000 series,営団9000系,commuter,active,,draft
-tokyo-metro-10000,tokyo-metro,Tokyo Metro 10000 series,東京メトロ10000系,commuter,active,,draft
-tokyo-metro-13000,tokyo-metro,Tokyo Metro 13000 series,東京メトロ13000系,commuter,active,,draft
-tokyo-metro-15000,tokyo-metro,Tokyo Metro 15000 series,東京メトロ15000系,commuter,active,,draft
-tokyo-metro-16000,tokyo-metro,Tokyo Metro 16000 series,東京メトロ16000系,commuter,active,,draft
-tokyo-metro-17000,tokyo-metro,Tokyo Metro 17000 series,東京メトロ17000系,commuter,active,,draft
-tokyo-metro-18000,tokyo-metro,Tokyo Metro 18000 series,東京メトロ18000系,commuter,active,,draft
-toei-5300,toei,Toei 5300 series,都営5300形,commuter,retired,,draft
-toei-5500,toei,Toei 5500 series,都営5500形,commuter,active,,draft
-toei-6000,toei,Toei 6000 series,都営6000形,commuter,retired,,draft
-toei-6300,toei,Toei 6300 series,都営6300形,commuter,active,,draft
-toei-6500,toei,Toei 6500 series,都営6500形,commuter,active,,draft
-toei-10-000,toei,Toei 10-000 series,都営10-000形,commuter,retired,,draft
-toei-10-300,toei,Toei 10-300 series,都営10-300形,commuter,active,,draft
-toei-12-000,toei,Toei 12-000 series,都営12-000形,commuter,active,,draft
-toei-12-600,toei,Toei 12-600 series,都営12-600形,commuter,active,,draft
-toei-7000,toei,Toei 7000 series,都電7000形,tram,retired,,draft
-toei-8500,toei,Toei 8500 series,都電8500形,tram,active,,draft
-toei-8800,toei,Toei 8800 series,都電8800形,tram,active,,draft
-toei-8900,toei,Toei 8900 series,都電8900形,tram,active,,draft
-toei-9000,toei,Toei 9000 series,都電9000形,tram,active,,draft
-nippori-toneri-300,toei,Nippori-Toneri Liner 300 series,日暮里・舎人ライナー300形,agt,active,,draft
-nippori-toneri-320,toei,Nippori-Toneri Liner 320 series,日暮里・舎人ライナー320形,agt,active,,draft
-nippori-toneri-330,toei,Nippori-Toneri Liner 330 series,日暮里・舎人ライナー330形,agt,active,,draft
-keio-1000,keio,Keio 1000 series,京王1000系,commuter,active,,draft
-keio-3000,keio,Keio 3000 series,京王3000系,commuter,retired,,draft
-keio-5000,keio,Keio 5000 series,京王5000系,commuter,active,,draft
-keio-6000,keio,Keio 6000 series,京王6000系,commuter,retired,,draft
-keio-7000,keio,Keio 7000 series,京王7000系,commuter,active,,draft
-keio-8000,keio,Keio 8000 series,京王8000系,commuter,active,,draft
-keio-9000,keio,Keio 9000 series,京王9000系,commuter,active,,draft
-odakyu-1000,odakyu,Odakyu 1000 series,小田急1000形,commuter,active,,draft
-odakyu-3000,odakyu,Odakyu 3000 series,小田急3000形,commuter,active,,draft
-odakyu-4000,odakyu,Odakyu 4000 series,小田急4000形,commuter,active,,draft
-odakyu-5000,odakyu,Odakyu 5000 series,小田急5000形,commuter,active,,draft
-odakyu-8000,odakyu,Odakyu 8000 series,小田急8000形,commuter,retiring,,draft
-odakyu-9000,odakyu,Odakyu 9000 series,小田急9000形,commuter,retired,,draft
-odakyu-7000-lse,odakyu,Odakyu 7000 series LSE,小田急7000形LSE,limited-express,retired,,draft
-odakyu-10000-hise,odakyu,Odakyu 10000 series HiSE,小田急10000形HiSE,limited-express,retired,,draft
-odakyu-30000-exe,odakyu,Odakyu 30000 series EXE,小田急30000形EXE,limited-express,active,,draft
-odakyu-50000-vse,odakyu,Odakyu 50000 series VSE,小田急50000形VSE,limited-express,retired,,draft
-odakyu-60000-mse,odakyu,Odakyu 60000 series MSE,小田急60000形MSE,limited-express,active,,draft
-odakyu-70000-gse,odakyu,Odakyu 70000 series GSE,小田急70000形GSE,limited-express,active,,draft
-tobu-9000,tobu,Tobu 9000 series,東武9000系,commuter,active,,draft
-tobu-20000,tobu,Tobu 20000 series,東武20000系,commuter,retiring,,draft
-tobu-50000,tobu,Tobu 50000 series,東武50000系,commuter,active,,draft
-tobu-70000,tobu,Tobu 70000 series,東武70000系,commuter,active,,draft
-seibu-6000,seibu,Seibu 6000 series,西武6000系,commuter,active,,draft
-seibu-40000,seibu,Seibu 40000 series,西武40000系,commuter,active,,draft
-tokyu-2020,tokyu,Tokyu 2020 series,東急2020系,commuter,active,,draft
-tokyu-3000,tokyu,Tokyu 3000 series,東急3000系,commuter,active,,draft
-tokyu-3020,tokyu,Tokyu 3020 series,東急3020系,commuter,active,,draft
-tokyu-5000,tokyu,Tokyu 5000 series,東急5000系,commuter,active,,draft
-tokyu-5080,tokyu,Tokyu 5080 series,東急5080系,commuter,active,,draft
-sotetsu-20000,sotetsu,Sotetsu 20000 series,相鉄20000系,commuter,active,,draft
-sotetsu-21000,sotetsu,Sotetsu 21000 series,相鉄21000系,commuter,active,,draft
-saitama-railway-2000,saitama-railway,Saitama Railway 2000 series,埼玉高速鉄道2000系,commuter,active,,draft
-minatomirai-y500,minatomirai,Yokohama Minatomirai Railway Y500 series,横浜高速鉄道Y500系,commuter,active,,draft
-toyo-rapid-2000,toyo-rapid,Toyo Rapid 2000 series,東葉高速鉄道2000系,commuter,active,,draft
-keisei-3000,keisei,Keisei 3000 series,京成3000形,commuter,active,,draft
-keisei-3100,keisei,Keisei 3100 series,京成3100形,commuter,active,,draft
-keikyu-600,keikyu,Keikyu 600 series,京急600形,commuter,active,,draft
-keikyu-1000,keikyu,Keikyu New 1000 series,京急新1000形,commuter,active,,draft
-tobu-n100,tobu,Tobu N100 series Spacia X,東武N100系スペーシアX,limited-express,active,,draft
-tobu-100,tobu,Tobu 100 series Spacia,東武100系スペーシア,limited-express,active,,draft
-tobu-500,tobu,Tobu 500 series Revaty,東武500系リバティ,limited-express,active,,draft
-tobu-200,tobu,Tobu 200 series Ryōmō,東武200系りょうもう,limited-express,active,,draft
-seibu-001,seibu,Seibu 001 series Laview,西武001系Laview,limited-express,active,,draft
-seibu-10000,seibu,Seibu 10000 series New Red Arrow,西武10000系ニューレッドアロー,limited-express,retiring,,draft
-keisei-ae,keisei,Keisei AE series Skyliner,京成AE形スカイライナー,limited-express,active,,draft
-keisei-ae100,keisei,Keisei AE100 series,京成AE100形,limited-express,retired,,draft
-185,jr-east,185 series,185系,limited-express,retired,,draft
-251,jr-east,251 series Super View Odoriko,251系スーパービュー踊り子,limited-express,retired,,draft
-253,jr-east,253 series,253系,limited-express,retiring,,draft
-255,jr-east,255 series,255系,limited-express,retiring,,draft
-651,jr-east,651 series,651系,limited-express,retired,,draft
-e259,jr-east,E259 series Narita Express,E259系成田エクスプレス,limited-express,active,,draft
-e261,jr-east,E261 series Saphir Odoriko,E261系サフィール踊り子,limited-express,active,,draft
-e657,jr-east,E657 series,E657系,limited-express,active,,draft
-izukyu-2100,izukyu,Izukyu 2100 series Resort 21,伊豆急2100系リゾート21,commuter,active,,draft
-kintetsu-80000,kintetsu,Kintetsu 80000 series Hinotori,近鉄80000系ひのとり,limited-express,active,,draft
-kintetsu-50000,kintetsu,Kintetsu 50000 series Shimakaze,近鉄50000系しまかぜ,limited-express,active,,draft
-kintetsu-19200,kintetsu,Kintetsu 19200 series Aoniyoshi,近鉄19200系あをによし,limited-express,active,,draft
-kintetsu-21000,kintetsu,Kintetsu 21000 series Urban Liner,近鉄21000系アーバンライナー,limited-express,active,,draft
-kintetsu-22600,kintetsu,Kintetsu 22600 series Ace,近鉄22600系Ace,limited-express,active,,draft
-kintetsu-16200,kintetsu,Kintetsu 16200 series Blue Symphony,近鉄16200系青の交響曲,limited-express,active,,draft
-kintetsu-26000,kintetsu,Kintetsu 26000 series Sakura Liner,近鉄26000系さくらライナー,limited-express,active,,draft
-nankai-50000,nankai,Nankai 50000 series Rapi:t,南海50000系ラピート,limited-express,active,,draft
-271,jr-west,271 series,271系,limited-express,active,,draft
-273,jr-west,273 series,273系,limited-express,active,,draft
-281,jr-west,281 series,281系,limited-express,active,,draft
-285,jr-west jr-central,285 series Sunrise Express,285系サンライズエクスプレス,limited-express,active,,draft
-287,jr-west,287 series,287系,limited-express,active,,draft
-289,jr-west,289 series,289系,limited-express,active,,draft
-381,jr-west jr-central,381 series,381系,limited-express,retired,,draft
-681,jr-west,681 series,681系,limited-express,active,,draft
-683,jr-west,683 series,683系,limited-express,active,,draft
-373,jr-central,373 series,373系,limited-express,active,,draft
-383,jr-central,383 series,383系,limited-express,active,,draft
-hc85,jr-central,HC85 series,HC85系,limited-express,active,,draft
-kiha-85,jr-central,KiHa 85 series,キハ85系,limited-express,retired,,draft
-783,jr-kyushu,783 series,783系,limited-express,active,,draft
-787,jr-kyushu,787 series,787系,limited-express,active,,draft
-883,jr-kyushu,883 series,883系,limited-express,active,,draft
-885,jr-kyushu,885 series,885系,limited-express,active,,draft
-261,jr-hokkaido,KiHa 261 series,キハ261系,limited-express,active,,draft
-789,jr-hokkaido,789 series,789系,limited-express,active,,draft
-tobu-6050,tobu,Tobu 6050 series,東武6050系,commuter,retiring,,draft
-tobu-8000,tobu,Tobu 8000 series,東武8000系,commuter,retiring,,draft
-tobu-10000,tobu,Tobu 10000 series,東武10000系,commuter,active,,draft
-tobu-30000,tobu,Tobu 30000 series,東武30000系,commuter,active,,draft
-tobu-60000,tobu,Tobu 60000 series,東武60000系,commuter,active,,draft
-tobu-80000,tobu,Tobu 80000 series,東武80000系,commuter,active,,draft
-aizu-at-600,aizu-railway,Aizu Railway AT-600 series,会津鉄道AT-600形,diesel,active,,draft
-aizu-at-700,aizu-railway,Aizu Railway AT-700 series,会津鉄道AT-700形,diesel,active,,draft
-seibu-2000,seibu,Seibu 2000 series,西武2000系,commuter,retiring,,draft
-seibu-4000,seibu,Seibu 4000 series,西武4000系,commuter,retiring,,draft
-seibu-9000,seibu,Seibu 9000 series,西武9000系,commuter,retiring,,draft
-seibu-20000,seibu,Seibu 20000 series,西武20000系,commuter,active,,draft
-seibu-30000,seibu,Seibu 30000 series,西武30000系,commuter,active,,draft
-keisei-3200,keisei,Keisei 3200 series,京成3200形,commuter,active,,draft
-keisei-3400,keisei,Keisei 3400 series,京成3400形,commuter,retired,,draft
-keisei-3500,keisei,Keisei 3500 series,京成3500形,commuter,retiring,,draft
-keisei-3600,keisei,Keisei 3600 series,京成3600形,commuter,retired,,draft
-keisei-3700,keisei,Keisei 3700 series,京成3700形,commuter,active,,draft
-hokuso-7500,hokuso,Hokuso 7500 series,北総7500形,commuter,active,,draft
-hokuso-9100,hokuso,Hokuso 9100 series,北総9100形,commuter,active,,draft
-hokuso-9200,hokuso,Hokuso 9200 series,北総9200形,commuter,active,,draft
-sotetsu-12000,sotetsu,Sotetsu 12000 series,相鉄12000系,commuter,active,,draft
-twr-70-000,twr,Rinkai Line 70-000 series,りんかい線70-000形,commuter,retiring,,draft
-izukyu-3000,izukyu,Izukyu 3000 series,伊豆急3000系,commuter,active,,draft
-izukyu-8000,izukyu,Izukyu 8000 series,伊豆急8000系,commuter,active,,draft
-fujikyu-1000,fujikyu,Fujikyu 1000 series,富士急1000系,commuter,retiring,,draft
-fujikyu-6000,fujikyu,Fujikyu 6000 series,富士急6000系,commuter,active,,draft
-fujikyu-8500,fujikyu,Fujikyu 8500 series Fujisan View Express,富士急8500系富士山ビュー特急,limited-express,retiring,,draft
-107,jr-east,107 series,107系,commuter,retired,,draft
-113,jr-east jr-west,113 series,113系,commuter,retired,,draft
-115,jr-east jr-west,115 series,115系,commuter,retiring,,draft
-203,jr-east,203 series,203系,commuter,retired,,draft
-209,jr-east,209 series,209系,commuter,retiring,,draft
-215,jr-east,215 series,215系,commuter,retired,,draft
-415,jr-east jr-kyushu,415 series,415系,commuter,retiring,,draft
-701,jr-east,701 series,701系,commuter,active,,draft
-e127,jr-east,E127 series,E127系,commuter,active,,draft
-e131,jr-east,E131 series,E131系,commuter,active,,draft
-e217,jr-east,E217 series,E217系,commuter,retiring,,draft
-e501,jr-east,E501 series,E501系,commuter,retiring,,draft
-e531,jr-east,E531 series,E531系,commuter,active,,draft
-e721,jr-east,E721 series,E721系,commuter,active,,draft
-117,jr-central jr-west,117 series,117系,commuter,retired,,draft
-311,jr-central,311 series,311系,commuter,retiring,,draft
-313,jr-central,313 series,313系,commuter,active,,draft
-315,jr-central,315 series,315系,commuter,active,,draft
-kiha-25,jr-central,KiHa 25 series,キハ25形,diesel,active,,draft
-105,jr-west,105 series,105系,commuter,retired,,draft
-125,jr-west,125 series,125系,commuter,active,,draft
-207,jr-west,207 series,207系,commuter,active,,draft
-213,jr-west jr-central,213 series,213系,commuter,active,,draft
-221,jr-west,221 series,221系,commuter,active,,draft
-223,jr-west,223 series,223系,commuter,active,,draft
-225,jr-west,225 series,225系,commuter,active,,draft
-227,jr-west,227 series,227系,commuter,active,,draft
-321,jr-west,321 series,321系,commuter,active,,draft
-323,jr-west,323 series,323系,commuter,active,,draft
-521,jr-west,521 series,521系,commuter,active,,draft
-kiha-120,jr-west,KiHa 120 series,キハ120形,diesel,active,,draft
-jr-shikoku-5000,jr-shikoku,JR Shikoku 5000 series,JR四国5000系,commuter,active,,draft
-jr-shikoku-7000,jr-shikoku,JR Shikoku 7000 series,JR四国7000系,commuter,active,,draft
-jr-shikoku-7200,jr-shikoku,JR Shikoku 7200 series,JR四国7200系,commuter,active,,draft
-jr-shikoku-8000,jr-shikoku,JR Shikoku 8000 series,JR四国8000系,limited-express,active,,draft
-jr-shikoku-8600,jr-shikoku,JR Shikoku 8600 series,JR四国8600系,limited-express,active,,draft
-811,jr-kyushu,811 series,811系,commuter,active,,draft
-813,jr-kyushu,813 series,813系,commuter,active,,draft
-815,jr-kyushu,815 series,815系,commuter,active,,draft
-817,jr-kyushu,817 series,817系,commuter,active,,draft
-821,jr-kyushu,821 series,821系,commuter,active,,draft
-yc1,jr-kyushu,YC1 series,YC1系,diesel,active,,draft
-721,jr-hokkaido,721 series,721系,commuter,retiring,,draft
-733,jr-hokkaido,733 series,733系,commuter,active,,draft
-737,jr-hokkaido,737 series,737系,commuter,active,,draft
-h100,jr-hokkaido,H100 series,H100形,diesel,active,,draft
-kiha-40,jr-east jr-west jr-hokkaido jr-kyushu,KiHa 40 series,キハ40系,diesel,retiring,,draft
-kintetsu-1233,kintetsu,Kintetsu 1233 series,近鉄1233系,commuter,active,,draft
-kintetsu-2000,kintetsu,Kintetsu 2000 series,近鉄2000系,commuter,active,,draft
-kintetsu-2800,kintetsu,Kintetsu 2800 series,近鉄2800系,commuter,retiring,,draft
-kintetsu-3220,kintetsu,Kintetsu 3220 series,近鉄3220系,commuter,active,,draft
-kintetsu-5800,kintetsu,Kintetsu 5800 series,近鉄5800系,commuter,active,,draft
-kintetsu-6020,kintetsu,Kintetsu 6020 series,近鉄6020系,commuter,retiring,,draft
-kintetsu-6400,kintetsu,Kintetsu 6400 series,近鉄6400系,commuter,active,,draft
-kintetsu-8000,kintetsu,Kintetsu 8000 series,近鉄8000系,commuter,retiring,,draft
-kintetsu-8a,kintetsu,Kintetsu 8A series,近鉄8A系,commuter,active,,draft
-kintetsu-9020,kintetsu,Kintetsu 9020 series,近鉄9020系,commuter,active,,draft
-hanshin-1000,hanshin,Hanshin 1000 series,阪神1000系,commuter,active,,draft
-hanshin-9000,hanshin,Hanshin 9000 series,阪神9000系,commuter,active,,draft
-nankai-1000,nankai,Nankai 1000 series,南海1000系,commuter,active,,draft
-nankai-7100,nankai,Nankai 7100 series,南海7100系,commuter,retiring,,draft
-nankai-8000,nankai,Nankai 8000 series,南海8000系,commuter,active,,draft
-nankai-8300,nankai,Nankai 8300 series,南海8300系,commuter,active,,draft
-nankai-9000,nankai,Nankai 9000 series,南海9000系,commuter,retiring,,draft
-nankai-12000,nankai,Nankai 12000 series Southern Premium,南海12000系サザン・プレミアム,limited-express,active,,draft
+id,operator,en,ja,kind,classes,status,checked,source
+0,jr-central jr-west,0 Series Shinkansen,0系新幹線,shinkansen,ordinary green,retired,,draft
+100,jr-central jr-west,100 Series Shinkansen,100系新幹線,shinkansen,ordinary green,retired,,draft
+300,jr-central jr-west,300 Series Shinkansen,300系新幹線,shinkansen,ordinary green,retired,,draft
+500,jr-west,500 Series Shinkansen,500系新幹線,shinkansen,ordinary green,active,,draft
+700,jr-central jr-west,700 Series Shinkansen,700系新幹線,shinkansen,ordinary green,active,,draft
+n700,jr-central jr-west jr-kyushu,N700 Series Shinkansen,N700系新幹線,shinkansen,ordinary green,active,,draft
+n700s,jr-central jr-west jr-kyushu,N700S Series Shinkansen,N700S新幹線,shinkansen,ordinary green,active,,draft
+800,jr-kyushu,800 Series Shinkansen,800系新幹線,shinkansen,ordinary,active,,draft
+200,jr-east,200 Series Shinkansen,200系新幹線,shinkansen,ordinary green,retired,,draft
+400,jr-east,400 Series Shinkansen,400系新幹線,shinkansen,ordinary green,retired,,draft
+e1,jr-east,E1 Series Shinkansen,E1系新幹線,shinkansen,ordinary green,retired,,draft
+e2,jr-east,E2 Series Shinkansen,E2系新幹線,shinkansen,ordinary green,retiring,,draft
+e3,jr-east,E3 Series Shinkansen,E3系新幹線,shinkansen,ordinary green,retiring,,draft
+e4,jr-east,E4 Series Shinkansen,E4系新幹線,shinkansen,ordinary green,retired,,draft
+e5,jr-east,E5 Series Shinkansen,E5系新幹線,shinkansen,ordinary green gran-class,active,,draft
+e6,jr-east,E6 Series Shinkansen,E6系新幹線,shinkansen,ordinary green,active,,draft
+e7,jr-east,E7 Series Shinkansen,E7系新幹線,shinkansen,ordinary green gran-class,active,,draft
+w7,jr-west,W7 Series Shinkansen,W7系新幹線,shinkansen,ordinary green gran-class,active,,draft
+e8,jr-east,E8 Series Shinkansen,E8系新幹線,shinkansen,ordinary green,active,,draft
+h5,jr-hokkaido,H5 Series Shinkansen,H5系新幹線,shinkansen,ordinary green gran-class,active,,draft
+103,jr-east,103 series,103系,commuter,ordinary,retired,,draft
+201,jr-east,201 series,201系,commuter,ordinary,retired,,draft
+205,jr-east,205 series,205系,commuter,ordinary,retiring,,draft
+211,jr-east jr-central,211 series,211系,commuter,ordinary,retiring,,draft
+e231,jr-east,E231 series,E231系,commuter,ordinary,active,,draft
+e233,jr-east,E233 series,E233系,commuter,ordinary,active,,draft
+e235,jr-east,E235 series,E235系,commuter,ordinary,active,,draft
+e257,jr-east,E257 series,E257系,limited-express,ordinary green,active,,draft
+e351,jr-east,E351 series,E351系,limited-express,ordinary green,retired,,draft
+e353,jr-east,E353 series,E353系,limited-express,ordinary green,active,,draft
+tokyo-metro-01,tokyo-metro,Tokyo Metro 01 series,営団01系,commuter,ordinary,retired,,draft
+tokyo-metro-02,tokyo-metro,Tokyo Metro 02 series,営団02系,commuter,ordinary,retiring,,draft
+tokyo-metro-03,tokyo-metro,Tokyo Metro 03 series,営団03系,commuter,ordinary,retired,,draft
+tokyo-metro-05,tokyo-metro,Tokyo Metro 05 series,営団05系,commuter,ordinary,active,,draft
+tokyo-metro-06,tokyo-metro,Tokyo Metro 06 series,営団06系,commuter,ordinary,retired,,draft
+tokyo-metro-07,tokyo-metro,Tokyo Metro 07 series,営団07系,commuter,ordinary,active,,draft
+tokyo-metro-08,tokyo-metro,Tokyo Metro 08 series,営団08系,commuter,ordinary,active,,draft
+tokyo-metro-1000,tokyo-metro,Tokyo Metro 1000 series,東京メトロ1000系,commuter,ordinary,active,,draft
+tokyo-metro-2000,tokyo-metro,Tokyo Metro 2000 series,東京メトロ2000系,commuter,ordinary,active,,draft
+tokyo-metro-5000,tokyo-metro,Tokyo Metro 5000 series,営団5000系,commuter,ordinary,retired,,draft
+tokyo-metro-6000,tokyo-metro,Tokyo Metro 6000 series,営団6000系,commuter,ordinary,retired,,draft
+tokyo-metro-7000,tokyo-metro,Tokyo Metro 7000 series,営団7000系,commuter,ordinary,retired,,draft
+tokyo-metro-8000,tokyo-metro,Tokyo Metro 8000 series,営団8000系,commuter,ordinary,retiring,,draft
+tokyo-metro-9000,tokyo-metro,Tokyo Metro 9000 series,営団9000系,commuter,ordinary,active,,draft
+tokyo-metro-10000,tokyo-metro,Tokyo Metro 10000 series,東京メトロ10000系,commuter,ordinary,active,,draft
+tokyo-metro-13000,tokyo-metro,Tokyo Metro 13000 series,東京メトロ13000系,commuter,ordinary,active,,draft
+tokyo-metro-15000,tokyo-metro,Tokyo Metro 15000 series,東京メトロ15000系,commuter,ordinary,active,,draft
+tokyo-metro-16000,tokyo-metro,Tokyo Metro 16000 series,東京メトロ16000系,commuter,ordinary,active,,draft
+tokyo-metro-17000,tokyo-metro,Tokyo Metro 17000 series,東京メトロ17000系,commuter,ordinary,active,,draft
+tokyo-metro-18000,tokyo-metro,Tokyo Metro 18000 series,東京メトロ18000系,commuter,ordinary,active,,draft
+toei-5300,toei,Toei 5300 series,都営5300形,commuter,ordinary,retired,,draft
+toei-5500,toei,Toei 5500 series,都営5500形,commuter,ordinary,active,,draft
+toei-6000,toei,Toei 6000 series,都営6000形,commuter,ordinary,retired,,draft
+toei-6300,toei,Toei 6300 series,都営6300形,commuter,ordinary,active,,draft
+toei-6500,toei,Toei 6500 series,都営6500形,commuter,ordinary,active,,draft
+toei-10-000,toei,Toei 10-000 series,都営10-000形,commuter,ordinary,retired,,draft
+toei-10-300,toei,Toei 10-300 series,都営10-300形,commuter,ordinary,active,,draft
+toei-12-000,toei,Toei 12-000 series,都営12-000形,commuter,ordinary,active,,draft
+toei-12-600,toei,Toei 12-600 series,都営12-600形,commuter,ordinary,active,,draft
+toei-7000,toei,Toei 7000 series,都電7000形,tram,ordinary,retired,,draft
+toei-8500,toei,Toei 8500 series,都電8500形,tram,ordinary,active,,draft
+toei-8800,toei,Toei 8800 series,都電8800形,tram,ordinary,active,,draft
+toei-8900,toei,Toei 8900 series,都電8900形,tram,ordinary,active,,draft
+toei-9000,toei,Toei 9000 series,都電9000形,tram,ordinary,active,,draft
+nippori-toneri-300,toei,Nippori-Toneri Liner 300 series,日暮里・舎人ライナー300形,agt,ordinary,active,,draft
+nippori-toneri-320,toei,Nippori-Toneri Liner 320 series,日暮里・舎人ライナー320形,agt,ordinary,active,,draft
+nippori-toneri-330,toei,Nippori-Toneri Liner 330 series,日暮里・舎人ライナー330形,agt,ordinary,active,,draft
+keio-1000,keio,Keio 1000 series,京王1000系,commuter,ordinary,active,,draft
+keio-3000,keio,Keio 3000 series,京王3000系,commuter,ordinary,retired,,draft
+keio-5000,keio,Keio 5000 series,京王5000系,commuter,ordinary,active,,draft
+keio-6000,keio,Keio 6000 series,京王6000系,commuter,ordinary,retired,,draft
+keio-7000,keio,Keio 7000 series,京王7000系,commuter,ordinary,active,,draft
+keio-8000,keio,Keio 8000 series,京王8000系,commuter,ordinary,active,,draft
+keio-9000,keio,Keio 9000 series,京王9000系,commuter,ordinary,active,,draft
+odakyu-1000,odakyu,Odakyu 1000 series,小田急1000形,commuter,ordinary,active,,draft
+odakyu-3000,odakyu,Odakyu 3000 series,小田急3000形,commuter,ordinary,active,,draft
+odakyu-4000,odakyu,Odakyu 4000 series,小田急4000形,commuter,ordinary,active,,draft
+odakyu-5000,odakyu,Odakyu 5000 series,小田急5000形,commuter,ordinary,active,,draft
+odakyu-8000,odakyu,Odakyu 8000 series,小田急8000形,commuter,ordinary,retiring,,draft
+odakyu-9000,odakyu,Odakyu 9000 series,小田急9000形,commuter,ordinary,retired,,draft
+odakyu-7000-lse,odakyu,Odakyu 7000 series LSE,小田急7000形LSE,limited-express,ordinary,retired,,draft
+odakyu-10000-hise,odakyu,Odakyu 10000 series HiSE,小田急10000形HiSE,limited-express,ordinary,retired,,draft
+odakyu-30000-exe,odakyu,Odakyu 30000 series EXE,小田急30000形EXE,limited-express,ordinary,active,,draft
+odakyu-50000-vse,odakyu,Odakyu 50000 series VSE,小田急50000形VSE,limited-express,ordinary,retired,,draft
+odakyu-60000-mse,odakyu,Odakyu 60000 series MSE,小田急60000形MSE,limited-express,ordinary,active,,draft
+odakyu-70000-gse,odakyu,Odakyu 70000 series GSE,小田急70000形GSE,limited-express,ordinary,active,,draft
+tobu-9000,tobu,Tobu 9000 series,東武9000系,commuter,ordinary,active,,draft
+tobu-20000,tobu,Tobu 20000 series,東武20000系,commuter,ordinary,retiring,,draft
+tobu-50000,tobu,Tobu 50000 series,東武50000系,commuter,ordinary,active,,draft
+tobu-70000,tobu,Tobu 70000 series,東武70000系,commuter,ordinary,active,,draft
+seibu-6000,seibu,Seibu 6000 series,西武6000系,commuter,ordinary,active,,draft
+seibu-40000,seibu,Seibu 40000 series,西武40000系,commuter,ordinary,active,,draft
+tokyu-2020,tokyu,Tokyu 2020 series,東急2020系,commuter,ordinary,active,,draft
+tokyu-3000,tokyu,Tokyu 3000 series,東急3000系,commuter,ordinary,active,,draft
+tokyu-3020,tokyu,Tokyu 3020 series,東急3020系,commuter,ordinary,active,,draft
+tokyu-5000,tokyu,Tokyu 5000 series,東急5000系,commuter,ordinary,active,,draft
+tokyu-5080,tokyu,Tokyu 5080 series,東急5080系,commuter,ordinary,active,,draft
+sotetsu-20000,sotetsu,Sotetsu 20000 series,相鉄20000系,commuter,ordinary,active,,draft
+sotetsu-21000,sotetsu,Sotetsu 21000 series,相鉄21000系,commuter,ordinary,active,,draft
+saitama-railway-2000,saitama-railway,Saitama Railway 2000 series,埼玉高速鉄道2000系,commuter,ordinary,active,,draft
+minatomirai-y500,minatomirai,Yokohama Minatomirai Railway Y500 series,横浜高速鉄道Y500系,commuter,ordinary,active,,draft
+toyo-rapid-2000,toyo-rapid,Toyo Rapid 2000 series,東葉高速鉄道2000系,commuter,ordinary,active,,draft
+keisei-3000,keisei,Keisei 3000 series,京成3000形,commuter,ordinary,active,,draft
+keisei-3100,keisei,Keisei 3100 series,京成3100形,commuter,ordinary,active,,draft
+keikyu-600,keikyu,Keikyu 600 series,京急600形,commuter,ordinary,active,,draft
+keikyu-1000,keikyu,Keikyu New 1000 series,京急新1000形,commuter,ordinary,active,,draft
+tobu-n100,tobu,Tobu N100 series Spacia X,東武N100系スペーシアX,limited-express,ordinary premium box-seat private-room cockpit-suite lounge,active,,draft
+tobu-100,tobu,Tobu 100 series Spacia,東武100系スペーシア,limited-express,ordinary private-room,active,,draft
+tobu-500,tobu,Tobu 500 series Revaty,東武500系リバティ,limited-express,ordinary,active,,draft
+tobu-200,tobu,Tobu 200 series Ryōmō,東武200系りょうもう,limited-express,ordinary,active,,draft
+seibu-001,seibu,Seibu 001 series Laview,西武001系Laview,limited-express,ordinary,active,,draft
+seibu-10000,seibu,Seibu 10000 series New Red Arrow,西武10000系ニューレッドアロー,limited-express,ordinary,retiring,,draft
+keisei-ae,keisei,Keisei AE series Skyliner,京成AE形スカイライナー,limited-express,ordinary,active,,draft
+keisei-ae100,keisei,Keisei AE100 series,京成AE100形,limited-express,ordinary,retired,,draft
+185,jr-east,185 series,185系,limited-express,ordinary green,retired,,draft
+251,jr-east,251 series Super View Odoriko,251系スーパービュー踊り子,limited-express,ordinary green,retired,,draft
+253,jr-east,253 series,253系,limited-express,ordinary green private-room,retiring,,draft
+255,jr-east,255 series,255系,limited-express,ordinary green,retiring,,draft
+651,jr-east,651 series,651系,limited-express,ordinary green,retired,,draft
+e259,jr-east,E259 series Narita Express,E259系成田エクスプレス,limited-express,ordinary green,active,,draft
+e261,jr-east,E261 series Saphir Odoriko,E261系サフィール踊り子,limited-express,green premium-green private-room,active,,draft
+e657,jr-east,E657 series,E657系,limited-express,ordinary green,active,,draft
+izukyu-2100,izukyu,Izukyu 2100 series Resort 21,伊豆急2100系リゾート21,commuter,ordinary,active,,draft
+kintetsu-80000,kintetsu,Kintetsu 80000 series Hinotori,近鉄80000系ひのとり,limited-express,ordinary premium,active,,draft
+kintetsu-50000,kintetsu,Kintetsu 50000 series Shimakaze,近鉄50000系しまかぜ,limited-express,premium salon private-room,active,,draft
+kintetsu-19200,kintetsu,Kintetsu 19200 series Aoniyoshi,近鉄19200系あをによし,limited-express,ordinary salon,active,,draft
+kintetsu-21000,kintetsu,Kintetsu 21000 series Urban Liner,近鉄21000系アーバンライナー,limited-express,ordinary deluxe,active,,draft
+kintetsu-22600,kintetsu,Kintetsu 22600 series Ace,近鉄22600系Ace,limited-express,ordinary,active,,draft
+kintetsu-16200,kintetsu,Kintetsu 16200 series Blue Symphony,近鉄16200系青の交響曲,limited-express,ordinary salon,active,,draft
+kintetsu-26000,kintetsu,Kintetsu 26000 series Sakura Liner,近鉄26000系さくらライナー,limited-express,ordinary deluxe,active,,draft
+nankai-50000,nankai,Nankai 50000 series Rapi:t,南海50000系ラピート,limited-express,ordinary super-seat,active,,draft
+271,jr-west,271 series,271系,limited-express,ordinary green,active,,draft
+273,jr-west,273 series,273系,limited-express,ordinary green,active,,draft
+281,jr-west,281 series,281系,limited-express,ordinary green,active,,draft
+285,jr-west jr-central,285 series Sunrise Express,285系サンライズエクスプレス,limited-express,sleeper-a-single-deluxe sleeper-single sleeper-single-twin sleeper-sunrise-twin sleeper-solo nobinobi,active,,draft
+287,jr-west,287 series,287系,limited-express,ordinary green,active,,draft
+289,jr-west,289 series,289系,limited-express,ordinary green,active,,draft
+381,jr-west jr-central,381 series,381系,limited-express,ordinary green,retired,,draft
+681,jr-west,681 series,681系,limited-express,ordinary green,active,,draft
+683,jr-west,683 series,683系,limited-express,ordinary green,active,,draft
+373,jr-central,373 series,373系,limited-express,ordinary green,active,,draft
+383,jr-central,383 series,383系,limited-express,ordinary green,active,,draft
+hc85,jr-central,HC85 series,HC85系,limited-express,ordinary green,active,,draft
+kiha-85,jr-central,KiHa 85 series,キハ85系,limited-express,ordinary green,retired,,draft
+783,jr-kyushu,783 series,783系,limited-express,ordinary green,active,,draft
+787,jr-kyushu,787 series,787系,limited-express,ordinary green,active,,draft
+883,jr-kyushu,883 series,883系,limited-express,ordinary green,active,,draft
+885,jr-kyushu,885 series,885系,limited-express,ordinary green,active,,draft
+261,jr-hokkaido,KiHa 261 series,キハ261系,limited-express,ordinary green,active,,draft
+789,jr-hokkaido,789 series,789系,limited-express,ordinary,active,,draft
+tobu-6050,tobu,Tobu 6050 series,東武6050系,commuter,ordinary,retiring,,draft
+tobu-8000,tobu,Tobu 8000 series,東武8000系,commuter,ordinary,retiring,,draft
+tobu-10000,tobu,Tobu 10000 series,東武10000系,commuter,ordinary,active,,draft
+tobu-30000,tobu,Tobu 30000 series,東武30000系,commuter,ordinary,active,,draft
+tobu-60000,tobu,Tobu 60000 series,東武60000系,commuter,ordinary,active,,draft
+tobu-80000,tobu,Tobu 80000 series,東武80000系,commuter,ordinary,active,,draft
+aizu-at-600,aizu-railway,Aizu Railway AT-600 series,会津鉄道AT-600形,diesel,ordinary,active,,draft
+aizu-at-700,aizu-railway,Aizu Railway AT-700 series,会津鉄道AT-700形,diesel,ordinary,active,,draft
+seibu-2000,seibu,Seibu 2000 series,西武2000系,commuter,ordinary,retiring,,draft
+seibu-4000,seibu,Seibu 4000 series,西武4000系,commuter,ordinary,retiring,,draft
+seibu-9000,seibu,Seibu 9000 series,西武9000系,commuter,ordinary,retiring,,draft
+seibu-20000,seibu,Seibu 20000 series,西武20000系,commuter,ordinary,active,,draft
+seibu-30000,seibu,Seibu 30000 series,西武30000系,commuter,ordinary,active,,draft
+keisei-3200,keisei,Keisei 3200 series,京成3200形,commuter,ordinary,active,,draft
+keisei-3400,keisei,Keisei 3400 series,京成3400形,commuter,ordinary,retired,,draft
+keisei-3500,keisei,Keisei 3500 series,京成3500形,commuter,ordinary,retiring,,draft
+keisei-3600,keisei,Keisei 3600 series,京成3600形,commuter,ordinary,retired,,draft
+keisei-3700,keisei,Keisei 3700 series,京成3700形,commuter,ordinary,active,,draft
+hokuso-7500,hokuso,Hokuso 7500 series,北総7500形,commuter,ordinary,active,,draft
+hokuso-9100,hokuso,Hokuso 9100 series,北総9100形,commuter,ordinary,active,,draft
+hokuso-9200,hokuso,Hokuso 9200 series,北総9200形,commuter,ordinary,active,,draft
+sotetsu-12000,sotetsu,Sotetsu 12000 series,相鉄12000系,commuter,ordinary,active,,draft
+twr-70-000,twr,Rinkai Line 70-000 series,りんかい線70-000形,commuter,ordinary,retiring,,draft
+izukyu-3000,izukyu,Izukyu 3000 series,伊豆急3000系,commuter,ordinary,active,,draft
+izukyu-8000,izukyu,Izukyu 8000 series,伊豆急8000系,commuter,ordinary,active,,draft
+fujikyu-1000,fujikyu,Fujikyu 1000 series,富士急1000系,commuter,ordinary,retiring,,draft
+fujikyu-6000,fujikyu,Fujikyu 6000 series,富士急6000系,commuter,ordinary,active,,draft
+fujikyu-8500,fujikyu,Fujikyu 8500 series Fujisan View Express,富士急8500系富士山ビュー特急,limited-express,ordinary,retiring,,draft
+107,jr-east,107 series,107系,commuter,ordinary,retired,,draft
+113,jr-east jr-west,113 series,113系,commuter,ordinary,retired,,draft
+115,jr-east jr-west,115 series,115系,commuter,ordinary,retiring,,draft
+203,jr-east,203 series,203系,commuter,ordinary,retired,,draft
+209,jr-east,209 series,209系,commuter,ordinary,retiring,,draft
+215,jr-east,215 series,215系,commuter,ordinary green,retired,,draft
+415,jr-east jr-kyushu,415 series,415系,commuter,ordinary,retiring,,draft
+701,jr-east,701 series,701系,commuter,ordinary,active,,draft
+e127,jr-east,E127 series,E127系,commuter,ordinary,active,,draft
+e131,jr-east,E131 series,E131系,commuter,ordinary,active,,draft
+e217,jr-east,E217 series,E217系,commuter,ordinary green,retiring,,draft
+e501,jr-east,E501 series,E501系,commuter,ordinary,retiring,,draft
+e531,jr-east,E531 series,E531系,commuter,ordinary green,active,,draft
+e721,jr-east,E721 series,E721系,commuter,ordinary,active,,draft
+117,jr-central jr-west,117 series,117系,commuter,ordinary,retired,,draft
+311,jr-central,311 series,311系,commuter,ordinary,retiring,,draft
+313,jr-central,313 series,313系,commuter,ordinary,active,,draft
+315,jr-central,315 series,315系,commuter,ordinary,active,,draft
+kiha-25,jr-central,KiHa 25 series,キハ25形,diesel,ordinary,active,,draft
+105,jr-west,105 series,105系,commuter,ordinary,retired,,draft
+125,jr-west,125 series,125系,commuter,ordinary,active,,draft
+207,jr-west,207 series,207系,commuter,ordinary,active,,draft
+213,jr-west jr-central,213 series,213系,commuter,ordinary,active,,draft
+221,jr-west,221 series,221系,commuter,ordinary,active,,draft
+223,jr-west,223 series,223系,commuter,ordinary,active,,draft
+225,jr-west,225 series,225系,commuter,ordinary,active,,draft
+227,jr-west,227 series,227系,commuter,ordinary,active,,draft
+321,jr-west,321 series,321系,commuter,ordinary,active,,draft
+323,jr-west,323 series,323系,commuter,ordinary,active,,draft
+521,jr-west,521 series,521系,commuter,ordinary,active,,draft
+kiha-120,jr-west,KiHa 120 series,キハ120形,diesel,ordinary,active,,draft
+jr-shikoku-5000,jr-shikoku,JR Shikoku 5000 series,JR四国5000系,commuter,ordinary green,active,,draft
+jr-shikoku-7000,jr-shikoku,JR Shikoku 7000 series,JR四国7000系,commuter,ordinary,active,,draft
+jr-shikoku-7200,jr-shikoku,JR Shikoku 7200 series,JR四国7200系,commuter,ordinary,active,,draft
+jr-shikoku-8000,jr-shikoku,JR Shikoku 8000 series,JR四国8000系,limited-express,ordinary green,active,,draft
+jr-shikoku-8600,jr-shikoku,JR Shikoku 8600 series,JR四国8600系,limited-express,ordinary green,active,,draft
+811,jr-kyushu,811 series,811系,commuter,ordinary,active,,draft
+813,jr-kyushu,813 series,813系,commuter,ordinary,active,,draft
+815,jr-kyushu,815 series,815系,commuter,ordinary,active,,draft
+817,jr-kyushu,817 series,817系,commuter,ordinary,active,,draft
+821,jr-kyushu,821 series,821系,commuter,ordinary,active,,draft
+yc1,jr-kyushu,YC1 series,YC1系,diesel,ordinary,active,,draft
+721,jr-hokkaido,721 series,721系,commuter,ordinary,retiring,,draft
+733,jr-hokkaido,733 series,733系,commuter,ordinary,active,,draft
+737,jr-hokkaido,737 series,737系,commuter,ordinary,active,,draft
+h100,jr-hokkaido,H100 series,H100形,diesel,ordinary,active,,draft
+kiha-40,jr-east jr-west jr-hokkaido jr-kyushu,KiHa 40 series,キハ40系,diesel,ordinary,retiring,,draft
+kintetsu-1233,kintetsu,Kintetsu 1233 series,近鉄1233系,commuter,ordinary,active,,draft
+kintetsu-2000,kintetsu,Kintetsu 2000 series,近鉄2000系,commuter,ordinary,active,,draft
+kintetsu-2800,kintetsu,Kintetsu 2800 series,近鉄2800系,commuter,ordinary,retiring,,draft
+kintetsu-3220,kintetsu,Kintetsu 3220 series,近鉄3220系,commuter,ordinary,active,,draft
+kintetsu-5800,kintetsu,Kintetsu 5800 series,近鉄5800系,commuter,ordinary,active,,draft
+kintetsu-6020,kintetsu,Kintetsu 6020 series,近鉄6020系,commuter,ordinary,retiring,,draft
+kintetsu-6400,kintetsu,Kintetsu 6400 series,近鉄6400系,commuter,ordinary,active,,draft
+kintetsu-8000,kintetsu,Kintetsu 8000 series,近鉄8000系,commuter,ordinary,retiring,,draft
+kintetsu-8a,kintetsu,Kintetsu 8A series,近鉄8A系,commuter,ordinary,active,,draft
+kintetsu-9020,kintetsu,Kintetsu 9020 series,近鉄9020系,commuter,ordinary,active,,draft
+hanshin-1000,hanshin,Hanshin 1000 series,阪神1000系,commuter,ordinary,active,,draft
+hanshin-9000,hanshin,Hanshin 9000 series,阪神9000系,commuter,ordinary,active,,draft
+nankai-1000,nankai,Nankai 1000 series,南海1000系,commuter,ordinary,active,,draft
+nankai-7100,nankai,Nankai 7100 series,南海7100系,commuter,ordinary,retiring,,draft
+nankai-8000,nankai,Nankai 8000 series,南海8000系,commuter,ordinary,active,,draft
+nankai-8300,nankai,Nankai 8300 series,南海8300系,commuter,ordinary,active,,draft
+nankai-9000,nankai,Nankai 9000 series,南海9000系,commuter,ordinary,retiring,,draft
+nankai-12000,nankai,Nankai 12000 series Southern Premium,南海12000系サザン・プレミアム,limited-express,ordinary,active,,draft

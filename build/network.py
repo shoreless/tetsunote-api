@@ -349,7 +349,7 @@ def main():
         name_lines(shard, line_names, report)
 
     line_ids = {line["id"] for shard in shards.values() for line in shard["lines"]}
-    all_series, series_by_line = rolling_stock.load(line_ids, report)
+    all_series, series_by_line, seat_classes = rolling_stock.load(line_ids, report)
     pictures, line_pictures = train_images.build({s["id"] for s in all_series}, line_ids, report)
     for record in all_series:
         record["image"] = pictures.get(record["id"])
@@ -395,7 +395,7 @@ def main():
 
     files = []
     series_text = json.dumps(
-        {"version": 0, "languages": ["en", "ja"], "series": all_series},
+        {"version": 0, "languages": ["en", "ja"], "seat_classes": seat_classes, "series": all_series},
         ensure_ascii=False, separators=(",", ":"),
     )
     (OUT / "series.json").write_text(series_text, encoding="utf-8")
