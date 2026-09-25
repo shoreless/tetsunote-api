@@ -242,3 +242,15 @@ nankai-8000,nankai,Nankai 8000 series,南海8000系,commuter,ordinary,active,,,d
 nankai-8300,nankai,Nankai 8300 series,南海8300系,commuter,ordinary,active,,,draft
 nankai-9000,nankai,Nankai 9000 series,南海9000系,commuter,ordinary,retiring,,,draft
 nankai-12000,nankai,Nankai 12000 series Southern Premium,南海12000系サザン・プレミアム,limited-express,ordinary,active,,,draft
+923,jr-central jr-west,Class 923 Doctor Yellow,923形 ドクターイエロー,inspection,,retiring,Q60461394,,draft
+922,jr-central jr-west,Class 922 Doctor Yellow,922形 ドクターイエロー,inspection,,retired,Q907579,,draft
+e926,jr-east,E926 East i,E926形 East i,inspection,,active,Q17177477,,draft
+e491,jr-east,E491 East i-E,E491系 East i-E,inspection,,active,Q11226249,,draft
+kiya-e193,jr-east,KiYa E193 East i-D,キヤE193系 East i-D,inspection,,active,Q11226263,,draft
+e956,jr-east,E956 ALFA-X,E956形 ALFA-X,test,,active,Q33111832,,draft
+e001,jr-east,E001 Train Suite Shiki-shima,E001形 TRAIN SUITE 四季島,cruise,,active,Q19317696,,draft
+87,jr-west,87 series Twilight Express Mizukaze,87系 TWILIGHT EXPRESS 瑞風,cruise,,active,Q19316301,,draft
+77,jr-kyushu,77 series Seven Stars in Kyushu,77系 ななつ星 in 九州,cruise,,active,Q11080223,,draft
+d51-498,jr-east,D51 498 steam locomotive,D51形 498号機,steam,,active,Q11421746,,draft
+c57-180,jr-east,C57 180 steam locomotive,C57形 180号機,steam,,active,Q11421740,,draft
+tobu-sl-taiju,tobu,SL Taiju,SL大樹,steam,,active,Q109594231,,draft

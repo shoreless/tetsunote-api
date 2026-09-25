@@ -22,7 +22,11 @@ SELECT ?series ?ja ?en WHERE {
   OPTIONAL { ?series rdfs:label ?en FILTER(lang(?en)="en") }
 }
 """
-KINDS = {"commuter", "limited-express", "shinkansen", "diesel", "tram", "monorail", "agt", "cable"}
+KINDS = {
+    "commuter", "limited-express", "shinkansen", "diesel", "tram", "monorail", "agt", "cable",
+    # Special trains people go to see: track inspection, test, cruise and steam.
+    "inspection", "test", "cruise", "steam",
+}
 STATUSES = {"active", "retiring", "retired"}
 
 
