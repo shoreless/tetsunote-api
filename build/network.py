@@ -22,6 +22,7 @@ from pyproj import Geod, Transformer
 from shapely import ops
 from shapely.geometry import LineString, MultiLineString, Point
 
+import images as train_images
 import series as rolling_stock
 from names import LineNames, Names, ascii_name, line_slug_en
 
@@ -349,9 +350,18 @@ def main():
 
     line_ids = {line["id"] for shard in shards.values() for line in shard["lines"]}
     all_series, series_by_line = rolling_stock.load(line_ids, report)
+    pictures, line_pictures = train_images.build({s["id"] for s in all_series}, line_ids, report)
+    for record in all_series:
+        record["image"] = pictures.get(record["id"])
     for shard in shards.values():
         for line in shard["lines"]:
             line["series"] = series_by_line.get(line["id"], [])
+            for entry in line["series"]:
+                if (entry["id"], line["id"]) in line_pictures:
+                    entry["image"] = line_pictures[(entry["id"], line["id"])]
+    listed = {(e["id"], line_id) for line_id, entries in series_by_line.items() for e in entries}
+    for series_id, line_id in sorted(line_pictures.keys() - listed):
+        report.append(f"data/train_images.csv: {series_id} has an image for {line_id} but is not listed on it")
 
     (OUT / "operators").mkdir(parents=True, exist_ok=True)
     listing = []
@@ -378,6 +388,11 @@ def main():
             "sha256": hashlib.sha256(text.encode()).hexdigest(),
         })
 
+    published = {s["path"] for s in listing}
+    for stale in (OUT / "operators").glob("*.json"):
+        if f"operators/{stale.name}" not in published:
+            stale.unlink()
+
     files = []
     series_text = json.dumps(
         {"version": 0, "languages": ["en", "ja"], "series": all_series},
@@ -389,6 +404,14 @@ def main():
         "bytes": len(series_text.encode()),
         "sha256": hashlib.sha256(series_text.encode()).hexdigest(),
     })
+
+    for picture in sorted(train_images.OUT.glob("*.webp")):
+        data = picture.read_bytes()
+        files.append({
+            "path": f"trains/{picture.name}",
+            "bytes": len(data),
+            "sha256": hashlib.sha256(data).hexdigest(),
+        })
 
     hashes = [s["sha256"] for s in listing + files]
     revision = hashlib.sha256("".join(hashes).encode()).hexdigest()[:12]
