@@ -1,6 +1,6 @@
 {
  "version": 0,
- "revision": "ef0be58b95e7",
+ "revision": "3151c99ecc71",
  "languages": [
   "en",
   "ja"
@@ -2136,8 +2136,13 @@
  "files": [
   {
    "path": "series.json",
-   "bytes": 57991,
-   "sha256": "c550671928e25efe1fa7489c257c5664b145d929a45ea45bbaae425ee612a460"
+   "bytes": 196407,
+   "sha256": "dcec64c5105b73b112733509b263c1e9a33ca5c8939d2cf62e9a069af4ea6306"
+  },
+  {
+   "path": "series_wikipedia.json",
+   "bytes": 251643,
+   "sha256": "5086457a8c927a13316310542a14cc6c6878ac9378443224aec1666a4c65bd95"
   },
   {
    "path": "trains/e231--jr-east.chuo-thumb.webp",

@@ -80,9 +80,19 @@ def load(line_ids, report):
                 "kind": row["kind"],
                 "classes": parse_classes(row["classes"] or "ordinary", known, f"data/series.csv {row['id']}"),
                 "status": row["status"],
-                "wikidata": qids.get(key(row["en"])),
+                # Matched by English name unless pinned: two models can share a name (the old and new Keio 5000).
+                "wikidata": row.get("wikidata") or qids.get(key(row["en"])),
                 "checked": row["checked"] or None,
                 "source": row["source"] or None,
+            }
+
+    with open(ROOT / "data" / "series_notes.csv", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            if row["id"] not in series:
+                raise SystemExit(f"data/series_notes.csv: unknown series {row['id']!r}")
+            series[row["id"]]["about"] = {
+                "en": row["en"], "ja": row["ja"],
+                "checked": row["checked"] or None, "source": row["source"] or None,
             }
 
     by_line = {}
