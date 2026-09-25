@@ -136,3 +136,8 @@ def titles(record):
         if url:
             out[lang] = urllib.parse.unquote(url.rsplit("/wiki/", 1)[1]).replace("_", " ")
     return out
+
+
+def entities():
+    """The cached Wikidata entities, after build() has run."""
+    return json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}

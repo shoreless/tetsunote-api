@@ -16,7 +16,7 @@ Nothing is published yet. The first release will cover the Tokyo region.
 | `v0/operators/{id}.json` | One operator's lines, stations and segments (adjacent-station pieces of line with operating km and geometry) |
 | `v0/series.json` | Train models (E235 series, N700S…) with operators, kind and status (active, retiring, retired). Where known: `facts` (entered service, retired, top speed, car length, number built, manufacturers), a one-line `description` and `links` from Wikidata, what it `replaces` and was `replaced_by`, and a short bilingual `about` of our own (marked `draft` until checked). Each line lists the models that run or ran on it in `series`, with a status for that line. A model with a picture has `image`: `url` and `thumb` (WebP, relative to `v0/`), size, `generated` (true for AI illustrations, which apps should label) and `credit`. A picture in the livery of particular lines is given only on those lines, as `image` on the model's entry in that line's `series`; prefer it over the model's own `image` |
 | `v0/series_wikipedia.json` | The opening of each model's Japanese and English Wikipedia article, shortened. **Licensed CC BY-SA 4.0**, unlike the rest of this data; each entry links to its article. Apps showing it should credit Wikipedia and link the article |
-| `v0/trains/*.webp` | Train pictures, 1200 px wide, each with a `-thumb.webp` at 400 px. Every file is in the manifest with its hash |
+| `v0/trains/*.webp` | Train pictures: our illustrations (1200 px), and for models without one, a photo from Wikimedia Commons (960 px), each with a `-thumb.webp` at 400 px. A photo's `image` has `credit` (the photographer), `licence`, `licence_url` and `source_url` (its Commons page); apps must show the credit and licence. Photos stay under their own licences. Every file is in the manifest with its hash |
 | `v0/places.json` | Museums, notable stations, viewpoints, preserved locomotives and 廃線跡 |
 | `v0/events.json` | Depot open days, festivals, farewell runs and stamp rallies, with `starts` and `ends` |
 
@@ -88,7 +88,9 @@ source each entry names.
 
 ## Attribution
 
-Train facts and descriptions come from [Wikidata](https://www.wikidata.org/) (CC0). The text in
+Train facts and descriptions come from [Wikidata](https://www.wikidata.org/) (CC0). Train photos come from
+[Wikimedia Commons](https://commons.wikimedia.org/), only where freely licensed; each names its author,
+licence and file page. The text in
 `v0/series_wikipedia.json` is from Wikipedia and stays under CC BY-SA 4.0.
 
 Each source will be credited here, with a note where its data has been processed. Licence terms for

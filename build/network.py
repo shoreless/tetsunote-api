@@ -22,6 +22,7 @@ from pyproj import Geod, Transformer
 from shapely import ops
 from shapely.geometry import LineString, MultiLineString, Point
 
+import commons
 import facts
 import images as train_images
 import wikipedia
@@ -354,7 +355,8 @@ def main():
     all_series, series_by_line, seat_classes = rolling_stock.load(line_ids, report)
     facts.build(all_series, report)
     articles = wikipedia.build(all_series)
-    pictures, line_pictures = train_images.build({s["id"] for s in all_series}, line_ids, report)
+    photos = commons.photos(all_series, facts.entities(), train_images.listed(), report)
+    pictures, line_pictures = train_images.build({s["id"] for s in all_series}, line_ids, report, photos)
     for record in all_series:
         record["image"] = pictures.get(record["id"])
     for shard in shards.values():
