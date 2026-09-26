@@ -98,3 +98,4 @@ services: svc.jr-east.joban-local: served beyond its sections (not in the app): 
 services: svc.jr-east.utsunomiya: served beyond its sections (not in the app): 東京 熱海
 services: svc.jr-east.takasaki: served beyond its sections (not in the app): 東京 熱海
 services: svc.jr-east.musashino: served beyond its sections (not in the app): 与野 北小金 国立 馬橋 鶴見
+services: svc.tobu.spacia-x: no colour

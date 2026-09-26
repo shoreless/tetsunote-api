@@ -1,6 +1,6 @@
 {
  "version": 0,
- "revision": "f852d2a6cd7c",
+ "revision": "99168f8213ae",
  "languages": [
   "en",
   "ja"
@@ -1781,8 +1781,8 @@
    },
    "lines": 12,
    "stations": 217,
-   "bytes": 113815,
-   "sha256": "3059b68e32cb93035af34af083155810375137dc76b1294d1b132dc2924ad6f3"
+   "bytes": 113866,
+   "sha256": "2b83684e26c0f6b179715a06a383407b32fccd79007c73082098594e18bdcb0c"
   },
   {
    "path": "operators/toei.json",
@@ -2124,8 +2124,8 @@
  "files": [
   {
    "path": "series.json",
-   "bytes": 277294,
-   "sha256": "f663a771024f03d5b8fc33cbc6a4fd10d78cd2e8b98ba322540bc7525d20cb21"
+   "bytes": 277656,
+   "sha256": "795af5de4bffe121ee63e3847f8efcf3d21c50c27aaefdac37bda661a3aa9c3c"
   },
   {
    "path": "series_wikipedia.json",
@@ -2149,8 +2149,8 @@
   },
   {
    "path": "services.json",
-   "bytes": 44193,
-   "sha256": "c7aa940b665f5544e453966e739b499132802fbd08716a03e924fca601ba710b"
+   "bytes": 46492,
+   "sha256": "2f4a841442af6ffe626d1185aa22fbbee538c37170e523b93f32a91a85b17e3d"
   },
   {
    "path": "trains/0-thumb.webp",

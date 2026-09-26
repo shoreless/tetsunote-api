@@ -105,7 +105,7 @@ keisei-3000,keisei,Keisei 3000 series,京成3000形,commuter,ordinary,active,,,d
 keisei-3100,keisei,Keisei 3100 series,京成3100形,commuter,ordinary,active,,,draft
 keikyu-600,keikyu,Keikyu 600 series,京急600形,commuter,ordinary,active,,,draft
 keikyu-1000,keikyu,Keikyu New 1000 series,京急新1000形,commuter,ordinary,active,Q4358472,,draft
-tobu-n100,tobu,Tobu N100 series Spacia X,東武N100系スペーシアX,limited-express,ordinary premium box-seat private-room cockpit-suite lounge,active,Q117861075,,draft
+tobu-n100,tobu,Tobu N100 series Spacia X,東武N100系スペーシアX,limited-express,standard-seat box-seat premium-seat compartment cockpit-suite cockpit-lounge,active,Q117861075,,draft
 tobu-100,tobu,Tobu 100 series Spacia,東武100系スペーシア,limited-express,ordinary private-room,active,,,draft
 tobu-500,tobu,Tobu 500 series Revaty,東武500系リバティ,limited-express,ordinary,active,,,draft
 tobu-200,tobu,Tobu 200 series Ryōmō,東武200系りょうもう,limited-express,ordinary,active,,,draft

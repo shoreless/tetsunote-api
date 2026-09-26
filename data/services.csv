@@ -19,3 +19,4 @@ svc.yamagata,山形新幹線,Yamagata Shinkansen,shinkansen,Q252048,山形新幹
 svc.akita,秋田新幹線,Akita Shinkansen,shinkansen,Q220696,秋田新幹線,こまち,Komachi,,"東北新幹線 to 盛岡, then 田沢湖線 and 奥羽本線"
 svc.joetsu,上越新幹線,Jōetsu Shinkansen,shinkansen,Q912219,,とき・たにがわ,Toki · Tanigawa,,"From 東京 over 東北新幹線 to 大宮"
 svc.hokuriku,北陸新幹線,Hokuriku Shinkansen,shinkansen,Q1037409,,かがやき・はくたか・あさま・つるぎ,Kagayaki · Hakutaka · Asama · Tsurugi,,"From 東京 over 東北新幹線 and 上越新幹線 to 高崎"
+svc.tobu.spacia-x,スペーシアX,Spacia X,limited-express,,,けごん・きぬ,Kegon · Kinu,,"Tobu N100 limited express; stops from ja:けごん and ja:きぬ (Spacia X runs as けごん to 東武日光 and きぬ to 鬼怒川温泉)"
