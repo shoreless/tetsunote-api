@@ -57,6 +57,8 @@ PREFIXES = "Shin|Higashi|Nishi|Minami|Kita|Naka|Kami|Shimo|Moto|Oku|Ko|Ō|O"
 
 
 def clean_en(en):
+    # Wikidata sometimes writes the hyphen as U+2010 or U+2011; a plain one is what people type.
+    en = re.sub("[\u2010\u2011]", "-", en)
     en = re.sub(r"\s*\(.*?\)", "", en).strip()
     en = re.sub(r"\s+(Station|Stop|Tram Stop|Streetcar Stop)$", "", en, flags=re.I)
     # "Shin-ōtsuka" → "Shin-Ōtsuka": a place name after a prefix keeps its capital
@@ -193,6 +195,7 @@ class LineNames:
 
 
 def clean_line_en(en):
+    en = re.sub("[\u2010\u2011]", "-", en)
     en = re.sub(r"\s*\(.*?\)", "", en).strip()
     return en[0].upper() + en[1:] if en else en
 
