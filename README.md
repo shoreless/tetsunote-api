@@ -20,6 +20,7 @@ Nothing is published yet. The first release will cover the Tokyo region.
 | `v0/trains/*.webp` | Train pictures: our illustrations (1200 px), and for models without one, a photo from Wikimedia Commons (960 px), each with a `-thumb.webp` at 400 px. A photo's `image` has `credit` (the photographer), `licence`, `licence_url` and `source_url` (its Commons page); apps must show the credit and licence. Photos stay under their own licences. Every file is in the manifest with its hash |
 | `v0/places.json` | Places for railway fans: museums, maglev and heritage railways, historic stations, and curated places such as train bars. Each has `kind`, `name`, `point` [lon, lat], its nearest `stations` (id and metres, within 3 km), `website`, a Wikidata `description` and `links`, and a Commons `image` with its credit |
 | `v0/places_wikipedia.json` | The opening of each place's Wikipedia article, under CC BY-SA 4.0 |
+| `v0/services.json` | Services (運転系統): the trains riders board, where they differ from the legal lines, such as 中央線快速 and 中央・総武線各駅停車 on the one 中央線, or 湘南新宿ライン over three lines, and the shinkansen that run through from one line to the next. Each has `name`, `kind`, `colour`, `trains` (the train names, for shinkansen) and `sections`: a `line` with the `segments` it runs over and the stations it `stops` at. `through` lists where one line's trains run on into another (東西線 into 中央線 at 中野), with the station on each |
 | `v0/events.json` | Depot open days, festivals, farewell runs and stamp rallies, with `starts` and `ends` |
 
 Every text field a reader might see is given in both languages as `{"en": "…", "ja": "…"}`.
@@ -80,6 +81,11 @@ honest:
 
 - `data/line_borrow.csv` gives a line track it legally includes but N02 files under another line.
   The Chūō Main Line borrows Kanda–Tokyo from the Tōhoku Line this way.
+- `data/services.csv` and `data/service_sections.csv` describe each service as sections along legal
+  lines through waypoint stations, so it follows the branch its trains use; the build fails if a
+  section doesn't follow its line. The stops are the stations on those sections that the service's
+  Japanese Wikipedia station table (駅一覧) lists as served (facts only), unless a section lists them
+  or says `all`. `data/through.csv` gives the through-running between lines.
 - `data/official_km.csv` holds the operators' published 営業キロ for each line, with the source:
   JR Hokkaido, JR Central, JR West and JR Kyushu from their own figures, and the lines listed by the
   MLIT Chūbu and Shikoku transport bureaus (every operator in those regions). `uv run

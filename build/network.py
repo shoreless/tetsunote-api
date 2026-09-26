@@ -30,6 +30,7 @@ import manual
 import places
 import wikipedia
 import series as rolling_stock
+import services
 from names import LineNames, Names, ascii_name, line_slug_en
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -516,9 +517,12 @@ def main():
             stale.unlink()
     places_doc = {"version": 0, "languages": ["en", "ja"], "places": place_records}
 
+    services_doc = services.build(shards, report)
+
     for name, doc in (
         ("series_wikipedia.json", articles), ("lines_wikipedia.json", line_articles),
         ("places.json", places_doc), ("places_wikipedia.json", place_articles),
+        ("services.json", services_doc),
     ):
         doc_text = json.dumps(doc, ensure_ascii=False, separators=(",", ":"))
         (OUT / name).write_text(doc_text, encoding="utf-8")

@@ -1,0 +1,42 @@
+line_a,line_b,station,note
+tokyo-metro.tozai,jr-east.chuo,中野,東西線 ⇄ 中央・総武線各駅停車 (三鷹)
+tokyo-metro.tozai,jr-east.sobu,西船橋,東西線 ⇄ 総武線各駅停車 (津田沼)
+tokyo-metro.tozai,toyo-rapid.rapid-railway,西船橋,東西線 ⇄ 東葉高速線
+tokyo-metro.chiyoda,jr-east.joban,綾瀬,千代田線 ⇄ 常磐線各駅停車
+tokyo-metro.chiyoda,odakyu.odawara,代々木上原,千代田線 ⇄ 小田急線
+tokyo-metro.hibiya,tobu.isesaki,北千住,日比谷線 ⇄ 東武スカイツリーライン
+tokyo-metro.hanzomon,tokyu.denen-toshi,渋谷,半蔵門線 ⇄ 田園都市線
+tokyo-metro.hanzomon,tobu.isesaki,押上,半蔵門線 ⇄ 東武スカイツリーライン
+tokyo-metro.fukutoshin,tokyu.toyoko,渋谷,副都心線 ⇄ 東横線
+tokyo-metro.fukutoshin,tokyo-metro.yurakucho,小竹向原,副都心線 ⇄ 和光市 (有楽町線と共用)
+tokyo-metro.yurakucho,tobu.tojo,和光市,有楽町線・副都心線 ⇄ 東武東上線
+tokyo-metro.yurakucho,seibu.yurakucho,小竹向原,有楽町線 ⇄ 西武有楽町線
+tokyo-metro.fukutoshin,seibu.yurakucho,小竹向原,副都心線 ⇄ 西武有楽町線
+seibu.yurakucho,seibu.ikebukuro,練馬,西武有楽町線 ⇄ 西武池袋線
+tokyu.toyoko,minatomirai.minatomirai,横浜,東横線 ⇄ みなとみらい線
+tokyo-metro.namboku,tokyu.meguro,目黒,南北線 ⇄ 目黒線
+tokyo-metro.namboku,saitama-railway.rapid-railway,赤羽岩淵,南北線 ⇄ 埼玉高速鉄道線
+toei.mita,tokyu.meguro,目黒,三田線 ⇄ 目黒線
+tokyu.meguro,tokyu.toyoko,田園調布,目黒線 ⇄ 東横線 (田園調布–日吉は東横線と共用)
+tokyu.toyoko,tokyu.shin-yokohama,日吉,東横線 ⇄ 東急新横浜線
+tokyu.shin-yokohama,sotetsu.shin-yokohama,新横浜,東急新横浜線 ⇄ 相鉄新横浜線
+sotetsu.shin-yokohama,sotetsu.sotetsu,西谷,相鉄新横浜線 ⇄ 相鉄本線
+sotetsu.sotetsu,sotetsu.izumino,二俣川,相鉄本線 ⇄ いずみ野線
+toei.asakusa,keisei.oshiage,押上,浅草線 ⇄ 京成押上線
+toei.asakusa,keikyu.keikyu,泉岳寺,浅草線 ⇄ 京急本線
+keikyu.keikyu,keikyu.airport,京急蒲田,京急本線 ⇄ 空港線
+keikyu.keikyu,keikyu.kurihama,堀ノ内,京急本線 ⇄ 久里浜線
+keikyu.keikyu,keikyu.zushi,金沢八景,京急本線 ⇄ 逗子線
+keisei.oshiage,keisei.keisei,青砥,京成押上線 ⇄ 京成本線
+keisei.keisei,hokuso.hokuso,京成高砂,京成本線 ⇄ 北総線
+hokuso.hokuso,keisei.narita-airport,印旛日本医大,北総線 ⇄ 成田スカイアクセス線
+toei.shinjuku,keio.keio,新宿,新宿線 ⇄ 京王線 (京王新線)
+keio.keio,keio.sagamihara,調布,京王線 ⇄ 相模原線
+keio.keio,keio.takao,北野,京王線 ⇄ 高尾線
+odakyu.odawara,odakyu.enoshima,相模大野,小田原線 ⇄ 江ノ島線
+odakyu.odawara,odakyu.tama,新百合ヶ丘,小田原線 ⇄ 多摩線
+tokyu.denen-toshi,tokyu.oimachi,二子玉川,田園都市線 ⇄ 大井町線
+tobu.isesaki,tobu.nikko,東武動物公園,伊勢崎線 ⇄ 日光線
+seibu.ikebukuro,seibu.chichibu,吾野,池袋線 ⇄ 西武秩父線
+jr-east.chuo,jr-east.ome,立川,中央線 ⇄ 青梅線
+jr-east.ome,jr-east.itsukaichi,拝島,青梅線 ⇄ 五日市線
