@@ -1,22 +1,22 @@
-id,name_ja,name_en,kind,wikidata,wikipedia_ja,trains_ja,trains_en,colour,note
-svc.jr-east.yamanote,山手線,Yamanote Line,commuter,Q693036,山手線,,,,"Loop: 山手線 legally runs 品川–新宿–田端; trains carry on via 東京 over 東北線 and 東海道線"
-svc.jr-east.keihin-tohoku,京浜東北線・根岸線,Keihin-Tōhoku Line,commuter,Q1197028,京浜東北線,,,,
-svc.jr-east.saikyo,埼京線,Saikyō Line,commuter,Q1372061,埼京線,,,,"大崎–池袋 on 山手線, 池袋–赤羽 on 赤羽線, 赤羽–大宮 on the 東北線 branch via 武蔵浦和, on to 川越"
-svc.jr-east.shonan-shinjuku,湘南新宿ライン,Shōnan-Shinjuku Line,commuter,Q1323851,湘南新宿ライン,,,,"Legally 東北本線 大宮–田端, 山手線 田端–品川, 東海道本線 品川–大船"
-svc.jr-east.ueno-tokyo,上野東京ライン,Ueno-Tokyo Line,commuter,Q871169,上野東京ライン,,,,
-svc.jr-east.chuo-rapid,中央線快速,Chūō Line (Rapid),commuter,Q1191297,中央線快速,,,,
-svc.jr-east.chuo-sobu,中央・総武線各駅停車,Chūō-Sōbu Line (Local),commuter,Q1091295,中央・総武緩行線,,,,
-svc.jr-east.yokosuka-sobu,横須賀・総武快速線,Yokosuka-Sōbu Rapid Line,commuter,Q11543512,横須賀・総武快速線,,,,
-svc.jr-east.joban-rapid,常磐線快速,Jōban Line (Rapid),commuter,Q1952889,常磐快速線,,,,
-svc.jr-east.joban-local,常磐線各駅停車,Jōban Line (Local),commuter,Q5365768,常磐緩行線,,,,
-svc.jr-east.utsunomiya,宇都宮線,Utsunomiya Line,commuter,Q1144130,宇都宮線,,,,"東北本線 上野–黒磯"
-svc.jr-east.takasaki,高崎線,Takasaki Line,commuter,Q1346657,高崎線,,,,"Trains run from 上野 over 東北本線 to 大宮"
-svc.jr-east.musashino,武蔵野線,Musashino Line,commuter,Q1191671,武蔵野線,,,,"On to 京葉線 at 西船橋"
-svc.tokaido-sanyo,東海道・山陽新幹線,Tōkaidō–San'yō Shinkansen,shinkansen,,,のぞみ・ひかり・こだま,Nozomi · Hikari · Kodama,0072BA,
-svc.sanyo-kyushu,山陽・九州新幹線,San'yō–Kyūshū Shinkansen,shinkansen,,,みずほ・さくら,Mizuho · Sakura,0073BC,
-svc.tohoku-hokkaido,東北・北海道新幹線,Tōhoku–Hokkaidō Shinkansen,shinkansen,,,はやぶさ・はやて・やまびこ・なすの,Hayabusa · Hayate · Yamabiko · Nasuno,008000,
-svc.yamagata,山形新幹線,Yamagata Shinkansen,shinkansen,Q252048,山形新幹線,つばさ,Tsubasa,,"東北新幹線 to 福島, then 奥羽本線"
-svc.akita,秋田新幹線,Akita Shinkansen,shinkansen,Q220696,秋田新幹線,こまち,Komachi,,"東北新幹線 to 盛岡, then 田沢湖線 and 奥羽本線"
-svc.joetsu,上越新幹線,Jōetsu Shinkansen,shinkansen,Q912219,,とき・たにがわ,Toki · Tanigawa,,"From 東京 over 東北新幹線 to 大宮"
-svc.hokuriku,北陸新幹線,Hokuriku Shinkansen,shinkansen,Q1037409,,かがやき・はくたか・あさま・つるぎ,Kagayaki · Hakutaka · Asama · Tsurugi,,"From 東京 over 東北新幹線 and 上越新幹線 to 高崎"
-svc.tobu.spacia-x,スペーシアX,Spacia X,limited-express,,,けごん・きぬ,Kegon · Kinu,,"Tobu N100 limited express; stops from ja:けごん and ja:きぬ (Spacia X runs as けごん to 東武日光 and きぬ to 鬼怒川温泉)"
+id,name_ja,name_en,kind,wikidata,wikipedia_ja,trains_ja,trains_en,series,colour,note
+svc.jr-east.yamanote,山手線,Yamanote Line,commuter,Q693036,山手線,,,,,Loop: 山手線 legally runs 品川–新宿–田端; trains carry on via 東京 over 東北線 and 東海道線
+svc.jr-east.keihin-tohoku,京浜東北線・根岸線,Keihin-Tōhoku Line,commuter,Q1197028,京浜東北線,,,,,
+svc.jr-east.saikyo,埼京線,Saikyō Line,commuter,Q1372061,埼京線,,,,,"大崎–池袋 on 山手線, 池袋–赤羽 on 赤羽線, 赤羽–大宮 on the 東北線 branch via 武蔵浦和, on to 川越"
+svc.jr-east.shonan-shinjuku,湘南新宿ライン,Shōnan-Shinjuku Line,commuter,Q1323851,湘南新宿ライン,,,,,"Legally 東北本線 大宮–田端, 山手線 田端–品川, 東海道本線 品川–大船"
+svc.jr-east.ueno-tokyo,上野東京ライン,Ueno-Tokyo Line,commuter,Q871169,上野東京ライン,,,,,
+svc.jr-east.chuo-rapid,中央線快速,Chūō Line (Rapid),commuter,Q1191297,中央線快速,,,,,
+svc.jr-east.chuo-sobu,中央・総武線各駅停車,Chūō-Sōbu Line (Local),commuter,Q1091295,中央・総武緩行線,,,,,
+svc.jr-east.yokosuka-sobu,横須賀・総武快速線,Yokosuka-Sōbu Rapid Line,commuter,Q11543512,横須賀・総武快速線,,,,,
+svc.jr-east.joban-rapid,常磐線快速,Jōban Line (Rapid),commuter,Q1952889,常磐快速線,,,,,
+svc.jr-east.joban-local,常磐線各駅停車,Jōban Line (Local),commuter,Q5365768,常磐緩行線,,,,,
+svc.jr-east.utsunomiya,宇都宮線,Utsunomiya Line,commuter,Q1144130,宇都宮線,,,,,東北本線 上野–黒磯
+svc.jr-east.takasaki,高崎線,Takasaki Line,commuter,Q1346657,高崎線,,,,,Trains run from 上野 over 東北本線 to 大宮
+svc.jr-east.musashino,武蔵野線,Musashino Line,commuter,Q1191671,武蔵野線,,,,,On to 京葉線 at 西船橋
+svc.tokaido-sanyo,東海道・山陽新幹線,Tōkaidō–San'yō Shinkansen,shinkansen,,,のぞみ・ひかり・こだま,Nozomi · Hikari · Kodama,,0072BA,
+svc.sanyo-kyushu,山陽・九州新幹線,San'yō–Kyūshū Shinkansen,shinkansen,,,みずほ・さくら,Mizuho · Sakura,,0073BC,
+svc.tohoku-hokkaido,東北・北海道新幹線,Tōhoku–Hokkaidō Shinkansen,shinkansen,,,はやぶさ・はやて・やまびこ・なすの,Hayabusa · Hayate · Yamabiko · Nasuno,,008000,
+svc.yamagata,山形新幹線,Yamagata Shinkansen,shinkansen,Q252048,山形新幹線,つばさ,Tsubasa,,,"東北新幹線 to 福島, then 奥羽本線"
+svc.akita,秋田新幹線,Akita Shinkansen,shinkansen,Q220696,秋田新幹線,こまち,Komachi,,,"東北新幹線 to 盛岡, then 田沢湖線 and 奥羽本線"
+svc.joetsu,上越新幹線,Jōetsu Shinkansen,shinkansen,Q912219,,とき・たにがわ,Toki · Tanigawa,,,From 東京 over 東北新幹線 to 大宮
+svc.hokuriku,北陸新幹線,Hokuriku Shinkansen,shinkansen,Q1037409,,かがやき・はくたか・あさま・つるぎ,Kagayaki · Hakutaka · Asama · Tsurugi,,,From 東京 over 東北新幹線 and 上越新幹線 to 高崎
+svc.tobu.spacia-x,スペーシアX,Spacia X,limited-express,,,けごん・きぬ,Kegon · Kinu,tobu-n100,,Tobu N100 limited express; stops from ja:けごん and ja:きぬ (Spacia X runs as けごん to 東武日光 and きぬ to 鬼怒川温泉)

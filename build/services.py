@@ -184,6 +184,8 @@ def build(shards, report):
             "kind": row["kind"],
             "colour": f"#{colour.upper()}" if colour else None,
             "trains": {"ja": row["trains_ja"], "en": row["trains_en"]} if row["trains_ja"] else None,
+            # The train models that run this service, where it has its own (スペーシアX is the N100).
+            "series": row["series"].split() if row.get("series") else [],
             "wikidata": row["wikidata"] or None,
             "sections": out_sections,
         })
