@@ -27,6 +27,7 @@ import commons
 import facts
 import images as train_images
 import manual
+import mascots
 import places
 import wikipedia
 import series as rolling_stock
@@ -519,10 +520,51 @@ def main():
 
     services_doc = services.build(shards, report)
 
+    # Mascots and characters, on the lines and trains they belong to; photos only of real animals.
+    resolver = mascots.Resolver(shards, {s["id"] for s in all_series}, report)
+    mascot_records = mascots.build(resolver)
+    lore_doc = {
+        "version": 0, "languages": ["en", "ja"],
+        "source": "Facts from Japanese Wikipedia; notes are our own",
+        "lore": mascots.build_lore(resolver),
+    }
+    animals = [r for r in mascot_records if r["kind"] == "animal" and r["wikidata"]]
+    cache = facts.entities()
+    facts.fetch(sorted({r["wikidata"] for r in animals}), cache)
+    facts.CACHE.write_text(json.dumps(cache, ensure_ascii=False, sort_keys=True), encoding="utf-8")
+    animal_photos = {row["id"]: row for row in commons.photos(animals, cache, set(), report)}
+    mascot_dir = OUT / "mascots"
+    mascot_dir.mkdir(parents=True, exist_ok=True)
+    keep = set()
+    for record in mascot_records:
+        row = animal_photos.get(record["id"])
+        record["image"] = None
+        if row:
+            image = train_images.Image.open(row["path"]).convert("RGB")
+            full = train_images.resized(image, train_images.PHOTO_W)
+            thumb = train_images.resized(image, train_images.THUMB_W)
+            full.save(mascot_dir / f"{record['id']}.webp", "WEBP", quality=train_images.PHOTO_QUALITY, method=6)
+            thumb.save(mascot_dir / f"{record['id']}-thumb.webp", "WEBP", quality=train_images.PHOTO_QUALITY, method=6)
+            keep |= {f"{record['id']}.webp", f"{record['id']}-thumb.webp"}
+            record["image"] = {
+                "url": f"mascots/{record['id']}.webp", "thumb": f"mascots/{record['id']}-thumb.webp",
+                "width": full.width, "height": full.height, "generated": False,
+                "credit": row["credit"], "licence": row["licence"],
+                "licence_url": row["licence_url"], "source_url": row["source_url"],
+            }
+    for stale in mascot_dir.glob("*.webp"):
+        if stale.name not in keep:
+            stale.unlink()
+    mascots_doc = {
+        "version": 0, "languages": ["en", "ja"],
+        "source": "Facts from Japanese Wikipedia's lists and Wikidata; notes are our own",
+        "mascots": mascot_records,
+    }
+
     for name, doc in (
         ("series_wikipedia.json", articles), ("lines_wikipedia.json", line_articles),
         ("places.json", places_doc), ("places_wikipedia.json", place_articles),
-        ("services.json", services_doc),
+        ("services.json", services_doc), ("mascots.json", mascots_doc), ("lore.json", lore_doc),
     ):
         doc_text = json.dumps(doc, ensure_ascii=False, separators=(",", ":"))
         (OUT / name).write_text(doc_text, encoding="utf-8")
@@ -532,7 +574,8 @@ def main():
             "sha256": hashlib.sha256(doc_text.encode()).hexdigest(),
         })
 
-    for picture in sorted(train_images.OUT.glob("*.webp")) + sorted((OUT / "places").glob("*.webp")):
+    for picture in (sorted(train_images.OUT.glob("*.webp")) + sorted((OUT / "places").glob("*.webp"))
+                    + sorted((OUT / "mascots").glob("*.webp"))):
         data = picture.read_bytes()
         files.append({
             "path": f"{picture.parent.name}/{picture.name}",

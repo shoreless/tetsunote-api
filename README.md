@@ -20,6 +20,8 @@ Nothing is published yet. The first release will cover the Tokyo region.
 | `v0/trains/*.webp` | Train pictures: our illustrations (1200 px), and for models without one, a photo from Wikimedia Commons (960 px), each with a `-thumb.webp` at 400 px. A photo's `image` has `credit` (the photographer), `licence`, `licence_url` and `source_url` (its Commons page); apps must show the credit and licence. Photos stay under their own licences. Every file is in the manifest with its hash |
 | `v0/places.json` | Places for railway fans: museums, maglev and heritage railways, historic stations, and curated places such as train bars. Each has `kind`, `name`, `point` [lon, lat], its nearest `stations` (id and metres, within 3 km), `website`, a Wikidata `description` and `links`, and a Commons `image` with its credit |
 | `v0/places_wikipedia.json` | The opening of each place's Wikipedia article, under CC BY-SA 4.0 |
+| `v0/mascots.json` | Mascots and characters of lines and trains: operator and line mascots (とぶっち, カンセンジャー), station idols and characters (STATION IDOL LATCH! on the 山手線, やなせたかし's on ごめん・なはり線), animal stationmasters (たま at 貴志), and Shinkalion robots and Zairiners. Each has `kind`, `name` (ja, en, reading), the `lines`, `stations` and `series` it belongs to, `status` (active, retired, in-memoriam), `since`/`until`, a short `note` in our own words, and `links` (official site, Wikipedia). Only real animals have an `image`, a free Commons photo with its credit; character art belongs to its owners, so apps should link to it |
+| `v0/lore.json` | Legends and lucky things: lucky trains (spotting Dr Yellow is said to bring happiness; 都電's one yellow car), charms on board (heart-shaped straps), name origins (こまち after 小野小町), and stations whose tickets are charms (学 for exams, 銭函 for money). Each has `kind`, `title`, the `lines`, `stations` and `series` it belongs to, `status` (active or past, as for tickets no longer sold), a `note` in our own words and a Wikipedia `link` |
 | `v0/services.json` | Services (運転系統): the trains riders board, where they differ from the legal lines, such as 中央線快速 and 中央・総武線各駅停車 on the one 中央線, or 湘南新宿ライン over three lines, and the shinkansen that run through from one line to the next. Each has `name`, `kind`, `colour`, `trains` (the train names, for shinkansen), `series` (the train models of a service that has its own, like スペーシアX) and `sections`: a `line` with the `segments` it runs over and the stations it `stops` at. `through` lists where one line's trains run on into another (東西線 into 中央線 at 中野), with the station on each |
 | `v0/events.json` | Depot open days, festivals, farewell runs and stamp rallies, with `starts` and `ends` |
 
@@ -86,6 +88,9 @@ honest:
   section doesn't follow its line. The stops are the stations on those sections that the service's
   Japanese Wikipedia station table (駅一覧) lists as served (facts only), unless a section lists them
   or says `all`. `data/through.csv` gives the through-running between lines.
+- `data/mascots.csv` lists the mascots and characters, and `data/lore.csv` the legends, drafted from Japanese Wikipedia's lists (facts
+  only) and checked by hand. Rows name an operator and optionally lines, stations and train models;
+  the build fails on any it doesn't know.
 - `data/official_km.csv` holds the operators' published 営業キロ for each line, with the source:
   JR Hokkaido, JR Central, JR West and JR Kyushu from their own figures, and the lines listed by the
   MLIT Chūbu and Shikoku transport bureaus (every operator in those regions). `uv run

@@ -1,6 +1,6 @@
 {
  "version": 0,
- "revision": "2736f2b4255f",
+ "revision": "9dbacd3aad71",
  "languages": [
   "en",
   "ja"
@@ -2151,6 +2151,16 @@
    "path": "services.json",
    "bytes": 46755,
    "sha256": "330e4b39db636bce8179a7e12b9e3ec9d6b6aef6d5ca7ef4f301b4071ea946b3"
+  },
+  {
+   "path": "mascots.json",
+   "bytes": 132478,
+   "sha256": "2a46725f6d68d172854d32268d8baefab331450d5335dc4fa7d213b04406d7fd"
+  },
+  {
+   "path": "lore.json",
+   "bytes": 14572,
+   "sha256": "4d06e96d8e2723f4b1966a9850759c6b7334083748c42d2d3b24810bfd3d97d7"
   },
   {
    "path": "trains/0-thumb.webp",
@@ -4661,6 +4671,36 @@
    "path": "places/yamanashi-prefectural-maglev-exhibition-center.webp",
    "bytes": 36120,
    "sha256": "344350c56a8b504254c6bccda42e0afc81b3488e96ae87743c1dad02f3ce7d6f"
+  },
+  {
+   "path": "mascots/animal.jr-east.wasao-thumb.webp",
+   "bytes": 11864,
+   "sha256": "4d5b6171c26b9c073b591daa8cedf955b021507ef6ebcb2df084f80e1d342d06"
+  },
+  {
+   "path": "mascots/animal.jr-east.wasao.webp",
+   "bytes": 48488,
+   "sha256": "0813ec8c20be20b041cfc28695b65c26d8c687bcbc3ca3125e90cb461d07154a"
+  },
+  {
+   "path": "mascots/animal.wakayama-dentetsu.nitama-thumb.webp",
+   "bytes": 12600,
+   "sha256": "736855ccd6115d9abb5e9d77d13258b870ce1b51e289ac83bb11556c60e14585"
+  },
+  {
+   "path": "mascots/animal.wakayama-dentetsu.nitama.webp",
+   "bytes": 53192,
+   "sha256": "050f4e7bc62af3f4ff2bd901056118efa8f49adc14312f3c6e34b10371cdabae"
+  },
+  {
+   "path": "mascots/animal.wakayama-dentetsu.tama-thumb.webp",
+   "bytes": 10430,
+   "sha256": "faa9c5922b8e5e408c56498a3e5fa318c4dd94439e92cabe085769279a44b9b0"
+  },
+  {
+   "path": "mascots/animal.wakayama-dentetsu.tama.webp",
+   "bytes": 18138,
+   "sha256": "9dc9188a64eff1a1d441f5c18d478ec31f6f89c4eedc1bac998f55cec2ad1b7c"
   }
  ]
 }
