@@ -4,120 +4,125 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>鉄ノート Tetsunote · Android</title>
-<meta name="description" content="鉄ノート (Tetsunote): a railway logbook for Japan. Log every ride, collect trains, lines and railway museums, and watch the map fill in. Free for Android.">
+<meta name="description" content="鉄ノート (Tetsunote): a railway logbook for Japan. Log every ride, collect trains and station stamps, fill in the 乗りつぶし map, and find railway shops, bars and museums. Free for Android.">
 <meta property="og:title" content="鉄ノート Tetsunote">
-<meta property="og:description" content="A railway logbook for Japan: rides, trains, lines, sightings and railway museums.">
-<meta property="og:image" content="https://shoreless.github.io/tetsunote-api/app/screens/logbook.webp">
-<meta name="theme-color" content="#10242d">
+<meta property="og:description" content="A railway logbook for Japan: rides as tickets, a train stamp album, station stamps, lines, and railway places.">
+<meta property="og:image" content="https://shoreless.github.io/tetsunote-api/app/screens/log.webp">
+<meta name="theme-color" content="#f7f2e7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=DotGothic16&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #10242d; --panel: #17323d; --high: #214452; --chalk: #e8eef0; --muted: #8fa7b0;
-    --lime: #9acd32; --amber: #ffb02e; --paper: #f3eee1; --paper-ink: #26343a; --hanko: #d7263d;
+    --washi: #f7f2e7; --kami: #fffdf7; --sumi: #2b2a28; --usuzumi: #8b867c; --shu: #e0402e; --ai: #274a78;
+    --kin: #c9a24a; --wakatake: #5fa77a; --yamabuki: #f3b52c; --rule: #e6dccb; --jy: #9acd32;
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
   body {
-    margin: 0; background: var(--ink); color: var(--chalk);
-    font: 16px/1.6 "Hiragino Sans", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+    margin: 0; background: var(--washi); color: var(--sumi);
+    font: 500 16px/1.7 "Zen Maru Gothic", "Hiragino Maru Gothic ProN", system-ui, sans-serif;
+    background-image: radial-gradient(#e3d9c6 1px, transparent 1.2px); background-size: 16px 16px;
   }
-  a { color: var(--lime); }
-  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
-  header { display: flex; align-items: baseline; gap: 12px; padding: 24px 0 8px; }
-  header h1 { margin: 0; font-size: 34px; font-weight: 900; letter-spacing: .02em; }
-  header .latin { color: var(--muted); font-family: ui-monospace, Menlo, monospace; font-size: 13px; letter-spacing: .12em; }
+  a { color: var(--ai); font-weight: 700; }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+  canvas.px { image-rendering: pixelated; vertical-align: middle; }
+
+  header { display: flex; align-items: flex-end; gap: 12px; padding: 24px 0 8px; }
+  header h1 { margin: 0; font-size: 34px; font-weight: 900; letter-spacing: .04em; line-height: 1; }
+  header .latin { color: var(--usuzumi); font-size: 12px; font-weight: 700; letter-spacing: .2em; margin-bottom: 4px; }
   header .lang { margin-left: auto; }
   button.lang-toggle {
-    background: none; color: var(--chalk); border: 1px solid var(--muted); border-radius: 999px;
-    padding: 6px 14px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
+    background: var(--kami); color: var(--sumi); border: 2px solid var(--sumi); border-radius: 999px; box-shadow: 2px 2px 0 var(--sumi);
+    padding: 5px 14px; font: inherit; font-size: 14px; font-weight: 900; cursor: pointer;
   }
-  .hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: center; padding: 24px 0 40px; }
-  .tagline { font-size: clamp(26px, 5vw, 40px); font-weight: 900; line-height: 1.25; margin: 0 0 16px; }
-  .lead { color: var(--muted); margin: 0 0 24px; font-size: 17px; }
 
-  /* 発車標: the departure board */
-  .board {
-    background: #050807; border: 2px solid #2a2f2e; border-radius: 14px; padding: 14px 16px;
-    font-family: ui-monospace, Menlo, monospace; margin-bottom: 24px;
-  }
-  .board .head { color: #6d7773; font-size: 11px; display: grid; grid-template-columns: 64px 1fr; }
-  .board .row { display: grid; grid-template-columns: 64px 1fr; align-items: center; margin-top: 6px; }
-  .board .kind { font-family: inherit; font-weight: 900; font-size: 15px; }
-  .board .dest { color: var(--amber); font-weight: 700; font-size: 17px; }
-  .board .cursor { display: inline-block; width: 7px; height: 12px; background: var(--amber); margin-left: 6px; animation: blink 1.2s steps(2) infinite; vertical-align: -1px; }
-  @keyframes blink { 50% { opacity: 0; } }
+  .hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 36px; align-items: center; padding: 24px 0 36px; }
+  .tagline { font-size: clamp(28px, 5vw, 42px); font-weight: 900; line-height: 1.3; margin: 0 0 14px; }
+  .lead { color: #5d5a53; margin: 0 0 24px; font-size: 17px; }
+
+  /* パタパタ: the flip board */
+  .flip { background: #1a1a1a; border: 2px solid var(--sumi); border-radius: 16px; padding: 12px 14px; margin-bottom: 26px; box-shadow: 0 5px 0 var(--sumi); max-width: 470px; }
+  .flip .hd { font: 11px "DotGothic16", monospace; color: #8a8a8a; letter-spacing: .1em; margin: 0 0 6px 2px; }
+  .flip .row { display: flex; align-items: center; gap: 8px; margin-top: 5px; }
+  .flip .kind { font: 13px "DotGothic16", monospace; color: #fff; border-radius: 4px; width: 42px; text-align: center; padding: 2px 0; flex: none; }
+  .flip .tiles { display: flex; gap: 2px; }
+  .flip .tiles.val { margin-left: auto; }
+  .flip i { display: grid; place-items: center; width: 18px; height: 25px; border-radius: 3px; font: normal 17px "DotGothic16", monospace; color: #f4f1e8;
+    background: linear-gradient(#2e2e2e 0 49%, #111 49% 51%, #262626 51%); }
+  .flip .val i { color: #ffcf4a; }
 
   /* 乗車券: the download ticket */
-  .ticket {
-    position: relative; display: grid; grid-template-columns: 1fr 120px; background: var(--paper); color: var(--paper-ink);
-    border-radius: 12px; overflow: hidden; max-width: 460px;
-  }
-  .ticket .band { grid-column: 1 / -1; background: var(--lime); color: #fff; font-weight: 700; font-size: 13px; padding: 6px 14px; }
-  .ticket .body { padding: 14px; }
-  .ticket .stub {
-    padding: 14px 10px; border-left: 3px dashed rgba(38, 52, 58, .35); display: flex; flex-direction: column;
-    align-items: center; justify-content: center; text-align: center; font-family: ui-monospace, Menlo, monospace; font-size: 12px;
-  }
-  .ticket::before, .ticket::after {
-    content: ""; position: absolute; right: 108px; width: 22px; height: 22px; border-radius: 50%; background: var(--ink);
-  }
-  .ticket::before { top: 20px; }
-  .ticket::after { bottom: -11px; }
-  .from-to { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 22px; color: #000; }
-  .from-to small { display: block; font-weight: 400; font-size: 11px; color: var(--paper-ink); }
+  .kouken { position: relative; display: flex; border-radius: 8px; background: #f4f9ea; box-shadow: 0 6px 14px #6b5a3a26; max-width: 470px; overflow: hidden; }
+  .kouken .band { width: 7px; background: var(--jy); flex: none; }
+  .kouken .body { flex: 1; padding: 12px 14px; }
+  .kouken .top { font-size: 12px; font-weight: 700; color: #5d6a60; display: flex; align-items: center; gap: 8px; }
+  .badge { display: inline-flex; align-items: center; border: 2px solid var(--jy); border-radius: 5px; background: #fff; font: 900 11px/1 "Zen Maru Gothic"; overflow: hidden; height: 21px; }
+  .badge span { background: var(--jy); color: #fff; padding: 0 4px; height: 100%; display: grid; place-items: center; }
+  .badge em { font-style: normal; padding: 0 5px; }
+  .route { display: flex; align-items: flex-end; gap: 10px; font-weight: 900; font-size: 24px; margin: 4px 0 2px; }
+  .route small { display: block; font-size: 11px; font-weight: 700; color: #7c8a80; }
+  .route .arrow { color: var(--usuzumi); font-size: 16px; padding-bottom: 14px; }
   .download {
-    display: inline-block; margin-top: 12px; background: var(--ink); color: var(--lime); text-decoration: none;
-    font-weight: 900; padding: 12px 18px; border-radius: 999px; font-size: 16px;
+    display: inline-flex; align-items: center; gap: 10px; margin-top: 10px; background: var(--shu); color: #fff; text-decoration: none;
+    font-weight: 900; padding: 11px 18px; border-radius: 14px; font-size: 17px; border: 2px solid var(--sumi); box-shadow: 0 4px 0 var(--sumi);
   }
-  .download:hover { background: #0b1a21; }
-  .meta { font-size: 12px; margin-top: 8px; color: var(--paper-ink); }
-  .hanko {
-    width: 72px; height: 72px; border: 3px solid var(--hanko); border-radius: 50%; color: var(--hanko);
-    display: flex; flex-direction: column; align-items: center; justify-content: center; transform: rotate(-14deg);
-    font-weight: 900; font-size: 11px; line-height: 1.2; opacity: .8; margin-bottom: 6px;
-  }
-  .hanko span { font-size: 9px; font-weight: 700; }
+  .download:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--sumi); }
+  .meta { font-size: 12px; font-weight: 700; margin-top: 10px; color: #6b7a6e; }
+  .kouken .stub { width: 112px; border-left: 2px dashed #b9c9bb; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 10px; position: relative; flex: none; }
+  .kouken .stub small { font-size: 11px; font-weight: 700; color: #4b5a4f; text-align: center; line-height: 1.3; }
+  .kouken::before, .kouken::after { content: ""; position: absolute; right: 105px; width: 16px; height: 16px; border-radius: 50%; background: var(--washi); }
+  .kouken::before { top: -8px; } .kouken::after { bottom: -8px; }
+  .inkan { width: 60px; height: 60px; border: 2.5px solid var(--shu); border-radius: 50%; color: var(--shu); display: grid; place-items: center; text-align: center;
+    transform: rotate(-12deg); font: 900 12px/1.2 "Zen Maru Gothic"; }
 
-  .phone { justify-self: center; width: min(300px, 80vw); height: auto; border-radius: 28px; border: 8px solid #0b1a21; box-shadow: 0 20px 60px rgba(0,0,0,.45); display: block; }
+  .phone { justify-self: center; width: min(300px, 80vw); height: auto; border-radius: 30px; border: 9px solid var(--sumi); box-shadow: 8px 8px 0 #2b2a2833; display: block; background: var(--washi); }
 
-  section { padding: 32px 0; }
-  h2 { font-size: 13px; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); margin: 0 0 16px; }
-  .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-  .feature { background: var(--panel); border-radius: 16px; padding: 18px; }
-  .feature .icon { font-size: 26px; }
-  .feature h3 { margin: 6px 0 6px; font-size: 18px; }
-  .feature p { margin: 0; color: var(--muted); font-size: 14px; }
+  section { padding: 30px 0; }
+  h2 { font-size: 22px; font-weight: 900; margin: 0 0 16px; display: flex; align-items: baseline; gap: 10px; }
+  h2 small { font-size: 12px; color: var(--usuzumi); font-weight: 700; }
+  .card { background: var(--kami); border: 2px solid var(--sumi); border-radius: 16px; box-shadow: 3px 3px 0 var(--sumi); }
+  .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .feature { padding: 16px 18px; }
+  .feature canvas { width: 36px; height: 36px; }
+  .feature h3 { margin: 8px 0 6px; font-size: 18px; font-weight: 900; }
+  .feature p { margin: 0; color: #5d5a53; font-size: 14px; }
 
-  .shots { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
-  .shots figure { margin: 0; flex: 0 0 auto; width: 200px; scroll-snap-align: start; }
-  .shots img { width: 100%; height: auto; border-radius: 16px; border: 5px solid #0b1a21; display: block; }
-  .shots figcaption { color: var(--muted); font-size: 13px; margin-top: 6px; text-align: center; }
+  .poppo { display: flex; align-items: flex-end; gap: 10px; margin: 8px 0 0; }
+  .poppo canvas { width: 52px; height: 52px; flex: none; }
+  .dlg { position: relative; background: var(--kami); border: 3px solid var(--sumi); border-radius: 12px; padding: 12px 14px; font-weight: 700; font-size: 15px;
+    box-shadow: inset 0 0 0 3px var(--kami), inset 0 0 0 5px var(--rule); }
+  .dlg .who { position: absolute; top: -13px; left: 12px; background: var(--shu); color: #fff; font-size: 11px; font-weight: 900; padding: 1px 10px; border-radius: 6px; border: 2px solid var(--sumi); }
+
+  .shots { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 4px 14px; }
+  .shots figure { margin: 0; flex: 0 0 auto; width: 210px; scroll-snap-align: start; }
+  .shots img { width: 100%; height: auto; border-radius: 18px; border: 5px solid var(--sumi); display: block; background: var(--washi); }
+  .shots figcaption { color: #5d5a53; font-size: 13px; font-weight: 700; margin-top: 8px; text-align: center; }
 
   .steps { counter-reset: step; list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
-  .steps li { counter-increment: step; background: var(--panel); border-radius: 12px; padding: 12px 14px 12px 52px; position: relative; }
+  .steps li { counter-increment: step; padding: 12px 14px 12px 54px; position: relative; }
   .steps li::before {
-    content: counter(step); position: absolute; left: 14px; top: 11px; width: 26px; height: 26px; border-radius: 50%;
-    background: var(--lime); color: var(--ink); font-weight: 900; display: flex; align-items: center; justify-content: center; font-size: 14px;
+    content: counter(step); position: absolute; left: 14px; top: 11px; width: 28px; height: 28px; border-radius: 50%;
+    background: var(--shu); color: #fff; font-weight: 900; display: grid; place-items: center; font-size: 14px; border: 2px solid var(--sumi);
   }
-  .note { color: var(--muted); font-size: 14px; }
+  .note { color: #5d5a53; font-size: 14px; }
   code, .hash { font-family: ui-monospace, Menlo, monospace; font-size: 12px; word-break: break-all; }
-  .credits { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .credits div { background: var(--panel); border-radius: 12px; padding: 12px 14px; font-size: 14px; }
-  .credits b { display: block; }
-  footer { padding: 32px 0 48px; color: var(--muted); font-size: 13px; }
+  .credits { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .credits div { padding: 12px 14px; font-size: 14px; }
+  .credits b { display: block; font-weight: 900; }
+  footer { padding: 24px 0 48px; color: var(--usuzumi); font-size: 13px; font-weight: 700; }
 
   [data-en] { display: none; }
   html[lang="en"] [data-en] { display: revert; }
-  .from-to small[data-ja], html[lang="en"] .from-to small[data-en] { display: block; }
-  html[lang="en"] .from-to small[data-ja] { display: none; }
   html[lang="en"] [data-ja] { display: none; }
+  .route small[data-ja], html[lang="en"] .route small[data-en] { display: block; }
+  html[lang="en"] .route small[data-ja] { display: none; }
 
   @media (max-width: 760px) {
     .hero { grid-template-columns: 1fr; }
-    .phone { width: min(260px, 70vw); }  /* after the download: that is what people came for */
-    .features { grid-template-columns: 1fr; }
-    .credits { grid-template-columns: 1fr; }
-    .ticket { grid-template-columns: 1fr 96px; }
-    .ticket::before, .ticket::after { right: 85px; }
+    .phone { width: min(260px, 70vw); }
+    .features, .credits { grid-template-columns: 1fr; }
+    .flip i { width: 15px; height: 22px; font-size: 14px; }
   }
 </style>
 </head>
@@ -136,92 +141,103 @@
         <span data-en>Every train you ride, in one notebook.</span>
       </p>
       <p class="lead">
-        <span data-ja>日本の鉄道のための乗車記録アプリ。乗った区間、車両、座席、駅弁、写真を記録して、乗りつぶし地図を塗っていこう。</span>
-        <span data-en>A railway logbook for Japan. Log the line, the stations, the train and your seat, add photos and ekiben, and watch your 乗りつぶし map fill in.</span>
+        <span data-ja>日本の鉄道のための乗車記録アプリ。乗車は切符に、車両は切手帳に、降りた駅は御朱印に。乗りつぶし地図を塗って、鉄道模型店や鉄道バーも探そう。</span>
+        <span data-en>A railway logbook for Japan. Rides become tickets, trains go in a stamp album, and every station you get off at is stamped like a goshuin. Fill in the 乗りつぶし map, and find model railway shops and train bars on the way.</span>
       </p>
 
-      <div class="board" aria-hidden="true">
-        <div class="head"><span>種別</span><span>DESTINATION</span></div>
-        <div class="row"><span class="kind" style="color:#b8c4c2">普通</span><span class="dest">LINES      594</span></div>
-        <div class="row"><span class="kind" style="color:#f15a22">快速</span><span class="dest">STATIONS 10154</span></div>
-        <div class="row"><span class="kind" style="color:#e53935">特急</span><span class="dest">TRAINS     255</span></div>
-        <div style="color:#6d7773;font-size:11px;margin-top:8px;white-space:nowrap">まもなく&nbsp; NEXT RIDE<span class="cursor"></span></div>
+      <div class="flip" aria-hidden="true">
+        <div class="hd">種別 &nbsp; 行先 · DESTINATION</div>
+        <div class="row"><span class="kind" style="background:#b8c4c2;color:#1c1c1c">普通</span><span class="tiles" data-f="LINES"></span><span class="tiles val" data-f="594"></span></div>
+        <div class="row"><span class="kind" style="background:#f15a22">快速</span><span class="tiles" data-f="STATION"></span><span class="tiles val" data-f="10154"></span></div>
+        <div class="row"><span class="kind" style="background:#e53935">特急</span><span class="tiles" data-f="TRAINS"></span><span class="tiles val" data-f="255"></span></div>
+        <div class="row"><span class="kind" style="background:#ffb02e;color:#1c1c1c">臨時</span><span class="tiles" data-f="PLACES"></span><span class="tiles val" data-f="191"></span></div>
       </div>
 
-      <div class="ticket">
-        <div class="band">乗車券 No. 1 · Android</div>
+      <div class="kouken">
+        <div class="band"></div>
         <div class="body">
-          <div class="from-to">
+          <div class="top"><span class="badge"><span>JY</span><em>01</em></span><span data-ja>乗車券 · Android</span><span data-en>Ticket · Android</span></div>
+          <div class="route">
             <div>ここ<small data-ja>いま</small><small data-en>here</small></div>
-            <div>→</div>
+            <div class="arrow">→</div>
             <div>全線<small data-ja>乗りつぶし</small><small data-en>every line</small></div>
           </div>
           <a class="download" href="https://github.com/shoreless/tetsunote-api/releases/latest/download/tetsunote.apk">
-            <span data-ja>⬇ ダウンロード（APK）</span><span data-en>⬇ Download the APK</span>
+            <span data-ja>ダウンロード（APK）</span><span data-en>Download the APK</span> <span style="color:#3fcf6a;font-size:13px">▶</span>
           </a>
           <div class="meta">
-            <span data-ja>バージョン 0.4.0 · 3.7 MB · Android 10 以上</span>
-            <span data-en>Version 0.4.0 · 3.7 MB · Android 10 or later</span>
+            <span data-ja>バージョン 0.5.0 · 5.6 MB · Android 10 以上</span>
+            <span data-en>Version 0.5.0 · 5.6 MB · Android 10 or later</span>
           </div>
         </div>
         <div class="stub">
-          <div class="hanko">乗車記念<span>26.09.26</span></div>
-          2026.09.26<br>v0.4.0
+          <canvas class="px" data-train width="24" height="12" style="width:72px;height:36px"></canvas>
+          <small>2026.09.29<br>v0.5.0</small>
+          <div class="inkan" style="position:absolute;right:-6px;bottom:-6px;width:48px;height:48px;font-size:10px">乗車<br>記念</div>
         </div>
       </div>
     </div>
-    <img class="phone" src="screens/logbook.webp" width="540" height="1200" alt="The Tetsunote logbook: a departure board and a ride ticket from Shibuya to Ikebukuro">
+    <img class="phone" src="screens/log.webp" width="540" height="1200" alt="The Tetsunote log: rides as tickets with their trains and stamps">
   </div>
 
   <section>
     <h2><span data-ja>できること</span><span data-en>What it does</span></h2>
     <div class="features">
-      <div class="feature"><div class="icon">🎫</div>
+      <div class="feature card"><canvas class="px" data-icon="log" width="12" height="12"></canvas>
         <h3><span data-ja>乗車券で記録</span><span data-en>Rides as tickets</span></h3>
-        <p><span data-ja>路線と区間を選ぶだけで営業キロを計算。乗車中は「発車!」、到着したら乗車記念スタンプ。</span><span data-en>Pick the line and stations and the km work themselves out. Tap 発車! on the train; arriving stamps your ticket.</span></p></div>
-      <div class="feature"><div class="icon">🚃</div>
-        <h3><span data-ja>車両図鑑</span><span data-en>Collect the trains</span></h3>
-        <p><span data-ja>255形式。乗った・見た車両がカラーに。車両ごとの豆知識、データ、写真、あなたの乗車歴。</span><span data-en>255 models that turn from grey to colour as you ride or see them, each with facts, photos and your history with it.</span></p></div>
-      <div class="feature"><div class="icon">🗾</div>
-        <h3><span data-ja>乗りつぶし地図</span><span data-en>The 乗りつぶし map</span></h3>
-        <p><span data-ja>全国594路線。乗った区間がラインカラーで光り、路線ごとの達成率がわかる。</span><span data-en>All 594 lines in Japan. What you've ridden glows in each line's colour, with completion for every line.</span></p></div>
-      <div class="feature"><div class="icon">👁</div>
-        <h3><span data-ja>目撃記録</span><span data-en>Sightings</span></h3>
-        <p><span data-ja>ドクターイエロー、East i、ALFA-X、SL…見かけた特別な列車を記録。</span><span data-en>Doctor Yellow, East i, ALFA-X, steam specials: log the special trains you spot.</span></p></div>
-      <div class="feature"><div class="icon">🏛️</div>
-        <h3><span data-ja>鉄道スポット</span><span data-en>Railway places</span></h3>
-        <p><span data-ja>鉄道博物館、リニア見学センターなど。最寄り駅と徒歩時間、沿線のおすすめも。</span><span data-en>Railway museums, the maglev centre and more, with the nearest station and walk, and suggestions along your ride.</span></p></div>
-      <div class="feature"><div class="icon">🔒</div>
+        <p><span data-ja>「発車」で乗車開始。次の駅と駅番号、残りの駅数がわかり、到着すると御朱印が押される。</span><span data-en>Tap 発車 on the train: see the next station with its number and the stops to go. Arrive, and the station is stamped like a goshuin.</span></p></div>
+      <div class="feature card"><canvas class="px" data-icon="note" width="12" height="12"></canvas>
+        <h3><span data-ja>ノート</span><span data-en>The notebook</span></h3>
+        <p><span data-ja>乗った日にスタンプが押される日記、切手のような車両スタンプ帳、路線ごとの駅スタンプ帳、完乗までの達成率。</span><span data-en>A diary with a stamp for every day you ride, a stamp album of trains, a station stamp card for each line, and progress towards riding every line end to end (完乗).</span></p></div>
+      <div class="feature card"><canvas class="px" data-icon="dex" width="12" height="12"></canvas>
+        <h3><span data-ja>図鑑</span><span data-en>The guide</span></h3>
+        <p><span data-ja>255形式の車両、594路線、10,154駅。豆知識、駅名標、ご当地キャラクターや言い伝えも。</span><span data-en>255 train models, 594 lines and 10,154 stations with their numbers, facts, station signs, and the characters and legends that belong to them.</span></p></div>
+      <div class="feature card"><canvas class="px" data-icon="map" width="12" height="12"></canvas>
+        <h3><span data-ja>乗りつぶし地図と鉄道スポット</span><span data-en>The map and railway places</span></h3>
+        <p><span data-ja>乗った区間がラインカラーで光る。鉄道博物館、鉄道模型店、鉄道書店、鉄道バー・カフェを種類で絞り込み。</span><span data-en>What you've ridden glows in each line's colour. Museums, model railway shops, railway bookshops, and train bars and cafés, filtered by kind.</span></p></div>
+      <div class="feature card"><canvas class="px" data-icon="share" width="12" height="12"></canvas>
+        <h3><span data-ja>シェア</span><span data-en>Share</span></h3>
+        <p><span data-ja>乗車、御朱印、一日の乗車、路線の達成率、スタンプ帳をカードにしてシェア。</span><span data-en>Share a ride, a stamp, a day's rides, a line's progress or your stamp cards as a picture card.</span></p></div>
+      <div class="feature card"><canvas class="px" data-icon="lock" width="12" height="12"></canvas>
         <h3><span data-ja>記録は端末の中だけ</span><span data-en>Your log stays on your phone</span></h3>
-        <p><span data-ja>アカウント不要、広告なし。位置情報は乗車中だけ（使わない設定も可）、端末の外には出ません。鉄道データを一度読み込めばオフラインで使えます。</span><span data-en>No account, no ads. Location is used only during a ride (or not at all, if you prefer) and never leaves your phone. Once the railway data has loaded, it works offline.</span></p></div>
+        <p><span data-ja>アカウント不要、広告なし。位置情報は乗車中と地図だけ（使わない設定も可）、端末の外には出ません。</span><span data-en>No account, no ads. Location is used only during a ride and on the map (or not at all, if you prefer) and never leaves your phone.</span></p></div>
+    </div>
+    <div class="poppo">
+      <canvas class="px" data-poppo width="16" height="16"></canvas>
+      <div class="dlg"><span class="who">ぽっぽ</span>
+        <span data-ja>ホーム画面には発車標と駅名標のウィジェットも。いい旅を！</span>
+        <span data-en>There are home-screen widgets too: a departure board and a station sign. Enjoy the ride!</span>
+      </div>
     </div>
   </section>
 
   <section>
     <h2><span data-ja>画面</span><span data-en>Screens</span></h2>
     <div class="shots">
-      <figure><img src="screens/stations.webp" width="540" height="1200" loading="lazy" alt="Choosing stations shown as station nameboards"><figcaption><span data-ja>駅名標で区間を選ぶ</span><span data-en>Stations as nameboards</span></figcaption></figure>
-      <figure><img src="screens/arrival.webp" width="540" height="1200" loading="lazy" alt="The arrival stamp with confetti"><figcaption><span data-ja>到着で乗車記念</span><span data-en>The arrival stamp</span></figcaption></figure>
-      <figure><img src="screens/train.webp" width="540" height="1200" loading="lazy" alt="The E235 page in Japanese"><figcaption><span data-ja>車両のページ</span><span data-en>Every train's page</span></figcaption></figure>
-      <figure><img src="screens/line.webp" width="540" height="1200" loading="lazy" alt="The Yamanote Line with the ridden stretch coloured"><figcaption><span data-ja>路線図と達成率</span><span data-en>Lines and progress</span></figcaption></figure>
-      <figure><img src="screens/place.webp" width="540" height="1200" loading="lazy" alt="The Railway Museum page"><figcaption><span data-ja>鉄道スポット</span><span data-en>Railway places</span></figcaption></figure>
+      <figure><img src="screens/ride.webp" width="540" height="1200" loading="lazy" alt="A saved ride with its route and railway shops nearby"><figcaption><span data-ja>乗車の記録</span><span data-en>A ride</span></figcaption></figure>
+      <figure><img src="screens/note_trains.webp" width="540" height="1200" loading="lazy" alt="The train stamp album"><figcaption><span data-ja>車両スタンプ帳</span><span data-en>The train album</span></figcaption></figure>
+      <figure><img src="screens/note_stations.webp" width="540" height="1200" loading="lazy" alt="The Yamanote Line station stamp card"><figcaption><span data-ja>駅スタンプ帳</span><span data-en>Station stamps</span></figcaption></figure>
+      <figure><img src="screens/note_diary.webp" width="540" height="1200" loading="lazy" alt="The diary calendar with a stamp on each riding day"><figcaption><span data-ja>日記</span><span data-en>The diary</span></figcaption></figure>
+      <figure><img src="screens/line.webp" width="540" height="1200" loading="lazy" alt="The Yamanote Line with station numbers and transfers"><figcaption><span data-ja>路線と駅番号</span><span data-en>Lines and station numbers</span></figcaption></figure>
+      <figure><img src="screens/station.webp" width="540" height="1200" loading="lazy" alt="Gotanda station's page"><figcaption><span data-ja>駅のページ</span><span data-en>Every station's page</span></figcaption></figure>
+      <figure><img src="screens/map.webp" width="540" height="1200" loading="lazy" alt="The map with museums and shops around Tokyo"><figcaption><span data-ja>乗りつぶし地図</span><span data-en>The map</span></figcaption></figure>
     </div>
   </section>
 
   <section>
     <h2><span data-ja>インストール方法</span><span data-en>How to install</span></h2>
     <ol class="steps">
-      <li><span data-ja>Android 端末でこのページを開き、「ダウンロード（APK）」をタップ。</span><span data-en>On your Android phone, open this page and tap “Download the APK”.</span></li>
-      <li><span data-ja>ダウンロードした <code>tetsunote.apk</code> を開く。</span><span data-en>Open the downloaded <code>tetsunote.apk</code>.</span></li>
-      <li><span data-ja>「提供元不明のアプリ」の許可を求められたら、ブラウザ（またはファイルアプリ）に許可する。</span><span data-en>If asked, allow your browser (or files app) to install unknown apps.</span></li>
-      <li><span data-ja>インストールして開くと、最初に鉄道データ（約6 MB）を読み込みます。</span><span data-en>Install and open it. The first launch downloads the railway data (about 6 MB).</span></li>
+      <li class="card"><span data-ja>Android 端末でこのページを開き、「ダウンロード（APK）」をタップ。</span><span data-en>On your Android phone, open this page and tap “Download the APK”.</span></li>
+      <li class="card"><span data-ja>ダウンロードした <code>tetsunote.apk</code> を開く。</span><span data-en>Open the downloaded <code>tetsunote.apk</code>.</span></li>
+      <li class="card"><span data-ja>「提供元不明のアプリ」の許可を求められたら、ブラウザ（またはファイルアプリ）に許可する。</span><span data-en>If asked, allow your browser (or files app) to install unknown apps.</span></li>
+      <li class="card"><span data-ja>インストールして開くと、最初に鉄道データ（約7 MB）を読み込みます。</span><span data-en>Install and open it. The first launch downloads the railway data (about 7 MB).</span></li>
     </ol>
     <p class="note">
       <span data-ja>Google Play 版ではなく、直接配布している試験版です。新しい版は同じ署名なので、上書きインストールで記録はそのまま残ります。</span>
       <span data-en>This is an early test build shared directly, not through Google Play. New versions carry the same signature, so installing over the top keeps your log.</span>
     </p>
     <p class="note">
-      SHA-256 <span class="hash">ec714ff33452954b700406690aa2d35b24cd6da7aca248429c9da841e89a7bd0</span><br>
+      SHA-256 <span class="hash">ca44eb9e399525118f5d2f2176fabeda19652233b4c191b44ef5422ea092ecfb</span><br>
       <span data-ja>署名証明書</span><span data-en>Signing certificate</span> SHA-256
       <span class="hash">e89837f4f4999d6d023ec6dd3eec423a84d178108a9a97c3420bfc603cd49258</span><br>
       <a href="https://github.com/shoreless/tetsunote-api/releases"><span data-ja>すべてのリリース</span><span data-en>All releases</span></a>
@@ -231,10 +247,12 @@
   <section>
     <h2><span data-ja>データの出典</span><span data-en>Where the data comes from</span></h2>
     <div class="credits">
-      <div><b><span data-ja>路線・駅</span><span data-en>Lines and stations</span></b>「国土数値情報（鉄道データ）」（国土交通省）を加工して作成 · CC BY 4.0</div>
-      <div><b><span data-ja>営業キロ</span><span data-en>Official km</span></b><span data-ja>JR各社および国土交通省地方運輸局の公表値</span><span data-en>Published by the JR companies and MLIT regional transport bureaus</span></div>
-      <div><b><span data-ja>名称・データ・ラインカラー</span><span data-en>Names, facts and colours</span></b>Wikidata · CC0</div>
-      <div><b><span data-ja>解説・写真</span><span data-en>Descriptions and photos</span></b><span data-ja>ウィキペディア（CC BY-SA 4.0）、ウィキメディア・コモンズ（撮影者とライセンスをアプリ内に表示）</span><span data-en>Wikipedia (CC BY-SA 4.0) and Wikimedia Commons, with each photo's author and licence shown in the app</span></div>
+      <div class="card"><b><span data-ja>路線・駅</span><span data-en>Lines and stations</span></b>「国土数値情報（鉄道データ）」（国土交通省）を加工して作成 · CC BY 4.0</div>
+      <div class="card"><b><span data-ja>営業キロ</span><span data-en>Official km</span></b><span data-ja>JR各社および国土交通省地方運輸局の公表値</span><span data-en>Published by the JR companies and MLIT regional transport bureaus</span></div>
+      <div class="card"><b><span data-ja>名称・データ・ラインカラー</span><span data-en>Names, facts and colours</span></b>Wikidata · CC0</div>
+      <div class="card"><b><span data-ja>解説・写真・駅番号</span><span data-en>Descriptions, photos and station numbers</span></b><span data-ja>ウィキペディア（CC BY-SA 4.0）、ウィキメディア・コモンズ（撮影者とライセンスをアプリ内に表示）</span><span data-en>Wikipedia (CC BY-SA 4.0) and Wikimedia Commons, with each photo's author and licence shown in the app</span></div>
+      <div class="card"><b><span data-ja>お店・バー</span><span data-en>Shops and bars</span></b><span data-ja>各店の公式サイトで確認。位置は国土地理院のアドレス検索</span><span data-en>Checked on each venue's own site; placed with the GSI address search</span></div>
+      <div class="card"><b><span data-ja>フォント</span><span data-en>Fonts</span></b>Zen Maru Gothic · Yuji Syuku · DotGothic16 · SIL OFL 1.1</div>
     </div>
     <p class="note">
       <span data-ja>鉄道データはオープンデータとして公開しています：</span><span data-en>The railway data is open:</span>
@@ -258,6 +276,43 @@
   let saved = null;
   try { saved = localStorage.getItem("tetsunote-lang"); } catch (e) {}
   setLang(saved || ((navigator.language || "ja").toLowerCase().startsWith("ja") ? "ja" : "en"));
+
+  // Pixel art, as in the app: one character a pixel.
+  const PAL = { K: "#2b2a28", W: "#fffdf7", R: "#e0402e", Y: "#ffcf4a", L: "#8fb8e8", E: "#5fa77a", T: "#efe2c2", B: "#274a78",
+    O: "#ff7a4d", D: "#2b2a28", P: "#ffb3a1", G: "#c9a24a", S: "#e3e7ea", N: "#34404d", V: "#9acd32" };
+  const ICONS = {
+    log: ["............", "KKKKKKKKKKKK", "KRRRRRRRRRRK", "KWWWWKWWWWWK", "KWKKWKWKKKWK", "KWWWWWWWWWWK", "KWKKWKWKKWWK", "KWWWWKWWWWWK", "KKKKKKKKKKKK", "............", "............", "............"],
+    note: ["..K.K.K.K...", ".KKKKKKKKKK.", ".KWWWWWWWWK.", ".KWKKKKKWWK.", ".KWWWWWWWWK.", ".KWKKKKWWWK.", ".KWWWWWWWWK.", ".KWKKKKKWRK.", ".KWWWWWWWRK.", ".KKKKKKKKRK.", ".........R..", "............"],
+    dex: ["..KKKKKKKK..", "..KYYYYYYK..", "..KYLLLLYK..", "..KYLEELYK..", "..KYLLLLYK..", "..KYYYYYYK..", "..KYKKKKYK..", "..KYYYYYYK..", "..KYKKKYYK..", "..KYYYYYYK..", "..KKKKKKKK..", "............"],
+    map: ["KKKKKKKKKKKK", "KTTETTTTBTTK", "KTEEETTTBTTK", "KTTETRRTTBTK", "KTTTRRTTTBTK", "KTTTTRTTTTBK", "KTBTTTTTETTK", "KBBTTTTEEETK", "KTTTTTTTETTK", "KKKKKKKKKKKK", "............", "............"],
+    share: ["....KK......", "...KWWK.....", "..KWWWWK....", ".KKKWWKKK...", "...KWWK.....", "...KWWK..K..", "K..KKKK..K..", "KW.......WK.", "KW.......WK.", "KWWWWWWWWWK.", "KKKKKKKKKKK.", "............"],
+    lock: ["...KKKKK....", "..KK...KK...", "..K.....K...", "..K.....K...", ".KKKKKKKKK..", ".KYYYYYYYK..", ".KYYYKYYYK..", ".KYYYKYYYK..", ".KYYYYYYYK..", ".KKKKKKKKK..", "............", "............"],
+  };
+  const POPPO = ["....KKKKKKKK....", "...KBBBBGBBBK...", "..KBBBBBBBBBBK..", "..KKKKKKKKKKKK..", "..KOOOOOOOOOOK..", ".KOODDDDDDDDOOK.", ".KODWDDDDDDWDOK.", ".KODDDDDDDDDDOK.", ".KOOOOOOOOOOOOK.", ".KOPOOOOOOOOPOK.", ".KOOOOOKKOOOOOK.", ".KOOOOOOOOOOOOK.", "..KOYOOOOOOYOK..", "..KKKKKKKKKKKK..", "...KK......KK...", "................"];
+  const TRAIN = ["........................", ".KKKKKKKKKKKKKKKKKKKKK..", "KSSSSSSSSSSSSSSSSSSSSSK.", "KVVVVVVVVVVVVVVVVVVVVVVK", "KSNNNSNNNSKKSNNNSNNNSNNK", "KSNNNSNNNSKKSNNNSNNNSNNK", "KSNNNSNNNSKKSNNNSNNNSSSK", "KSSSSSSSSSKKSSSSSSSSSSYK", "KVVVVVVVVVVVVVVVVVVVVVVK", "KSSSSSSSSSSSSSSSSSSSSSSK", ".KKKKKKKKKKKKKKKKKKKKKK.", "....KK...........KK....."];
+  function px(canvas, map) {
+    const g = canvas.getContext("2d");
+    map.forEach((row, y) => [...row].forEach((c, x) => { if (PAL[c]) { g.fillStyle = PAL[c]; g.fillRect(x, y, 1, 1); } }));
+  }
+  document.querySelectorAll("[data-icon]").forEach(c => px(c, ICONS[c.dataset.icon]));
+  document.querySelectorAll("[data-poppo]").forEach(c => px(c, POPPO));
+  document.querySelectorAll("[data-train]").forEach(c => px(c, TRAIN));
+
+  // パタパタ: the flaps clatter into place once, as the page opens.
+  const GLYPHS = " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  document.querySelectorAll(".flip [data-f]").forEach(el => {
+    const value = el.classList.contains("val");
+    const text = value ? el.dataset.f.padStart(5) : el.dataset.f.padEnd(7);
+    [...text].forEach((ch, i) => {
+      const tile = document.createElement("i");
+      el.appendChild(tile);
+      let n = 0; const steps = 6 + Math.floor(Math.random() * 10) + i * 2;
+      const t = setInterval(() => {
+        tile.textContent = ++n >= steps ? ch : GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
+        if (n >= steps) clearInterval(t);
+      }, 70);
+    });
+  });
 </script>
 </body>
 </html>
