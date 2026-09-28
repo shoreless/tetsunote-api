@@ -18,7 +18,7 @@ Nothing is published yet. The first release will cover the Tokyo region.
 | `v0/series.json` | Train models (E235 series, N700S…) with operators, kind and status (active, retiring, retired). Where known: `facts` (entered service, retired, top speed, car length, number built, manufacturers), a one-line `description` and `links` from Wikidata, what it `replaces` and was `replaced_by`, and a short bilingual `about` of our own (marked `draft` until checked). Each line lists the models that run or ran on it in `series`, with a status for that line. A model with a picture has `image`: `url` and `thumb` (WebP, relative to `v0/`), size, `generated` (true for AI illustrations, which apps should label) and `credit`. A picture in the livery of particular lines is given only on those lines, as `image` on the model's entry in that line's `series`; prefer it over the model's own `image` |
 | `v0/series_wikipedia.json` | The opening of each model's Japanese and English Wikipedia article, shortened. **Licensed CC BY-SA 4.0**, unlike the rest of this data; each entry links to its article. Apps showing it should credit Wikipedia and link the article |
 | `v0/trains/*.webp` | Train pictures: our illustrations (1200 px), and for models without one, a photo from Wikimedia Commons (960 px), each with a `-thumb.webp` at 400 px. A photo's `image` has `credit` (the photographer), `licence`, `licence_url` and `source_url` (its Commons page); apps must show the credit and licence. Photos stay under their own licences. Every file is in the manifest with its hash |
-| `v0/places.json` | Places for railway fans: museums, maglev and heritage railways, historic stations, and curated places such as train bars. Each has `kind`, `name`, `point` [lon, lat], its nearest `stations` (id and metres, within 3 km), `website`, a Wikidata `description` and `links`, and a Commons `image` with its credit |
+| `v0/places.json` | Places for railway fans: museums, maglev and heritage railways, historic stations, railway shops (model railways, railway books, operators' goods), and curated places such as train bars. Each has `kind`, `name`, `point` [lon, lat], its nearest `stations` (id and metres, within 3 km), `website`, a Wikidata `description` and `links`, and a Commons `image` with its credit |
 | `v0/places_wikipedia.json` | The opening of each place's Wikipedia article, under CC BY-SA 4.0 |
 | `v0/mascots.json` | Mascots and characters of lines and trains: operator and line mascots (とぶっち, カンセンジャー), station idols and characters (STATION IDOL LATCH! on the 山手線, やなせたかし's on ごめん・なはり線), animal stationmasters (たま at 貴志), and Shinkalion robots and Zairiners. Each has `kind`, `name` (ja, en, reading), the `lines`, `stations` and `series` it belongs to, `status` (active, retired, in-memoriam), `since`/`until`, a short `note` in our own words, and `links` (official site, Wikipedia). Only real animals have an `image`, a free Commons photo with its credit; character art belongs to its owners, so apps should link to it |
 | `v0/lore.json` | Legends and lucky things: lucky trains (spotting Dr Yellow is said to bring happiness; 都電's one yellow car), charms on board (heart-shaped straps), name origins (こまち after 小野小町), and stations whose tickets are charms (学 for exams, 銭函 for money). Each has `kind`, `title`, the `lines`, `stations` and `series` it belongs to, `status` (active or past, as for tickets no longer sold), a `note` in our own words and a Wikipedia `link` |
@@ -120,6 +120,13 @@ spot, add a row to `data/places.csv` with `kind` (museum, maglev, heritage-railw
 historic-station, bar, cafe, shop, viewpoint, other), `ja`, `en`, `lat`, `lon`, `website`, `source`
 and the date you `checked` it. To hide a Wikidata place (closed, not open to the public), give its
 `wikidata` id and `hide` = yes, with a `note` saying why.
+
+Railway shops (model railway shops, railway bookshops, operators' goods shops, parts shops) are
+listed in `data/shops.csv`: `id`, `chain`, `ja`, `en`, the street `address` from the shop's own
+site, `website`, `source`, the date `checked`, and a short `note_en`/`note_ja` in our own words.
+Each address is placed with the 国土地理院 address search; give `lat` and `lon` to place it by hand.
+A closed shop gets `hide` = yes. Shops appear in `v0/places.json` as kind `shop`, with their
+`chain`, `address` and the note as `description`.
 
 ## Corrections and submissions
 

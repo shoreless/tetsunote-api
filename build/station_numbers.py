@@ -275,7 +275,8 @@ def build(shards, services, report):
         if not groups:
             continue
         done_groups |= groups
-        group_stations = [x for g in groups for x in by_group[g]]
+        # In a fixed order, so a number of no line of ours lands on the same station every build.
+        group_stations = sorted((x for g in groups for x in by_group[g]), key=lambda x: (x["group"], x["id"]))
         seen = set()
         for block in parsed.get(title, []):
             for e in block["entries"]:

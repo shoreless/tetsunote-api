@@ -197,7 +197,8 @@ def describe(records):
     for record in records:
         entity = cache.get(record.get("wikidata") or "")
         if not entity or "missing" in entity:
-            record.update(description=None, links=None)
+            # A record of our own keeps the description it came with (a shop's note).
+            record.update(description=record.get("description"), links=None)
             continue
         record["description"] = {"en": text(entity, "descriptions", "en"), "ja": text(entity, "descriptions", "ja")}
         sitelinks = entity.get("sitelinks", {})

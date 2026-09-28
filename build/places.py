@@ -13,6 +13,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+import shops
 from names import USER_AGENT, ascii_name
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -120,6 +121,9 @@ def build(stations, report):
                 raise SystemExit(f"{where}: a new place needs kind, ja, lat and lon")
             places[key] = place
 
+    # Railway shops, from data/shops.csv.
+    places.update(shops.load(report))
+
     groups = {}
     for st in stations:
         groups.setdefault(st["group"], st)
@@ -144,6 +148,10 @@ def build(stations, report):
             "source": place.get("source"),
             "checked": place.get("checked"),
         }
+        # Shops carry their chain, street address and our note on what they are.
+        for extra in ("chain", "address", "description"):
+            if place.get(extra):
+                record[extra] = place[extra]
         if not record["stations"]:
             report.append(f"place {pid}: no station within {NEAR_M} m")
         by_id.append(record)
