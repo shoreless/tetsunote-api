@@ -1,6 +1,6 @@
 {
  "version": 0,
- "revision": "9dbacd3aad71",
+ "revision": "ea0d1b3a6e82",
  "languages": [
   "en",
   "ja"
@@ -2149,8 +2149,8 @@
   },
   {
    "path": "services.json",
-   "bytes": 46755,
-   "sha256": "330e4b39db636bce8179a7e12b9e3ec9d6b6aef6d5ca7ef4f301b4071ea946b3"
+   "bytes": 46828,
+   "sha256": "b71cbce1244e3ccfcfd79bfd2b8225552d468b732b8f3bce7bfa94a444bfc62f"
   },
   {
    "path": "mascots.json",

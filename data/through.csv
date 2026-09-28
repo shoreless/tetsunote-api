@@ -1,4 +1,5 @@
 line_a,line_b,station,note
+jr-east.chuo,jr-east.sobu,御茶ノ水,中央線 ⇄ 総武線 (中央・総武線各駅停車)
 tokyo-metro.tozai,jr-east.chuo,中野,東西線 ⇄ 中央・総武線各駅停車 (三鷹)
 tokyo-metro.tozai,jr-east.sobu,西船橋,東西線 ⇄ 総武線各駅停車 (津田沼)
 tokyo-metro.tozai,toyo-rapid.rapid-railway,西船橋,東西線 ⇄ 東葉高速線
