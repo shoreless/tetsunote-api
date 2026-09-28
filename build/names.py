@@ -111,7 +111,10 @@ class Names:
         ]
         near = [x for x in near if x[0] <= MATCH_M]
         if near:
-            item = min(near, key=lambda x: x[0])[1]
+            # An item named for one operator ("Keikyu Corporation Shinagawa") only wins if nothing plainer is near.
+            def operator_named(item):
+                return bool(item["en"] and re.search(r"\b(Corporation|Railway|Railways|Electric|Keikyu|Keio|Odakyu|Tokyu|Seibu|Tobu|Keisei)\b", item["en"]))
+            item = min(near, key=lambda x: (operator_named(x[1]), x[0]))[1]
             found = {k: item[k] for k in found}
         override = self.overrides.get(code)
         if override:

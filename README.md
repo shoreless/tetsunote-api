@@ -28,6 +28,11 @@ Nothing is published yet. The first release will cover the Tokyo region.
 Every text field a reader might see is given in both languages as `{"en": "…", "ja": "…"}`.
 Station English names use Hepburn with macrons (Ōtemachi); each station also carries `ascii`
 (Otemachi), as most station signs show it and people type it, and a kana `reading` (おおてまち).
+Where a station has station numbers, `numbers` lists them: `code` (JY13), `prefix` (JY) and
+`number` (13), the sign's `colour` and `shape` (square, round-square, circle), and the `line` and
+`service` each one numbers (池袋's JA12 is 埼京線, a service on our 山手線 and 赤羽線). A number
+matched to no line of ours has `line` null. Numbers come from each station's infobox on Japanese
+Wikipedia.
 Every record has a stable id, names its `source`, and carries a `checked` date: when someone last
 confirmed it.
 
@@ -135,7 +140,8 @@ source each entry names.
 
 Train facts and descriptions come from [Wikidata](https://www.wikidata.org/) (CC0). Train photos come from
 [Wikimedia Commons](https://commons.wikimedia.org/), only where freely licensed; each names its author,
-licence and file page. The text in
+licence and file page. Station numbers are facts read from the infoboxes of Japanese Wikipedia's
+station articles. The text in
 `v0/series_wikipedia.json` is from Wikipedia and stays under CC BY-SA 4.0.
 
 Each source will be credited here, with a note where its data has been processed. Licence terms for

@@ -28,6 +28,7 @@ import facts
 import images as train_images
 import manual
 import mascots
+import station_numbers
 import places
 import wikipedia
 import series as rolling_stock
@@ -446,6 +447,10 @@ def main():
     for series_id, line_id in sorted(line_pictures.keys() - listed):
         report.append(f"data/train_images.csv: {series_id} has an image for {line_id} but is not listed on it")
 
+    services_doc = services.build(shards, report)
+    # Station numbers from the stations' infoboxes, on the lines and services they number.
+    station_numbers.build(shards, services_doc["services"], report)
+
     (OUT / "operators").mkdir(parents=True, exist_ok=True)
     listing = []
     for op_id, shard in sorted(shards.items()):
@@ -517,8 +522,6 @@ def main():
         if stale.name not in keep:
             stale.unlink()
     places_doc = {"version": 0, "languages": ["en", "ja"], "places": place_records}
-
-    services_doc = services.build(shards, report)
 
     # Mascots and characters, on the lines and trains they belong to; photos only of real animals.
     resolver = mascots.Resolver(shards, {s["id"] for s in all_series}, report)

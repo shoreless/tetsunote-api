@@ -84,6 +84,215 @@ takao-cable.takao-kosaku (高尾登山電鉄 高尾鋼索線): no English name
 jr-east.chuo: borrowed 1 segment(s) 神田–東京 from jr-east.tohoku
 sangi-tetsudo.sangi: added hand-entered track 近鉄富田–大矢知 (2.71 km)
 42 of 255 series have no image
+services: svc.jr-east.yokosuka-sobu: served beyond its sections (not in the app): 佐倉 新小岩信号場
+services: svc.jr-east.joban-local: served beyond its sections (not in the app): 伊勢原 北千住
+services: svc.jr-east.utsunomiya: served beyond its sections (not in the app): 東京 熱海
+services: svc.jr-east.takasaki: served beyond its sections (not in the app): 東京 熱海
+services: svc.jr-east.musashino: served beyond its sections (not in the app): 与野 北小金 国立 馬橋 鶴見
+services: svc.tobu.spacia-x: no colour
+station numbers: A01 at 金沢駅 (北陸鉄道浅野川線) matched no line
+station numbers: C14 at 富山駅 (None) matched no line
+station numbers: C15 at 富山駅 (None) matched no line
+station numbers: E3 at 福井口駅 (None) matched no line
+station numbers: K11 at 博多駅 (福岡市地下鉄空港線) matched no line
+station numbers: N18 at 博多駅 (福岡市地下鉄七隈線) matched no line
+station numbers: JA53 at 下関駅 (山陽本線) matched no line
+station numbers: KS26 at 京成津田沼駅 (None) matched no line
+station numbers: HS12 at 千葉ニュータウン中央駅 (None) matched no line
+station numbers: HS14 at 印旛日本医大駅 (None) matched no line
+station numbers: HS08 at 新鎌ヶ谷駅 (None) matched no line
+station numbers: HS05 at 東松戸駅 (None) matched no line
+station numbers: KS09 at 青砥駅 (None) matched no line
+station numbers: SA06 at 町屋駅 (都電荒川線) matched no line
+station numbers: KS44 at 東成田駅 (None) matched no line
+station numbers: KK61 at 堀ノ内駅 (None) matched no line
+station numbers: KK20 at 京急川崎駅 (None) matched no line
+station numbers: A07 at 泉岳寺駅 (None) matched no line
+station numbers: KK11 at 京急蒲田駅 (None) matched no line
+station numbers: MM01 at 横浜駅 (横浜高速鉄道みなとみらい線) matched no line
+station numbers: KK37 at 横浜駅 (京急本線) matched no line
+station numbers: KK50 at 金沢八景駅 (None) matched no line
+station numbers: KO23 at 東府中駅 (None) matched no line
+station numbers: KO29 at 高幡不動駅 (None) matched no line
+station numbers: KO18 at 調布駅 (None) matched no line
+station numbers: A8 at 帷子ノ辻駅 (None) matched no line
+station numbers: KH03 at 天満橋駅 (None) matched no line
+station numbers: KH21 at 枚方市駅 (None) matched no line
+station numbers: OT12 at びわ湖浜大津駅 (None) matched no line
+station numbers: KH40 at 三条駅 (京都府) (None) matched no line
+station numbers: KH28 at 中書島駅 (None) matched no line
+station numbers: KH04 at 京橋駅 (大阪府) (京阪本線) matched no line
+station numbers: KH01 at 淀屋橋駅 (京阪本線) matched no line
+station numbers: KH02 at 北浜駅 (大阪府) (京阪本線) matched no line
+station numbers: IY10 at 松山市駅 (None) matched no line
+station numbers: H75 at 函館駅前停留場 (函館本線) matched no line
+station numbers: DY17 at 函館駅前停留場 (None) matched no line
+station numbers: DY16 at 松風町停留場 (None) matched no line
+station numbers: DY20 at 十字街停留場 (None) matched no line
+station numbers: M11 at 江坂駅 (None) matched no line
+station numbers: A28 at 旭川駅 (None) matched no line
+station numbers: A21 at 滝川駅 (None) matched no line
+station numbers: A13 at 岩見沢駅 (None) matched no line
+station numbers: S02 at 桑園駅 (None) matched no line
+station numbers: H47 at 長万部駅 (None) matched no line
+station numbers: H74 at 五稜郭駅 (None) matched no line
+station numbers: A30 at 新旭川駅 (None) matched no line
+station numbers: K15 at 追分駅 (北海道) (None) matched no line
+station numbers: H18 at 苫小牧駅 (None) matched no line
+station numbers: T30 at 富良野駅 (None) matched no line
+station numbers: A69 at 網走駅 (None) matched no line
+station numbers: CM03 at 千葉駅 (None) matched no line
+station numbers: NK44 at 紀ノ川駅 (None) matched no line
+station numbers: NK03 at 新今宮駅 (None) matched no line
+station numbers: HN52 at 新今宮駅 (阪堺電気軌道阪堺線) matched no line
+station numbers: NK05 at 天下茶屋駅 (None) matched no line
+station numbers: NK06 at 岸里玉出駅 (None) matched no line
+station numbers: NK16 at 羽衣駅 (None) matched no line
+station numbers: NK30 at 泉佐野駅 (None) matched no line
+station numbers: NK41 at みさき公園駅 (None) matched no line
+station numbers: NK45 at 和歌山市駅 (None) matched no line
+station numbers: NK59 at 中百舌鳥駅 (None) matched no line
+station numbers: NK86 at 極楽橋駅 (None) matched no line
+station numbers: M12 at 大曽根駅 (名古屋市営地下鉄名城線) matched no line
+station numbers: M01 at 金山駅 (愛知県) (名古屋市営地下鉄名城線) matched no line
+station numbers: MY08 at 梅坪駅 (None) matched no line
+station numbers: NH19 at 知立駅 (None) matched no line
+station numbers: NH60 at 名鉄岐阜駅 (None) matched no line
+station numbers: IY17 at 新鵜沼駅 (None) matched no line
+station numbers: NH56 at 笠松駅 (None) matched no line
+station numbers: NH50 at 名鉄一宮駅 (None) matched no line
+station numbers: NH42 at 須ヶ口駅 (None) matched no line
+station numbers: NH33 at 神宮前駅 (None) matched no line
+station numbers: NH17 at 新安城駅 (None) matched no line
+station numbers: NH04 at 国府駅 (愛知県) (None) matched no line
+station numbers: IY15 at 犬山駅 (None) matched no line
+station numbers: TB07 at 津島駅 (None) matched no line
+station numbers: TA03 at 大江駅 (愛知県) (None) matched no line
+station numbers: TA09 at 太田川駅 (None) matched no line
+station numbers: TA22 at 常滑駅 (None) matched no line
+station numbers: KC17 at 富貴駅 (None) matched no line
+station numbers: TH08 at 江吉良駅 (None) matched no line
+station numbers: GN13 at 吉良吉田駅 (None) matched no line
+station numbers: U10 at 内子駅 (None) matched no line
+station numbers: U13 at 新谷駅 (None) matched no line
+station numbers: JR-M12 at 児島駅 (本四備讃線) matched no line
+station numbers: TK40 at 中村駅 (None) matched no line
+station numbers: Y15 at 難波駅 (Osaka Metro) (Osaka Metro四つ橋線) matched no line
+station numbers: Y16 at 大国町駅 (Osaka Metro四つ橋線) matched no line
+station numbers: HN01 at 天王寺駅 (阪堺電気軌道上町線) matched no line
+station numbers: Y21 at 住之江公園駅 (Osaka Metro四つ橋線) matched no line
+station numbers: A02 at 日本橋駅 (大阪府) (近鉄難波線) matched no line
+station numbers: FJ01 at 大月駅 (富士山麓電気鉄道富士急行線) matched no line
+station numbers: FJ16 at 富士山駅 (富士山麓電気鉄道富士急行線) matched no line
+station numbers: T61 at 南富山駅 (None) matched no line
+station numbers: T51 at 岩峅寺駅 (None) matched no line
+station numbers: T02 at 稲荷町駅 (富山県) (None) matched no line
+station numbers: C20 at 安野屋停留場 (None) matched no line
+station numbers: C18 at 丸の内停留場 (None) matched no line
+station numbers: C08 at 西町停留場 (富山地方鉄道富山軌道線) matched no line
+station numbers: T01 at 電鉄富山駅・エスタ前停留場 (富山地方鉄道本線) matched no line
+station numbers: C14 at 電鉄富山駅・エスタ前停留場 (None) matched no line
+station numbers: C15 at 電鉄富山駅・エスタ前停留場 (None) matched no line
+station numbers: T08 at 寺田駅 (富山県) (None) matched no line
+station numbers: OH57 at 強羅駅 (None) matched no line
+station numbers: OH23 at 新百合ヶ丘駅 (None) matched no line
+station numbers: OH28 at 相模大野駅 (None) matched no line
+station numbers: SY40 at 飾磨駅 (None) matched no line
+station numbers: S03 at 柳川停留場 (None) matched no line
+station numbers: CA07 at 吉原駅 (None) matched no line
+station numbers: M07 at 紙屋町西停留場 (None) matched no line
+station numbers: M08 at 紙屋町西停留場 (None) matched no line
+station numbers: M07 at 紙屋町東停留場 (None) matched no line
+station numbers: M08 at 紙屋町東停留場 (None) matched no line
+station numbers: U09 at 皆実町六丁目停留場 (None) matched no line
+station numbers: M18 at 広電西広島（己斐）駅 (None) matched no line
+station numbers: M11 at 十日市町停留場 (None) matched no line
+station numbers: M12 at 土橋停留場 (None) matched no line
+station numbers: M05 at 八丁堀停留場 (None) matched no line
+station numbers: L01 at 的場町停留場 (広島電鉄循環線) matched no line
+station numbers: R05 at 天王洲アイル駅 (東京臨海高速鉄道りんかい線) matched no line
+station numbers: Y06 at 小竹向原駅 (東京メトロ有楽町線) matched no line
+station numbers: SI37 at 小竹向原駅 (西武有楽町線) matched no line
+station numbers: TX05 at 北千住駅 (首都圏新都市鉄道つくばエクスプレス) matched no line
+station numbers: TX04 at 南千住駅 (首都圏新都市鉄道つくばエクスプレス) matched no line
+station numbers: TX01 at 秋葉原駅 (首都圏新都市鉄道つくばエクスプレス) matched no line
+station numbers: M06 at 中野坂上駅 (None) matched no line
+station numbers: JU01 at 東京駅 (宇都宮線) matched no line
+station numbers: SA16 at 王子駅 (都電荒川線) matched no line
+station numbers: R01 at 新木場駅 (東京臨海高速鉄道りんかい線) matched no line
+station numbers: JS17 at 大崎駅 (相鉄・JR直通線) matched no line
+station numbers: JA08 at 大崎駅 (相鉄・JR直通線) matched no line
+station numbers: R08 at 大崎駅 (東京臨海高速鉄道りんかい線) matched no line
+station numbers: R07 at 大井町駅 (東京臨海高速鉄道りんかい線) matched no line
+station numbers: SI06 at 練馬駅 (None) matched no line
+station numbers: TX02 at 新御徒町駅 (首都圏新都市鉄道つくばエクスプレス) matched no line
+station numbers: MG09 at 多摩川駅 (東急目黒線) matched no line
+station numbers: MG13 at 日吉駅 (神奈川県) (東急目黒線) matched no line
+station numbers: JS15 at 武蔵小杉駅 (相鉄・JR直通線) matched no line
+station numbers: MG11 at 武蔵小杉駅 (東急目黒線) matched no line
+station numbers: CO61 at 塩尻駅 (中央本線) matched no line
+station numbers: JT21 at 熱海駅 (東海道本線) matched no line
+station numbers: CA00 at 熱海駅 (東海道本線) matched no line
+station numbers: JO33 at 佐倉駅 (None) matched no line
+station numbers: SO51 at 羽沢横浜国大駅 (None) matched no line
+station numbers: B17 at 関内駅 (横浜市営地下鉄ブルーライン) matched no line
+station numbers: TX10 at 南流山駅 (首都圏新都市鉄道つくばエクスプレス) matched no line
+station numbers: TS04 at 曳舟駅 (None) matched no line
+station numbers: TI18 at 太田駅 (群馬県) (None) matched no line
+station numbers: TI10 at 館林駅 (None) matched no line
+station numbers: TS30 at 東武動物公園駅 (None) matched no line
+station numbers: TS13 at 西新井駅 (None) matched no line
+station numbers: TN12 at 新栃木駅 (None) matched no line
+station numbers: TN23 at 下今市駅 (None) matched no line
+station numbers: TX12 at 流山おおたかの森駅 (首都圏新都市鉄道つくばエクスプレス) matched no line
+station numbers: CA83 at 米原駅 (東海道本線) matched no line
+station numbers: CA77 at 大垣駅 (新垂井線) matched no line
+station numbers: CJ17 at 亀山駅 (三重県) (関西本線) matched no line
+station numbers: B30 at センター北駅 (横浜市営地下鉄ブルーライン) matched no line
+station numbers: B29 at センター南駅 (横浜市営地下鉄ブルーライン) matched no line
+station numbers: KD08 at 北熊本駅 (None) matched no line
+station numbers: A01 at 甘木駅 (西鉄甘木線) matched no line
+station numbers: SO10 at 二俣川駅 (None) matched no line
+station numbers: SO08 at 西谷駅 (None) matched no line
+station numbers: S02 at 新神戸駅 (None) matched no line
+station numbers: S09 at 新長田駅 (None) matched no line
+station numbers: KB27 at 横山駅 (兵庫県) (None) matched no line
+station numbers: KB15 at 有馬口駅 (None) matched no line
+station numbers: KB06 at 鈴蘭台駅 (None) matched no line
+station numbers: KB02 at 湊川駅 (None) matched no line
+station numbers: HS36 at 新開地駅 (阪神神戸高速線) matched no line
+station numbers: HS36 at 新開地駅 (阪急神戸高速線) matched no line
+station numbers: K09 at 中洲川端駅 (福岡市地下鉄空港線) matched no line
+station numbers: NS10 at 山下駅 (兵庫県) (None) matched no line
+station numbers: S01 at 岡山駅 (岡山電気軌道東山本線) matched no line
+station numbers: JR-F01 at 大阪駅 (おおさか東線) matched no line
+station numbers: JR-A63 at 神戸駅 (兵庫県) (None) matched no line
+station numbers: JR-R16 at 岩国駅 (None) matched no line
+station numbers: HS33 at 元町駅 (兵庫県) (None) matched no line
+station numbers: T13 at 西鉄二日市駅 (None) matched no line
+station numbers: T25 at 宮の陣駅 (None) matched no line
+station numbers: SK05 at 東村山駅 (西武西武園線) matched no line
+station numbers: SS19 at 小平駅 (None) matched no line
+station numbers: SI31 at 吾野駅 (None) matched no line
+station numbers: SI18 at 西所沢駅 (None) matched no line
+station numbers: OR15 at 八日市駅 (None) matched no line
+station numbers: OR07 at 高宮駅 (滋賀県) (None) matched no line
+station numbers: A03 at 大阪上本町駅 (近鉄奈良線) matched no line
+station numbers: M74 at 宇治山田駅 (None) matched no line
+station numbers: TX15 at 守谷駅 (首都圏新都市鉄道つくばエクスプレス) matched no line
+station numbers: HN10 at 住吉停留場 (大阪府) (None) matched no line
+station numbers: HK81 at 桂駅 (None) matched no line
+station numbers: HK63 at 淡路駅 (None) matched no line
+station numbers: HK08 at 西宮北口駅 (None) matched no line
+station numbers: HK06 at 塚口駅 (阪急) (None) matched no line
+station numbers: HK48 at 石橋阪大前駅 (None) matched no line
+station numbers: HK01 at 大阪梅田駅 (阪急) (阪急京都本線) matched no line
+station numbers: HK09 at 夙川駅 (None) matched no line
+station numbers: HS35 at 高速神戸駅 (None) matched no line
+station numbers: HS12 at 武庫川駅 (None) matched no line
+station numbers: HS09 at 尼崎駅 (阪神) (None) matched no line
+station numbers: HS08 at 大物駅 (None) matched no line
+station numbers: 5708 numbers on 5464 of 10154 stations
 place mikasa-railway-memorial-museum: no station within 3000 m
 place hokkaido-maruseppu-recreation-forest-park-railway: no station within 3000 m
 place shuzenji-niji-no-sato: no station within 3000 m
@@ -93,10 +302,4 @@ place nansatsu-railway-museum: no station within 3000 m
 place poppo-train-museum: no station within 3000 m
 place japan-heritage-yuzu-road-museum: no station within 3000 m
 place makiba-line: no station within 3000 m
-services: svc.jr-east.yokosuka-sobu: served beyond its sections (not in the app): 佐倉 新小岩信号場
-services: svc.jr-east.joban-local: served beyond its sections (not in the app): 伊勢原 北千住
-services: svc.jr-east.utsunomiya: served beyond its sections (not in the app): 東京 熱海
-services: svc.jr-east.takasaki: served beyond its sections (not in the app): 東京 熱海
-services: svc.jr-east.musashino: served beyond its sections (not in the app): 与野 北小金 国立 馬橋 鶴見
-services: svc.tobu.spacia-x: no colour
 mascots: data/mascots.csv line 120 (animal.jr-hokkaido.rara): no station 新十津川 on jr-hokkaido
