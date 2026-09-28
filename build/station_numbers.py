@@ -305,8 +305,9 @@ def build(shards, services, report):
                     same = [x for x in group_stations if operator_of[x["line"]] and e["link"].startswith(operator_of[x["line"]])]
                     if len({x["line"] for x in same}) == 1:
                         line_id = same[0]["line"]
-                if not line_id and len({x["line"] for x in group_stations}) == 1:
-                    # Only one line of ours stops here: it can only be that one.
+                if not line_id and len({x["line"] for x in group_stations}) == 1 and len(parsed.get(title, [])) == 1:
+                    # Only one line of ours stops here and the article numbers one operator: it can only be that one.
+                    # (大塚's JR and 都電 stops are two stations, and each article lists both numbers.)
                     line_id = group_stations[0]["line"]
                 number = {
                     "code": code, "prefix": e["prefix"], "number": e["number"],
