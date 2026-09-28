@@ -355,8 +355,11 @@ station numbers: HS09 at 尼崎駅 (阪神) (None) matched no line
 station numbers: HS08 at 大物駅 (None) matched no line
 station numbers: N12 at ドーム前駅 (Osaka Metro長堀鶴見緑地線) matched no line
 station numbers: 5708 numbers on 5456 of 10154 stations
+place orient-express-at-lalique-museum-hakone: no station within 3000 m
+place garden-railway-cafe: no station within 3000 m
 place popondetta-aeon-mall-tsukuba: no station within 3000 m
 place popondetta-aeon-mall-takasaki: no station within 3000 m
+place restaurant-joki-kikansha: no station within 3000 m
 place mikasa-railway-memorial-museum: no station within 3000 m
 place hokkaido-maruseppu-recreation-forest-park-railway: no station within 3000 m
 place shuzenji-niji-no-sato: no station within 3000 m

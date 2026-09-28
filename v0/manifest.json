@@ -1,6 +1,6 @@
 {
  "version": 0,
- "revision": "9fdaa614fad4",
+ "revision": "e2a2013a5426",
  "languages": [
   "en",
   "ja"
@@ -2139,8 +2139,8 @@
   },
   {
    "path": "places.json",
-   "bytes": 129092,
-   "sha256": "02a8f9b622785a95dfe55755c6762c52a396d0f90d88f1f5e364196092fe63a4"
+   "bytes": 147602,
+   "sha256": "985ba048670efc82cfedba067e376fd6abc59c0b65305379176aa789885ff86d"
   },
   {
    "path": "places_wikipedia.json",

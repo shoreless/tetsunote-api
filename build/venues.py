@@ -1,9 +1,9 @@
-"""Railway shops for fans: model railway shops, railway bookshops, operators' goods shops, parts shops.
+"""Venues for fans found by their street address: railway shops, and train bars, cafés and restaurants.
 
-Listed by hand in data/shops.csv from each shop's own website: the name, the street address, the
-site, and a short note in our own words. Each address is placed on the map with the Geospatial
-Information Authority of Japan's address search (国土地理院), cached in sources/gsi/geocode.json;
-a row's own lat and lon win over it. Shops are published as places of kind "shop".
+Listed by hand in data/venues.csv from each venue's own website: its kind (shop, bar, cafe,
+restaurant), name, street address, site, and a short note in our own words. Each address is placed
+on the map with the Geospatial Information Authority of Japan's address search (国土地理院), cached in
+sources/gsi/geocode.json; a row's own lat and lon win over it. Venues are published as places.
 """
 
 import csv
@@ -17,7 +17,8 @@ from pathlib import Path
 from names import USER_AGENT
 
 ROOT = Path(__file__).resolve().parent.parent
-LIST = ROOT / "data" / "shops.csv"
+LIST = ROOT / "data" / "venues.csv"
+KINDS = {"shop", "bar", "cafe", "restaurant"}
 CACHE = ROOT / "sources" / "gsi" / "geocode.json"
 SEARCH = "https://msearch.gsi.go.jp/address-search/AddressSearch?q="
 
@@ -42,7 +43,7 @@ def geocode(address, cache):
 
 
 def load(report):
-    """Shops as place records keyed "shop:<id>", with their point, ready for places.build."""
+    """Venues as place records keyed "venue:<id>", with their point, ready for places.build."""
     if not LIST.exists():
         return {}
     CACHE.parent.mkdir(parents=True, exist_ok=True)
@@ -50,12 +51,14 @@ def load(report):
     shops = {}
     with open(LIST, encoding="utf-8") as f:
         for n, row in enumerate(csv.DictReader(f), start=2):
-            where = f"data/shops.csv line {n}"
+            where = f"data/venues.csv line {n}"
             if row.get("hide", "").strip().lower() in ("yes", "true", "1"):
                 continue
             if not row["id"] or not row["ja"] or not row["address"]:
-                raise SystemExit(f"{where}: a shop needs id, ja and address")
-            if f"shop:{row['id']}" in shops:
+                raise SystemExit(f"{where}: a venue needs id, ja and address")
+            if (row.get("kind") or "shop") not in KINDS:
+                raise SystemExit(f"{where}: kind {row['kind']!r} is not one of {sorted(KINDS)}")
+            if f"venue:{row['id']}" in shops:
                 raise SystemExit(f"{where}: id {row['id']} is used twice")
             if row["lat"] and row["lon"]:
                 point = [float(row["lon"]), float(row["lat"])]
@@ -64,7 +67,7 @@ def load(report):
                 if not point:
                     report.append(f"{where}: {row['ja']}: address not found ({street(row['address'])}); left out")
                     continue
-            shops[f"shop:{row['id']}"] = {
+            shops[f"venue:{row['id']}"] = {
                 "id": row["id"],
                 "kind": row.get("kind") or "shop",
                 "name": {"en": row["en"] or None, "ja": row["ja"]},
